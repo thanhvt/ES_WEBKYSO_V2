@@ -165,25 +165,7 @@ namespace ES_WEBKYSO.Areas.HeThongGiaoTiep.Controllers
                                                                 o.MA_SOGCS.Contains(findModel.MaSo))
                                                             && o.THANG.Equals(iThang)
                                                             && o.NAM.Equals(iNam)).Select(i => i.MA_SOGCS).ToList();
-                //var data = Uow.RepoBase<D_SOGCS>().GetAll(o => id.Any(u => u == o.MA_SOGCS)
-                //                                               && listSoGCSOK.Contains(o.MA_SOGCS)
-                //                                               &&
-                //                                               (findModel.MaSo == null ||
-                //                                                o.MA_SOGCS.Contains(findModel.MaSo))
-                //                                               &&
-                //                                               (findModel.TenSo == null ||
-                //                                                o.TEN_SOGCS.Contains(findModel.TenSo))
-                //                                               &&
-                //                                               (findModel.NgayGhi == null ||
-                //                                                o.NGAY_GHI == findModel.NgayGhi)
-                //                                               &&
-                //                                               (findModel.TrangThai == null ||
-                //                                                o.TRANG_THAI.Contains(findModel.TrangThai))
-                //                                               &&
-                //                                               (paging.Key == null ||
-                //                                                (o.MA_SOGCS.Contains(paging.Key) ||
-                //                                                 o.TEN_SOGCS.Contains(paging.Key))), paging.OrderKey,
-                //    ref paging).ToList();
+        
 
                 var data = Uow.RepoBase<D_SOGCS>().GetAll(o => id.Any(u => u == o.MA_SOGCS)
                                                                &&
