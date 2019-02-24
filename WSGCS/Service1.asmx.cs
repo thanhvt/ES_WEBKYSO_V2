@@ -1568,8 +1568,6 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                                     gcsHhu.CS_MOI = Convert.ToDecimal(dataRow["CS_MOI"]);
                                 if (dataRow["SL_MOI"] != null)
                                     gcsHhu.SL_MOI = Convert.ToDecimal(dataRow["SL_MOI"]);
-
-
                                 UnitOfWork.RepoBase<GCS_CHISO_HHU>().Update(gcsHhu);
                             }
                             //var m = System.Web.HttpContext.Current.Server.MapPath("~/");
