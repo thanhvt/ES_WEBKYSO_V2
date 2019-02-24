@@ -1,0 +1,548 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Nhận dữ liệu chỉ số từ File";
+}
+@section Styles{
+    <link href="~/Content/themes/ClipOne/plugins/dropzone/downloads/css/dropzone.css" rel="stylesheet" />
+    <link href="~/Content/themes/ClipOne/plugins/bootstrap-fileupload/bootstrap-fileupload.min.css" rel="stylesheet" />
+}
+<style>
+    .btn span.glyphicon {
+        opacity: 0;
+    }
+
+    .btn.active span.glyphicon {
+        opacity: 1;
+    }
+</style>
+<div class="container" style="min-height: 900px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Cập nhật dữ liệu chỉ số từ File</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12" align="left">
+            @Html.ValidationSummary()
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+                </div>
+            }
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">
+                    <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã đơn vị
+                                        </label>
+                                        <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value=@ViewBag.MA_DVIQLY disabled="">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã sổ
+                                        </label>
+                                        <input class="form-control" placeholder="Mã sổ" type="text" id="MaSo" name="MaSo">
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+
+                                    @*<div class="col-md-6">
+                                            <label class="control-label">
+                                                Loại sổ
+                                            </label>
+                                            <select id="LoaiSo" name="LoaiSo" class="form-control" onclick="disable(value);">
+                                                <option value="">--- Chọn loại sổ ---</option>
+                                                <option value="LDL">KH</option>
+                                                <option value="CNDL">DN</option>
+                                            </select>
+                                        </div>*@
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Tên sổ
+                                        </label>
+                                        <input class="form-control" placeholder="Tên sổ" type="text" id="TenSo" name="TenSo">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Ngày ghi
+                                        </label>
+                                        <select name="NgayGhi" id="NgayGhi" class="form-control" required>
+                                            <option value="" selected="">--- Chọn ngày ---</option>
+                                            <option value="01">1</option>
+                                            <option value="02">2</option>
+                                            <option value="03">3</option>
+                                            <option value="04">4</option>
+                                            <option value="05">5</option>
+                                            <option value="06">6</option>
+                                            <option value="07">7</option>
+                                            <option value="08">8</option>
+                                            <option value="09">9</option>
+                                            <option value="10">10</option>
+                                            <option value="11">11</option>
+                                            <option value="12">12</option>
+                                            <option value="13">13</option>
+                                            <option value="14">14</option>
+                                            <option value="15">15</option>
+                                            <option value="16">16</option>
+                                            <option value="17">17</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="control-label">
+                                        Tổ đội
+                                    </label>
+                                    <select name="ToDoi" id="ToDoi" class="form-control" required>
+                                        <option value="">--- Chọn tổ đội ---</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Kỳ GCS
+                                    </label>
+                                    <select name="Ky" id="Ky" class="form-control" required>
+                                        <option value="">--- Chọn kỳ ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Tháng
+                                    </label>
+                                    <select name="Thang" id="Thang" class="form-control" required>
+                                        <option value="">--- Chọn tháng ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Năm
+                                    </label>
+                                    <input type="text" placeholder="Năm" id="Nam" name="Nam" class="form-control" value="2017" required>
+                                </div>
+                                <div class="col-md-3">
+
+                                    <label class="control-label">
+                                        Trạng thái
+                                    </label>
+                                    <select id="TrangThai" name="TrangThai" class="form-control">
+                                        @*<option value="">--- Chọn trạng thái ---</option>*@
+                                        <option value="DCN">Đã thực hiện</option>
+                                        <option value="CCN" selected>Chưa thực hiện</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <br />
+                                    <button type="submit" class="btn btn-primary" id="btnGetData">
+                                        <i class="fa fa-search"></i>
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    @using (Html.BeginForm("UploadFile", "NhanFile", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Thao tác
+                <i class="fa fa-pencil-square-o text-right"></i>
+            </div>
+            <div class="panel-body">
+                @*<div class="col-md-1">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="control-label">Tất cả</label>
+                            <label class="btn btn-success">
+                                <input type="checkbox" id="checkAll" name="checkAll">
+                                <span class="glyphicon glyphicon-ok"></span>
+                            </label>
+                        </div>
+                    </div>*@
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <fieldset>
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-sm-5">
+                                                <label class="control-label">Chọn file</label>
+                                                <input id="files" name="files" type="file" multiple class="file-loading" style="padding-top: 5px;">
+                                            </div>
+                                            <div class="col-sm-2" style="padding-top: 20px;">
+                                                <button id="btnUpload" @*data-toggle="modal" data-target="#popupStaticModal"*@ class="btn btn-primary">
+                                                    <i class="clip-upload-2"></i>
+                                                    Upload
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    @*Upload file*@
+                    @*<div class="col-md-9">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-sm-5">
+                                        <label class="control-label">Chọn file</label>
+                                        <input id="files" name="files" type="file" multiple class="file-loading" style="padding-top: 5px;">
+                                    </div>
+                                    <div class="col-sm-2" style="padding-top: 20px;">
+                                        <button id="btnUpload" class="btn btn-primary">
+                                            <i class="clip-upload-2"></i>
+                                            Upload
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>*@
+                </div>
+            </div>
+            <input type="hidden" id="txtLichID" name="txtLichID" value="" />
+        </div>
+    }
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-file-text"></i>
+                    @ViewBag.Title
+                </div>
+                <div class="panel-body" id="divtable">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="~/Content/themes/ClipOne/plugins/dropzone/downloads/dropzone.js"></script>
+@section PageScripts{
+    @*<script src="~/Scripts/jquery.validate.new.js"></script>*@
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#checkAll").change(function () {
+                if ($("#checkAll").prop('checked')) {
+                    $(".grey").iCheck('check');
+                }
+                else { $(".grey").iCheck('uncheck'); }
+            })
+            return false;
+        });
+        $(document).ready(function () {
+            $.ajax({ //lấy danh sách đội cho phần tìm kiếm
+                type: 'POST',
+                url: '@Url.Action("GetDOI_GCS")',
+                dataType: 'json',
+                traditional: true,
+                data: { MA_DVIQLY: $("#MaDonVi").val() },
+                success:
+                    function (tous) {
+                        $.each(tous, function (i, tou) {
+                            $("#ToDoi").append('<option value="' + tou.MAChar + '">' + tou.TEN + '</option>');
+                        });
+                    },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình tải dữ liệu: ' + ex);
+                }
+            });
+            return false;
+        });
+
+        (function ($) {
+            "use strict";
+
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                //funcgr: function (grid) {
+                //    window.TableGenericCapNhatChiSoGrid = grid;
+                //},
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MaDonVi").val();
+                    d.NgayGhi = $("#NgayGhi").val();
+                    d.MaSo = $("#MaSo").val();
+                    d.LoaiSo = $("#LoaiSo").val();
+                    d.Ky = $("#Ky").val();
+                    d.Thang = $("#Thang").val();
+                    d.Nam = $("#Nam").val();
+                    d.TrangThai = $("#TrangThai").val();
+                    d.MaDoi = $("#ToDoi").val();
+                    d.TenSo = $("#TenSo").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                var ret = "";
+                                //ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" href="/ReportViewer/TongReport.aspx?IdLich=' + data.ID_LICHGCS + '&MaBangKe=' + data.MA_LOAIBANGKE + '"' + 'target="_blank"><i class="fa fa-eye"></i></a>' + " " + '<button class="btn btn-xs btn-teal tooltips Edit" name="idLich" id="idLich" value="' + data.ID_LICHGCS + '" onclick="btnKyBangke()" ><i class="fa fa-arrow-circle-left"></i></button></div>';
+                                ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" title="Xem bảng kê" href="/ReportViewer/TongReport.aspx?IdLich=' + data.ID_LICHGCS + '&MaBangKe=' + data.MA_LOAIBANGKE + '"' + 'target="_blank"><i class="fa fa-eye"></i></a></div>';
+                                //if (data.TrangThaiKy == true) {
+                                //    ret =
+                                //        '<div><a class="btn btn-xs btn-success tooltips Edit" title="Xem bảng kê" href="/Uploads/FilesHoSo/' + data.MA_DVIQLY + '/' + data.MA_LOAIBANGKE + '_' + data.MA_SOGCS + '_' + data.NAM + '_' + data.THANG + '_' + data.KY + '.pdf"' + 'target="_blank""><i class="fa fa-eye"></i></a></div>';
+                                //} else {
+                                //    ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" title="Xem bảng kê" href="/ReportViewer/TongReport.aspx?IdLich=' + data.ID_LICHGCS + '&MaBangKe=' + data.MA_LOAIBANGKE + '"' + 'target="_blank"><i class="fa fa-eye"></i></a>' + " " + '<button class="btn btn-xs btn-primary tooltips Edit" title="Ký bảng kê" name="idLich" id="idLich" value="' + data.ID_LICHGCS + '" onclick="btnKyBangke()" ><i class="fa fa-pencil"></i></button>' + " " + '<button class="btn btn-xs btn-warning tooltips Edit" title="Xác nhận ký bảng kê" name="idLichs" id="idLichs" value="' + data.ID_LICHGCS + '" onclick="btnXacNhanKyBangke()" ><i class="fa fa-check"></i></button></div>';
+                                //}
+                                return ret;
+                            }
+                        }
+                    ]
+                },
+                columns: [
+                    {
+                        //data: null,
+                        //header: "Chọn",
+                        //className: 'dt-center center',
+                        //'bSortable': false,
+                        //render: function (data) {
+                        //    return '<div class="checkbox-table"><label><input type="checkbox" name="chkSO" class="grey chkAll" id="chkSO" value="' + data.ID_LICHGCS + '"/></label></div>'; //' + data.ID_LICHGCS + '
+                        //}
+                        data: null,
+                        type: 'checkbox',
+                        className: 'dt-center center',
+                        'bSortable': false,
+                        render: function (data) {
+                            return '<div class="checkbox-table"><label><input type="checkbox" name="chkSo" class="checkboxes" id="chkSo" value="' + data.ID_LICHGCS + '"/></label></div>';
+                        }
+                    },
+                    {
+                        header: "Mã sổ",
+                        data: "MA_SOGCS"
+                    },
+                    {
+                        header: "Tên sổ",
+                        data: "TEN_SOGCS"
+                    },
+                     {
+                         header: "Hình thức",
+                         data: "HINHTHUC"
+                     },
+                     {
+                         header: "Ngày ghi",
+                         data: "NGAY_GHI"
+                     },
+                     {
+                         header: "Kỳ",
+                         data: "KY"
+                     },
+                     {
+                         header: "Tháng",
+                         data: "THANG"
+                     },
+                     {
+                         header: "Năm",
+                         data: "NAM"
+                     },
+                     {
+                         header: "Tổ đội",
+                         data: "MA_DOIGCS"
+                     },
+                     {
+                         header: "Tình trạng sổ",
+                         data: "TINHTRANGSO",
+                         render: function (data) {
+                             if (data === "0") {
+                                 return "<div  class='label label-sm label-success'>Đủ chỉ số</div>";
+                             }
+                             else {
+                                 return "<div class='label label-sm label-warning'>Thiếu chỉ số</div>";
+                             }
+                         }
+                     },
+                    {
+                        header: "Trạng thái",
+                        data: "STATUS",
+                        render: function (data) {
+                            if (data === "DCN") {
+                                return "<div class='label label-sm label-success'>Đã thực hiện</div>";
+                            }
+                            if (data === "CCN") {
+                                return "<div class='label label-sm label-info'>Chưa thực hiện</div>";
+                            }
+                            else {
+                                return "<div class='label label-sm label-success'></div>";
+                            }
+                        }
+                    }
+                ],
+                func: function (grid) {
+                    window.TableGenericPhanCongGrid = grid;
+                    $("#TableGeneric")
+                        .on('click',
+                            '.Delete',
+                            function (e) {
+                                e.preventDefault();
+                                var thisTrData = $(this).attr('data-id');
+
+                                if (confirm("Xác nhận hủy phân công? ")) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        cache: false,
+                                        async: true,
+                                        url: "@Html.Raw(Url.Action("Delete"))",
+                                        dataType: 'json',
+                                        data: JSON.stringify({ ID_LICHGCS: thisTrData }),
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (result) {
+                                            if (result.success === true) {
+                                                alert(result.message);
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+
+                                        },
+                                        complete: function (result) {
+                                            grid.ajax.reload();
+                                        }
+                                    });
+                                }
+
+                            });
+                }
+            };
+
+            $(function () {
+                var temp = "01";
+                var gio = "0";
+                var d = new Date();
+                $("#Ky").val(temp);
+                $("#Gio").val(gio);
+                $("#Nam").val(d.getFullYear());
+            });
+            $(function () {
+                var d = new Date();
+                var m = d.getMonth() + 1;
+                $('#Thang option:eq(' + m + ')').prop('selected', true);
+            });
+            //$(function () {
+            //    var d = new Date();
+            //    var m = d.getDate();
+            //    $('#NgayGhi option:eq(' + m + ')').prop('selected', true);
+            //});
+            $("#btnGetData").on('click',
+               function () {
+                   AutoDataTable();
+               });
+
+            $("#btnUpload").on('click',
+               function () {
+                   if (getCheckedId() == "") { alert('Mời chọn sổ GCS'); return };
+                   var list = getCheckedId();
+                   document.getElementById("txtLichID").value = list;
+                   document.getElementById("frm").submit();
+                   //var form = $('#frm');
+                   @*$.ajax({
+                       cache: false,
+                       async: true,
+                       type: "POST",
+                       url: @Url.Action("UploadFile"),
+                       data: form.serialize(),
+                       success: function (data) {
+                           alert(data);
+                       }
+                   });*@
+               });
+
+            function getCheckedId() {
+                var checkboxes = document.getElementsByName('chkSo');
+                var listIDs = new Array();
+                for (var i = 0, n = checkboxes.length; i < n; i++) {
+                    if (checkboxes[i].checked) {
+                        listIDs.push(checkboxes[i].value);
+                    }
+                }
+                return listIDs;
+            }
+        })(jQuery);
+    </script>
+}

@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report Width="9.68938668568929in" Name="rptTinhTrangBatThuong" ShowSnapGrid="True" SnapToGrid="False" SnapToSnapLines="False" xmlns="http://schemas.telerik.com/reporting/2012/3.9">
+  <DataSources>
+    <SqlDataSource Name="sqlDataSource1" />
+  </DataSources>
+  <Items>
+    <PageHeaderSection Height="0.225694447755814in" Name="pageHeaderSection1">
+      <Style>
+        <Font Name="Times New Roman" />
+      </Style>
+    </PageHeaderSection>
+    <DetailSection Height="4.65833353996277in" Name="detailSection1">
+      <Style>
+        <BorderStyle Default="Solid" Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+        <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+        <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+        <Font Name="Times New Roman" />
+      </Style>
+      <Items>
+        <Table Width="9.26388357469224in" Height="0.4375in" Left="0.25in" Top="2.6875in" Name="table1">
+          <Body>
+            <Cells>
+              <TableCell RowIndex="0" ColumnIndex="0" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.257042159013371in" Height="0.21875in" Left="0in" Top="0in" Name="textBox7">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="1" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.695910274743779in" Height="0.21875in" Left="0in" Top="0in" Name="textBox9">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="2" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.700702845236008in" Height="0.21875in" Left="0in" Top="0in" Name="textBox11">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="3" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.550469228382209in" Height="0.21875in" Left="0in" Top="0in" Name="textBox13" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="4" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.559858733221345in" Height="0.21875in" Left="0in" Top="0in" Name="textBox15" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="5" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.875194768918925in" Height="0.21875in" Left="0in" Top="0in" Name="textBox17" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="6" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="1.4392601279965in" Height="0.21875in" Left="0in" Top="0in" Name="textBox19" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="7" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.734937118329065in" Height="0.21875in" Left="0in" Top="0in" Name="textBox21" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="8" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.738849079603183in" Height="0.21875in" Left="0in" Top="0in" Name="textBox23" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="9" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.591548609809637in" Height="0.21875in" Left="0in" Top="0in" Name="textBox25" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="10" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.602112885481735in" Height="0.21875in" Left="0in" Top="0in" Name="textBox27" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="11" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.390845074607786in" Height="0.21875in" Left="0in" Top="0in" Name="textBox29" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="12" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.485915844310754in" Height="0.21875in" Left="0in" Top="0in" Name="textBox31" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+              <TableCell RowIndex="0" ColumnIndex="13" RowSpan="1" ColumnSpan="1">
+                <ReportItem>
+                  <TextBox Width="0.641236757562072in" Height="0.21875in" Left="0in" Top="0in" Name="textBox33" StyleName="">
+                    <Style>
+                      <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                      <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                      <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    </Style>
+                  </TextBox>
+                </ReportItem>
+              </TableCell>
+            </Cells>
+            <Columns>
+              <Column Width="0.257042058027243in" />
+              <Column Width="0.695910476271774in" />
+              <Column Width="0.700702763951968in" />
+              <Column Width="0.550468976346065in" />
+              <Column Width="0.559858808076864in" />
+              <Column Width="0.875194712575748in" />
+              <Column Width="1.4392601279965in" />
+              <Column Width="0.734937058228749in" />
+              <Column Width="0.73884946223359in" />
+              <Column Width="0.591548528183783in" />
+              <Column Width="0.602112584971606in" />
+              <Column Width="0.390845149945431in" />
+              <Column Width="0.485916104820281in" />
+              <Column Width="0.641236694041327in" />
+            </Columns>
+            <Rows>
+              <Row Height="0.21875in" />
+            </Rows>
+          </Body>
+          <Corner />
+          <Style>
+            <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+            <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+            <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+          </Style>
+          <RowGroups>
+            <TableGroup Name="detailTableGroup">
+              <Groupings>
+                <Grouping />
+              </Groupings>
+            </TableGroup>
+          </RowGroups>
+          <ColumnGroups>
+            <TableGroup Name="tableGroup">
+              <ReportItem>
+                <TextBox Width="0.257042159013371in" Height="0.21875in" Left="0in" Top="0in" Value="TT" Name="textBox6">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="tableGroup1">
+              <ReportItem>
+                <TextBox Width="0.695910274743779in" Height="0.21875in" Left="0in" Top="0in" Value="Mã trạm" Name="textBox8">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="tableGroup2">
+              <ReportItem>
+                <TextBox Width="0.700702845236008in" Height="0.21875in" Left="0in" Top="0in" Value="Mã quyển" Name="textBox10">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group">
+              <ReportItem>
+                <TextBox Width="0.550469228382209in" Height="0.21875in" Left="0in" Top="0in" Value="Mã KH" Name="textBox12" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group1">
+              <ReportItem>
+                <TextBox Width="0.559858733221345in" Height="0.21875in" Left="0in" Top="0in" Value="Mã GC" Name="textBox14" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group2">
+              <ReportItem>
+                <TextBox Width="0.875194768918925in" Height="0.21875in" Left="0in" Top="0in" Value="Tên KH" Name="textBox16" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group3">
+              <ReportItem>
+                <TextBox Width="1.4392601279965in" Height="0.21875in" Left="0in" Top="0in" Value="Địa chỉ" Name="textBox18" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group4">
+              <ReportItem>
+                <TextBox Width="0.734937118329065in" Height="0.21875in" Left="0in" Top="0in" Value="Số công tơ" Name="textBox20" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group5">
+              <ReportItem>
+                <TextBox Width="0.738849079603183in" Height="0.21875in" Left="0in" Top="0in" Value="Tình trạng" Name="textBox22" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group6">
+              <ReportItem>
+                <TextBox Width="0.591548609809637in" Height="0.21875in" Left="0in" Top="0in" Value="CS Đ.Kỳ" Name="textBox24" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group7">
+              <ReportItem>
+                <TextBox Width="0.602112885481735in" Height="0.21875in" Left="0in" Top="0in" Value="CS C.Kỳ" Name="textBox26" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group8">
+              <ReportItem>
+                <TextBox Width="0.390845074607786in" Height="0.21875in" Left="0in" Top="0in" Value="HSN" Name="textBox28" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group9">
+              <ReportItem>
+                <TextBox Width="0.485915844310754in" Height="0.21875in" Left="0in" Top="0in" Value="ĐNTT" Name="textBox30" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+            <TableGroup Name="group10">
+              <ReportItem>
+                <TextBox Width="0.641236757562072in" Height="0.21875in" Left="0in" Top="0in" Value="ĐNTT kỳ trước" Name="textBox32" StyleName="">
+                  <Style>
+                    <BorderStyle Top="Solid" Bottom="Solid" Left="Solid" Right="Solid" />
+                    <BorderColor Top="Black" Bottom="Black" Left="Black" Right="Black" />
+                    <BorderWidth Top="1pt" Bottom="1pt" Left="1pt" Right="1pt" />
+                    <Font Bold="True" />
+                  </Style>
+                </TextBox>
+              </ReportItem>
+            </TableGroup>
+          </ColumnGroups>
+        </Table>
+        <HtmlTextBox Width="3.89988017082214in" Height="0.199921146035194in" Left="5.77083333333333in" Top="0.791666825612386in" Value="Ngày .......... tháng .......... năm 20........." Name="htmlTextBox1" StyleName="NgayThang">
+          <Style TextAlign="Center" VerticalAlign="Middle">
+            <Font Name="Times New Roman" Size="11pt" Bold="False" Italic="True" />
+          </Style>
+        </HtmlTextBox>
+        <HtmlTextBox Width="3.89988040924072in" Height="0.299999952316284in" Left="5.77083333333333in" Top="0.489583333333333in" Value="Độc lập - Tự do - Hạnh phúc" Name="htmlTextBox5">
+          <Style TextAlign="Center" VerticalAlign="Middle">
+            <Font Name="Times New Roman" Size="12pt" Bold="True" />
+          </Style>
+        </HtmlTextBox>
+        <HtmlTextBox Width="3.89991974830627in" Height="0.299921423196793in" Left="5.77083333333333in" Top="0.208333333333333in" Value="CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM" Name="htmlTextBox4">
+          <Style TextAlign="Center" VerticalAlign="Middle">
+            <Font Name="Times New Roman" Size="12pt" Bold="True" />
+          </Style>
+        </HtmlTextBox>
+        <HtmlTextBox Width="3.11037723223368in" Height="0.299999952316284in" Left="0.489583333333333in" Top="0.489583492279053in" Value="&amp;nbsp;&amp;nbsp; PHÒNG ................." Name="htmlTextBox3">
+          <Style TextAlign="Left" VerticalAlign="Middle">
+            <Font Name="Times New Roman" Size="11pt" Bold="True" />
+          </Style>
+        </HtmlTextBox>
+        <HtmlTextBox Width="3.11041657129923in" Height="0.300000011920929in" Left="0.489583333333333in" Top="0.197916666666667in" Value="CÔNG TY .............................." Name="htmlTextBox2">
+          <Style TextAlign="Left" VerticalAlign="Middle">
+            <Font Name="Times New Roman" Size="12pt" />
+          </Style>
+        </HtmlTextBox>
+        <HtmlTextBox Width="0.722769101460775in" Height="0.227034131685893in" Left="0.253196080525716in" Top="2.06460777918498in" Value="Ngày GCS:" Name="htmlTextBox6" />
+        <HtmlTextBox Width="0.733185748259226in" Height="0.216617465019226in" Left="0.25in" Top="2.38541682561239in" Value="Sổ GCS:" Name="htmlTextBox7" />
+        <HtmlTextBox Width="0.576935748259227in" Height="0.258284131685893in" Left="7.41666666666667in" Top="2.05208349227905in" Value="Ngày in:" Name="htmlTextBox8" />
+        <HtmlTextBox Width="0.576935748259227in" Height="0.216617465019226in" Left="7.41666666666667in" Top="2.36458349227905in" Value="Giờ in:" Name="htmlTextBox9" />
+        <HtmlTextBox Width="9.66346518198649in" Height="0.227034136652946in" Left="0in" Top="1.42919127146403in" Value="&lt;p style=&quot;text-align: center&quot;&gt;BẢNG KÊ DANH SÁCH CÔNG TƠ CÓ TÌNH TRẠNG BẤT THƯỜNG&lt;/p&gt;" Name="htmlTextBox10">
+          <Style>
+            <Font Size="12pt" Bold="True" />
+          </Style>
+        </HtmlTextBox>
+        <TextBox Width="1.18110243479411in" Height="0.236220479011536in" Left="0.982362747192383in" Top="2.0652232170105in" Value="1" Name="textBox1" />
+        <TextBox Width="1.18110239505768in" Height="0.236220479011536in" Left="0.979166666666667in" Top="2.36458349227905in" Value="2" Name="textBox2" />
+        <TextBox Width="0.81651908159256in" Height="0.236220479011536in" Left="7.98958333333333in" Top="2.35416682561239in" Value="4" Name="textBox3" />
+        <TextBox Width="0.81651908159256in" Height="0.236220479011536in" Left="7.98958333333333in" Top="2.05208349227905in" Value="3" Name="textBox4" />
+      </Items>
+    </DetailSection>
+    <PageFooterSection Height="0.320793628692627in" Name="pageFooterSection1">
+      <Style>
+        <Font Name="Times New Roman" />
+      </Style>
+      <Items>
+        <TextBox Width="0.981053113937378in" Height="0.299960315227509in" Left="8.70833333333333in" Top="0in" Value="Trang: {PageNumber}" Name="ReportPageNumberTextBox">
+          <Style>
+            <Font Name="Times New Roman" Size="11pt" />
+          </Style>
+        </TextBox>
+      </Items>
+    </PageFooterSection>
+  </Items>
+  <StyleSheet>
+    <StyleRule>
+      <Style>
+        <Padding Left="2pt" Right="2pt" />
+      </Style>
+      <Selectors>
+        <TypeSelector Type="TextItemBase" />
+        <TypeSelector Type="HtmlTextBox" />
+      </Selectors>
+    </StyleRule>
+  </StyleSheet>
+  <PageSettings>
+    <PageSettings PaperKind="A4" Landscape="True">
+      <Margins>
+        <MarginsU Left="1in" Right="1in" Top="1in" Bottom="1in" />
+      </Margins>
+    </PageSettings>
+  </PageSettings>
+</Report>

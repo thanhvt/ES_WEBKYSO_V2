@@ -1,0 +1,17 @@
+﻿@using System.Diagnostics
+@using ES_WEBKYSO.HtmlHelpers
+@model dynamic
+@{
+    var htmlAttributes = ViewData["htmlAttributes"] ?? new { @class = "form-control" };
+    var labelAttributes = ViewData["labelAttributes"] ?? new { @class = "control-label" };
+    var dropKey = ViewData["dropKey"] ?? "";
+    var label = ViewData["label"] == null ? "" : ViewData["label"].ToString();
+}
+
+
+<div class="col-sm-6">
+    @LabelExtensionsNb.LabelFor(Html, model => model, labelAttributes)
+    @Html.DropDownListFor(model => model, (List<SelectListItem>)ViewData[dropKey.ToString()], label, htmlAttributes)
+    @Html.ValidationMessageFor(model => model)
+</div>
+

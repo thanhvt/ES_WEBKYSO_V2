@@ -1,0 +1,5158 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_NVGCS" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DDO" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_GC" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_QUYEN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_TRAM" type="xs:string" minOccurs="0" />
+                <xs:element name="BOCSO_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="LOAI_BCS" type="xs:string" minOccurs="0" />
+                <xs:element name="LOAI_CS" type="xs:string" minOccurs="0" />
+                <xs:element name="TEN_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="DIA_CHI" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NN" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_HO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MA_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="SERY_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="HSN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CS_CU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_CU" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_CU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SL_TTIEP" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_CU" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CS_MOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_MOI" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_MOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CHUOI_GIA" type="xs:string" minOccurs="0" />
+                <xs:element name="KY" type="xs:int" minOccurs="0" />
+                <xs:element name="THANG" type="xs:int" minOccurs="0" />
+                <xs:element name="NAM" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_MOI" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGUOI_GCS" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_THAO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="KIMUA_CSPK" type="xs:short" minOccurs="0" />
+                <xs:element name="MA_COT" type="xs:string" minOccurs="0" />
+                <xs:element name="SLUONG_1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SLUONG_2" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SLUONG_3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SO_HOM" type="xs:string" minOccurs="0" />
+                <xs:element name="PMAX" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NGAY_PMAX" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023198</MA_KHANG>
+    <MA_DDO>PD14T0231981</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>001</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507450</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lâm Thị THoa</TEN_KHANG>
+    <DIA_CHI>22/C4 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505201212003038</MA_CTO>
+    <SERY_CTO>12003038</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4611</CS_CU>
+    <TTR_CU />
+    <SL_CU>168</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4766</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>155</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>168</SLUONG_1>
+    <SLUONG_2>183</SLUONG_2>
+    <SLUONG_3>182</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:25</THOI_GIAN>
+    <X>21.037708333333331</X>
+    <Y>105.91005500000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22876</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023189</MA_KHANG>
+    <MA_DDO>PD14T0231891</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>006</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23512496</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Tiến Dũng</TEN_KHANG>
+    <DIA_CHI>Số 105 C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505039718</MA_CTO>
+    <SERY_CTO>05039718</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4105</CS_CU>
+    <TTR_CU />
+    <SL_CU>117</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4240</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>135</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>117</SLUONG_1>
+    <SLUONG_2>158</SLUONG_2>
+    <SLUONG_3>140</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:34</THOI_GIAN>
+    <X>21.037696666666669</X>
+    <Y>105.91003666666666</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22877</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000106043</MA_KHANG>
+    <MA_DDO>PD14000106043001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>011</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507377</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Ngọc</TEN_KHANG>
+    <DIA_CHI>11/C3 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201212003018</MA_CTO>
+    <SERY_CTO>12003018</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3409</CS_CU>
+    <TTR_CU />
+    <SL_CU>122</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3508</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>99</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>122</SLUONG_1>
+    <SLUONG_2>113</SLUONG_2>
+    <SLUONG_3>113</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:39</THOI_GIAN>
+    <X>21.037703333333337</X>
+    <Y>105.91007499999999</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22878</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023191</MA_KHANG>
+    <MA_DDO>PD14T0231911</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>016</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507372</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Thu Hương</TEN_KHANG>
+    <DIA_CHI>21/C3 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808021708</MA_CTO>
+    <SERY_CTO>08021708</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4630</CS_CU>
+    <TTR_CU />
+    <SL_CU>158</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4802</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>172</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>158</SLUONG_1>
+    <SLUONG_2>206</SLUONG_2>
+    <SLUONG_3>163</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:45</THOI_GIAN>
+    <X>21.037706666666669</X>
+    <Y>105.91006833333334</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22879</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023193</MA_KHANG>
+    <MA_DDO>PD14T0231931</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>021</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507390</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phan Mạnh Lực</TEN_KHANG>
+    <DIA_CHI>12/C3 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808061516</MA_CTO>
+    <SERY_CTO>08061516</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4198</CS_CU>
+    <TTR_CU />
+    <SL_CU>28</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4238</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>40</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>28</SLUONG_1>
+    <SLUONG_2>42</SLUONG_2>
+    <SLUONG_3>4</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:50</THOI_GIAN>
+    <X>21.037748333333337</X>
+    <Y>105.91007499999999</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22880</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023194</MA_KHANG>
+    <MA_DDO>PD14T0231941</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>026</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507463</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Thận</TEN_KHANG>
+    <DIA_CHI>19/C3 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909067210</MA_CTO>
+    <SERY_CTO>09067210</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5329</CS_CU>
+    <TTR_CU />
+    <SL_CU>166</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5482</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>153</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>166</SLUONG_1>
+    <SLUONG_2>153</SLUONG_2>
+    <SLUONG_3>161</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:25:55</THOI_GIAN>
+    <X>21.037745000000005</X>
+    <Y>105.91004833333334</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22881</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023196</MA_KHANG>
+    <MA_DDO>PD14T0231961</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>031</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507467</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Nụ</TEN_KHANG>
+    <DIA_CHI>20/C4 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505201212000319</MA_CTO>
+    <SERY_CTO>12000319</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4526</CS_CU>
+    <TTR_CU />
+    <SL_CU>94</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4612</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>86</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>94</SLUONG_1>
+    <SLUONG_2>101</SLUONG_2>
+    <SLUONG_3>124</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:26:01</THOI_GIAN>
+    <X>21.037719999999997</X>
+    <Y>105.91004666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22882</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000121487</MA_KHANG>
+    <MA_DDO>PD14000121487001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>036</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507488</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Vũ Thị Phương Thảo</TEN_KHANG>
+    <DIA_CHI>Tổ 16 -  Số 19/121/38 - P.Sài đồng - Long Biên - HN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808002526</MA_CTO>
+    <SERY_CTO>08002526</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5373</CS_CU>
+    <TTR_CU />
+    <SL_CU>179</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5588</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>215</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>179</SLUONG_1>
+    <SLUONG_2>138</SLUONG_2>
+    <SLUONG_3>161</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:26:08</THOI_GIAN>
+    <X>21.037728333333334</X>
+    <Y>105.910045</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22883</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023199</MA_KHANG>
+    <MA_DDO>PD14T0231991</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>041</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23515650</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Thu Ngát</TEN_KHANG>
+    <DIA_CHI>Số 24 C4, tổ 16 Phường Sài Đồng, Long Biên, Hà Nội</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808018075</MA_CTO>
+    <SERY_CTO>08018075</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5092</CS_CU>
+    <TTR_CU />
+    <SL_CU>167</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5244</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>152</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>167</SLUONG_1>
+    <SLUONG_2>138</SLUONG_2>
+    <SLUONG_3>135</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:26:16</THOI_GIAN>
+    <X>21.037733333333335</X>
+    <Y>105.91009833333334</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22884</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000106094</MA_KHANG>
+    <MA_DDO>PD14000106094001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>046</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507494</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đinh Quốc Tuấn</TEN_KHANG>
+    <DIA_CHI>42/C4 - Tổ16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909151796</MA_CTO>
+    <SERY_CTO>09151796</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8984</CS_CU>
+    <TTR_CU />
+    <SL_CU>513</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>9409</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>425</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>513</SLUONG_1>
+    <SLUONG_2>462</SLUONG_2>
+    <SLUONG_3>421</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:26:50</THOI_GIAN>
+    <X>21.037644999999998</X>
+    <Y>105.90986166666669</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22885</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023146</MA_KHANG>
+    <MA_DDO>PD14T0231461</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>051</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507507</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Xuân Chúc</TEN_KHANG>
+    <DIA_CHI>27/C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909064935</MA_CTO>
+    <SERY_CTO>09064935</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6272</CS_CU>
+    <TTR_CU />
+    <SL_CU>192</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6472</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>200</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>192</SLUONG_1>
+    <SLUONG_2>198</SLUONG_2>
+    <SLUONG_3>181</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:26:56</THOI_GIAN>
+    <X>21.03762166666667</X>
+    <Y>105.909845</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22886</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023147</MA_KHANG>
+    <MA_DDO>PD14T0231471</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>056</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507510</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị ánh Nguyệt</TEN_KHANG>
+    <DIA_CHI>22A/121/C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909073446</MA_CTO>
+    <SERY_CTO>09073446</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4618</CS_CU>
+    <TTR_CU />
+    <SL_CU>200</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4819</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>201</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>200</SLUONG_1>
+    <SLUONG_2>168</SLUONG_2>
+    <SLUONG_3>185</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:27:00</THOI_GIAN>
+    <X>21.037613333333336</X>
+    <Y>105.909845</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22887</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023150</MA_KHANG>
+    <MA_DDO>PD14T0231501</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>061</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507511</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Loan</TEN_KHANG>
+    <DIA_CHI>31/C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909153946</MA_CTO>
+    <SERY_CTO>09153946</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8001</CS_CU>
+    <TTR_CU />
+    <SL_CU>258</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>8239</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>238</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>258</SLUONG_1>
+    <SLUONG_2>265</SLUONG_2>
+    <SLUONG_3>272</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:27:04</THOI_GIAN>
+    <X>21.037598333333335</X>
+    <Y>105.90983333333334</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22888</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000157598</MA_KHANG>
+    <MA_DDO>PD14000157598001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>062</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23672247</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đinh Quốc Tú</TEN_KHANG>
+    <DIA_CHI>Bên trong số 42 tổ 16 phường Sài Đồng  Phường Sài Đồng Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201010044425</MA_CTO>
+    <SERY_CTO>10044425</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3784</CS_CU>
+    <TTR_CU />
+    <SL_CU>74</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3844</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>60</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>74</SLUONG_1>
+    <SLUONG_2>86</SLUONG_2>
+    <SLUONG_3>161</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:27:33</THOI_GIAN>
+    <X>21.037584999999996</X>
+    <Y>105.90979999999999</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22889</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023151</MA_KHANG>
+    <MA_DDO>PD14T0231511</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>066</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507521</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đàm Thị Oanh</TEN_KHANG>
+    <DIA_CHI>40/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808290112</MA_CTO>
+    <SERY_CTO>08290112</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4002</CS_CU>
+    <TTR_CU />
+    <SL_CU>181</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4086</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>84</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>181</SLUONG_1>
+    <SLUONG_2>34</SLUONG_2>
+    <SLUONG_3>21</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:07</THOI_GIAN>
+    <X>21.037571666666668</X>
+    <Y>105.90990666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22890</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023155</MA_KHANG>
+    <MA_DDO>PD14T0231551</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>071</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507528</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Thị Phin</TEN_KHANG>
+    <DIA_CHI>42/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201010506114</MA_CTO>
+    <SERY_CTO>10506114</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5705</CS_CU>
+    <TTR_CU />
+    <SL_CU>194</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5883</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>178</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>194</SLUONG_1>
+    <SLUONG_2>179</SLUONG_2>
+    <SLUONG_3>164</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:12</THOI_GIAN>
+    <X>21.037571666666668</X>
+    <Y>105.90990666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22891</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023157</MA_KHANG>
+    <MA_DDO>PD14T0231571</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>076</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507532</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Chu Thị Thanh Mai</TEN_KHANG>
+    <DIA_CHI>36/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808290752</MA_CTO>
+    <SERY_CTO>08290752</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3003</CS_CU>
+    <TTR_CU />
+    <SL_CU>79</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3064</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>61</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>79</SLUONG_1>
+    <SLUONG_2>84</SLUONG_2>
+    <SLUONG_3>90</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:17</THOI_GIAN>
+    <X>21.037571666666668</X>
+    <Y>105.90990666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22892</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023159</MA_KHANG>
+    <MA_DDO>PD14T0231591</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>081</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507534</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Quốc Khánh</TEN_KHANG>
+    <DIA_CHI>38/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200909068685</MA_CTO>
+    <SERY_CTO>09068685</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8366</CS_CU>
+    <TTR_CU />
+    <SL_CU>322</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>8595</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>229</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>322</SLUONG_1>
+    <SLUONG_2>286</SLUONG_2>
+    <SLUONG_3>260</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:21</THOI_GIAN>
+    <X>21.037571666666668</X>
+    <Y>105.90990666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22893</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023161</MA_KHANG>
+    <MA_DDO>PD14T0231611</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>086</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507520</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Ngoãn</TEN_KHANG>
+    <DIA_CHI>34/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505006436</MA_CTO>
+    <SERY_CTO>05006436</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5391</CS_CU>
+    <TTR_CU />
+    <SL_CU>239</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5635</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>244</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>239</SLUONG_1>
+    <SLUONG_2>242</SLUONG_2>
+    <SLUONG_3>247</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:27:53</THOI_GIAN>
+    <X>21.037541666666666</X>
+    <Y>105.90986333333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22894</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000121182</MA_KHANG>
+    <MA_DDO>PD14000121182001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>091</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507537</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Chu Quang Khuê</TEN_KHANG>
+    <DIA_CHI>Số 202 C4 Tổ 16 - P. Sài Đồng - LB</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808295690</MA_CTO>
+    <SERY_CTO>08295690</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2122</CS_CU>
+    <TTR_CU />
+    <SL_CU>62</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2182</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>60</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>6.8</MA_COT>
+    <SLUONG_1>62</SLUONG_1>
+    <SLUONG_2>65</SLUONG_2>
+    <SLUONG_3>56</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:30</THOI_GIAN>
+    <X>21.03756</X>
+    <Y>105.90989999999998</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22895</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023164</MA_KHANG>
+    <MA_DDO>PD14T0231641</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>096</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507539</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Kim Dung</TEN_KHANG>
+    <DIA_CHI>25/C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200000011933</MA_CTO>
+    <SERY_CTO>00011933</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7181</CS_CU>
+    <TTR_CU />
+    <SL_CU>208</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7343</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>162</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>208</SLUONG_1>
+    <SLUONG_2>203</SLUONG_2>
+    <SLUONG_3>204</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:36</THOI_GIAN>
+    <X>21.037543333333328</X>
+    <Y>105.90991333333335</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22896</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023165</MA_KHANG>
+    <MA_DDO>PD14T0231651</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>101</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507540</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Ngọt</TEN_KHANG>
+    <DIA_CHI>23/C3 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808294541</MA_CTO>
+    <SERY_CTO>08294541</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6702</CS_CU>
+    <TTR_CU />
+    <SL_CU>228</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6902</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>200</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>228</SLUONG_1>
+    <SLUONG_2>226</SLUONG_2>
+    <SLUONG_3>226</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:41</THOI_GIAN>
+    <X>21.037518333333331</X>
+    <Y>105.90990166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22897</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023167</MA_KHANG>
+    <MA_DDO>PD14T0231671</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>106</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507550</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Văn Tường</TEN_KHANG>
+    <DIA_CHI>28/C4 - Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909152087</MA_CTO>
+    <SERY_CTO>09152087</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>15948</CS_CU>
+    <TTR_CU />
+    <SL_CU>417</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>16219</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>271</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>417</SLUONG_1>
+    <SLUONG_2>441</SLUONG_2>
+    <SLUONG_3>517</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:28:47</THOI_GIAN>
+    <X>21.037516666666669</X>
+    <Y>105.909885</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22898</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T024346</MA_KHANG>
+    <MA_DDO>PD14T0243461</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>111</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507618</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Thị Nguyên</TEN_KHANG>
+    <DIA_CHI>203A C7 Tổ16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505078976</MA_CTO>
+    <SERY_CTO>05078976</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5581</CS_CU>
+    <TTR_CU />
+    <SL_CU>86</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5653</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>72</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>86</SLUONG_1>
+    <SLUONG_2>106</SLUONG_2>
+    <SLUONG_3>101</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:26</THOI_GIAN>
+    <X>21.037340000000004</X>
+    <Y>105.91044333333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22899</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023072</MA_KHANG>
+    <MA_DDO>PD14T0230721</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>116</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507608</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Vũ Thị Hợi</TEN_KHANG>
+    <DIA_CHI>10/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>506200202035450</MA_CTO>
+    <SERY_CTO>02035450</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>12588</CS_CU>
+    <TTR_CU />
+    <SL_CU>256</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>12801</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>213</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>256</SLUONG_1>
+    <SLUONG_2>370</SLUONG_2>
+    <SLUONG_3>373</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:33</THOI_GIAN>
+    <X>21.037316666666666</X>
+    <Y>105.91053333333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22900</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023074</MA_KHANG>
+    <MA_DDO>PD14T0230741</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>121</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507605</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đỗ Thị Hồng Sáu</TEN_KHANG>
+    <DIA_CHI>Số 205 - C6- Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201414039379</MA_CTO>
+    <SERY_CTO>14039379</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>1566</CS_CU>
+    <TTR_CU />
+    <SL_CU>84</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>1607</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>41</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>84</SLUONG_1>
+    <SLUONG_2>72</SLUONG_2>
+    <SLUONG_3>95</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:40</THOI_GIAN>
+    <X>21.037295000000004</X>
+    <Y>105.91053666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22901</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023075</MA_KHANG>
+    <MA_DDO>PD14T0230751</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>126</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507628</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Ngọc</TEN_KHANG>
+    <DIA_CHI>14/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200808221929</MA_CTO>
+    <SERY_CTO>08221929</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7576</CS_CU>
+    <TTR_CU />
+    <SL_CU>253</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7811</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>235</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>253</SLUONG_1>
+    <SLUONG_2>260</SLUONG_2>
+    <SLUONG_3>253</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:44</THOI_GIAN>
+    <X>21.037295000000004</X>
+    <Y>105.91053666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22902</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T109856</MA_KHANG>
+    <MA_DDO>PD14T1098561</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>131</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507645</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Mạnh Doanh</TEN_KHANG>
+    <DIA_CHI>105 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909156092</MA_CTO>
+    <SERY_CTO>09156092</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4396</CS_CU>
+    <TTR_CU />
+    <SL_CU>152</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4521</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>125</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>152</SLUONG_1>
+    <SLUONG_2>149</SLUONG_2>
+    <SLUONG_3>161</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:54</THOI_GIAN>
+    <X>21.037295000000004</X>
+    <Y>105.91053666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22903</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000123387</MA_KHANG>
+    <MA_DDO>PD14000123387001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>136</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507699</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đỗ Thanh Thủy</TEN_KHANG>
+    <DIA_CHI>Số 9 hẻm 121/18/6 Phố Sài Đồng Tổ 16 Sài Đồng</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909109385</MA_CTO>
+    <SERY_CTO>09109385</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4715</CS_CU>
+    <TTR_CU />
+    <SL_CU>165</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4853</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>138</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>37</MA_COT>
+    <SLUONG_1>165</SLUONG_1>
+    <SLUONG_2>154</SLUONG_2>
+    <SLUONG_3>172</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:30:58</THOI_GIAN>
+    <X>21.037373333333335</X>
+    <Y>105.91060166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22904</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023066</MA_KHANG>
+    <MA_DDO>PD14T0230661</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>141</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507626</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Ngô Thị Chiểu</TEN_KHANG>
+    <DIA_CHI>2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>506200202012265</MA_CTO>
+    <SERY_CTO>02012265</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6004</CS_CU>
+    <TTR_CU />
+    <SL_CU>231</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6216</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>212</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>231</SLUONG_1>
+    <SLUONG_2>238</SLUONG_2>
+    <SLUONG_3>232</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:31:03</THOI_GIAN>
+    <X>21.037455</X>
+    <Y>105.91055499999999</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22905</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023067</MA_KHANG>
+    <MA_DDO>PD14T0230671</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>146</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507687</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đàm Thị Thấn</TEN_KHANG>
+    <DIA_CHI>16/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200909155281</MA_CTO>
+    <SERY_CTO>09155281</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7985</CS_CU>
+    <TTR_CU />
+    <SL_CU>282</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>8239</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>254</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>282</SLUONG_1>
+    <SLUONG_2>263</SLUONG_2>
+    <SLUONG_3>255</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:31:08</THOI_GIAN>
+    <X>21.03755833333333</X>
+    <Y>105.91049166666666</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22906</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T024348</MA_KHANG>
+    <MA_DDO>PD14T0243481</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>151</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507666</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Việt</TEN_KHANG>
+    <DIA_CHI>Số nhà 15 tổ 16 P. Sài Đồng, Q.Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200808021310</MA_CTO>
+    <SERY_CTO>08021310</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10979</CS_CU>
+    <TTR_CU />
+    <SL_CU>406</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>11359</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>380</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>406</SLUONG_1>
+    <SLUONG_2>336</SLUONG_2>
+    <SLUONG_3>387</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:31:14</THOI_GIAN>
+    <X>21.037520000000004</X>
+    <Y>105.91049</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22907</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023077</MA_KHANG>
+    <MA_DDO>PD14T0230771</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>156</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507689</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Thị Ngân</TEN_KHANG>
+    <DIA_CHI>6/ C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201212000437</MA_CTO>
+    <SERY_CTO>12000437</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5057</CS_CU>
+    <TTR_CU />
+    <SL_CU>191</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5218</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>161</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>191</SLUONG_1>
+    <SLUONG_2>174</SLUONG_2>
+    <SLUONG_3>167</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:31:19</THOI_GIAN>
+    <X>21.037481666666668</X>
+    <Y>105.91050500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22908</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023079</MA_KHANG>
+    <MA_DDO>PD14T0230791</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>161</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507647</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Cường</TEN_KHANG>
+    <DIA_CHI>20/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909155484</MA_CTO>
+    <SERY_CTO>09155484</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2078</CS_CU>
+    <TTR_CU />
+    <SL_CU>64</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2132</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>54</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>64</SLUONG_1>
+    <SLUONG_2>65</SLUONG_2>
+    <SLUONG_3>64</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:31:25</THOI_GIAN>
+    <X>21.037473333333331</X>
+    <Y>105.91052833333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22909</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023080</MA_KHANG>
+    <MA_DDO>PD14T0230801</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>166</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507655</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Mừng</TEN_KHANG>
+    <DIA_CHI>20/1 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200202002893</MA_CTO>
+    <SERY_CTO>02002893</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2064</CS_CU>
+    <TTR_CU />
+    <SL_CU>80</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>0</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>80</SLUONG_1>
+    <SLUONG_2>84</SLUONG_2>
+    <SLUONG_3>93</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC />
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN />
+    <X>0</X>
+    <Y>0</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>0</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22910</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023068</MA_KHANG>
+    <MA_DDO>PD14T0230681</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>171</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507724</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phùng Thị Minh</TEN_KHANG>
+    <DIA_CHI>C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201212000494</MA_CTO>
+    <SERY_CTO>12000494</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10416</CS_CU>
+    <TTR_CU />
+    <SL_CU>399</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>10727</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>311</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>399</SLUONG_1>
+    <SLUONG_2>322</SLUONG_2>
+    <SLUONG_3>296</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:13</THOI_GIAN>
+    <X>21.03760333333333</X>
+    <Y>105.91033166666666</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22911</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023069</MA_KHANG>
+    <MA_DDO>PD14T0230691</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>176</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23515630</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Tiền</TEN_KHANG>
+    <DIA_CHI>18/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>3</SO_HO>
+    <MA_CTO>505200808112877</MA_CTO>
+    <SERY_CTO>08112877</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>9881</CS_CU>
+    <TTR_CU />
+    <SL_CU>274</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>10078</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>197</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>274</SLUONG_1>
+    <SLUONG_2>210</SLUONG_2>
+    <SLUONG_3>207</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:18</THOI_GIAN>
+    <X>21.037591666666671</X>
+    <Y>105.91036333333335</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22912</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023070</MA_KHANG>
+    <MA_DDO>PD14T0230701</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>181</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23515629</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Bùi Thị Nguyệt</TEN_KHANG>
+    <DIA_CHI>12/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808291238</MA_CTO>
+    <SERY_CTO>08291238</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3509</CS_CU>
+    <TTR_CU />
+    <SL_CU>136</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3620</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>111</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>136</SLUONG_1>
+    <SLUONG_2>138</SLUONG_2>
+    <SLUONG_3>144</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:22</THOI_GIAN>
+    <X>21.037568333333336</X>
+    <Y>105.91035166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22913</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023071</MA_KHANG>
+    <MA_DDO>PD14T0230711</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>186</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23515637</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Ngô Thị Tần</TEN_KHANG>
+    <DIA_CHI>10/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200808296944</MA_CTO>
+    <SERY_CTO>08296944</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5578</CS_CU>
+    <TTR_CU />
+    <SL_CU>153</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5709</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>131</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>153</SLUONG_1>
+    <SLUONG_2>154</SLUONG_2>
+    <SLUONG_3>173</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:27</THOI_GIAN>
+    <X>21.03760333333333</X>
+    <Y>105.91033166666666</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22914</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023083</MA_KHANG>
+    <MA_DDO>PD14T0230831</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>191</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507685</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đoàn Duy Thách</TEN_KHANG>
+    <DIA_CHI>206 C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200909233761</MA_CTO>
+    <SERY_CTO>09233761</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6118</CS_CU>
+    <TTR_CU />
+    <SL_CU>233</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6317</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>199</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>233</SLUONG_1>
+    <SLUONG_2>214</SLUONG_2>
+    <SLUONG_3>199</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:33</THOI_GIAN>
+    <X>21.03783</X>
+    <Y>105.91031666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22915</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023085</MA_KHANG>
+    <MA_DDO>PD14T0230851</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>196</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507674</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Vũ Thị Nghĩa</TEN_KHANG>
+    <DIA_CHI>14/C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201010323516</MA_CTO>
+    <SERY_CTO>10323516</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4748</CS_CU>
+    <TTR_CU />
+    <SL_CU>156</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4903</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>155</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>156</SLUONG_1>
+    <SLUONG_2>144</SLUONG_2>
+    <SLUONG_3>155</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:37</THOI_GIAN>
+    <X>21.037871666666668</X>
+    <Y>105.91034333333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22916</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023087</MA_KHANG>
+    <MA_DDO>PD14T0230871</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>201</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507635</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Chúc</TEN_KHANG>
+    <DIA_CHI>206B C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505074991</MA_CTO>
+    <SERY_CTO>05074991</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4637</CS_CU>
+    <TTR_CU />
+    <SL_CU>119</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4788</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>151</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>119</SLUONG_1>
+    <SLUONG_2>130</SLUONG_2>
+    <SLUONG_3>211</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:41</THOI_GIAN>
+    <X>21.037843333333331</X>
+    <Y>105.91039333333335</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22917</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T024351</MA_KHANG>
+    <MA_DDO>PD14T0243511</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>206</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507681</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phan Mạnh Cường</TEN_KHANG>
+    <DIA_CHI>203 C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909155531</MA_CTO>
+    <SERY_CTO>09155531</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7455</CS_CU>
+    <TTR_CU />
+    <SL_CU>280</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7692</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>237</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>280</SLUONG_1>
+    <SLUONG_2>242</SLUONG_2>
+    <SLUONG_3>256</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:46</THOI_GIAN>
+    <X>21.037705</X>
+    <Y>105.91046166666665</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22918</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000125497</MA_KHANG>
+    <MA_DDO>PD14000125497001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>211</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507611</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đào Huy Hoàng</TEN_KHANG>
+    <DIA_CHI>Số 18 hẻm 1231/18/6 Ngõ 121 Tổ 16 Sài Đồng</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707038349</MA_CTO>
+    <SERY_CTO>07038349</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5070</CS_CU>
+    <TTR_CU />
+    <SL_CU>151</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5198</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>128</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>151</SLUONG_1>
+    <SLUONG_2>152</SLUONG_2>
+    <SLUONG_3>156</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:32:50</THOI_GIAN>
+    <X>21.037566666666667</X>
+    <Y>105.91048666666666</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22919</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000151041</MA_KHANG>
+    <MA_DDO>PD14000151041001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>213</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507575</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Chu Thị Minh Hiếu</TEN_KHANG>
+    <DIA_CHI>Số 8 hẻm 121/18/6 phố Sài Đồng  Phường Long Biên Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200707170647</MA_CTO>
+    <SERY_CTO>07170647</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2427</CS_CU>
+    <TTR_CU />
+    <SL_CU>61</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2431</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>4</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>61</SLUONG_1>
+    <SLUONG_2>64</SLUONG_2>
+    <SLUONG_3>64</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:33:41</THOI_GIAN>
+    <X>21.037361666666666</X>
+    <Y>105.91063000000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22920</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000108639</MA_KHANG>
+    <MA_DDO>PD14000108639001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>216</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507573</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Chí Thành</TEN_KHANG>
+    <DIA_CHI>4/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200000006072</MA_CTO>
+    <SERY_CTO>00006072</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>1935</CS_CU>
+    <TTR_CU />
+    <SL_CU>69</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>1994</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>59</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>69</SLUONG_1>
+    <SLUONG_2>65</SLUONG_2>
+    <SLUONG_3>70</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:33:45</THOI_GIAN>
+    <X>21.037361666666666</X>
+    <Y>105.91063000000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22921</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000122935</MA_KHANG>
+    <MA_DDO>PD14000122935001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>221</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507565</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Quốc Huy</TEN_KHANG>
+    <DIA_CHI>Số 26hẻm 121/18/6 Ngõ 121 Tổ 16 Sài Đồng</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808297852</MA_CTO>
+    <SERY_CTO>08297852</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3806</CS_CU>
+    <TTR_CU />
+    <SL_CU>115</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3811</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>5</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>115</SLUONG_1>
+    <SLUONG_2>119</SLUONG_2>
+    <SLUONG_3>78</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:33:50</THOI_GIAN>
+    <X>21.037361666666666</X>
+    <Y>105.91063000000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22922</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023062</MA_KHANG>
+    <MA_DDO>PD14T0230621</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>226</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507577</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Chí Phương</TEN_KHANG>
+    <DIA_CHI>4/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808170868</MA_CTO>
+    <SERY_CTO>08170868</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3662</CS_CU>
+    <TTR_CU />
+    <SL_CU>97</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3743</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>81</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>97</SLUONG_1>
+    <SLUONG_2>89</SLUONG_2>
+    <SLUONG_3>94</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:33:55</THOI_GIAN>
+    <X>21.037361666666666</X>
+    <Y>105.91063000000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22923</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023063</MA_KHANG>
+    <MA_DDO>PD14T0230631</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>231</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507797</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Phương Lan</TEN_KHANG>
+    <DIA_CHI>2/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808031702</MA_CTO>
+    <SERY_CTO>08031702</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4208</CS_CU>
+    <TTR_CU />
+    <SL_CU>135</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4332</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>124</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>135</SLUONG_1>
+    <SLUONG_2>151</SLUONG_2>
+    <SLUONG_3>146</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:33:58</THOI_GIAN>
+    <X>21.037361666666666</X>
+    <Y>105.91063000000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22924</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023064</MA_KHANG>
+    <MA_DDO>PD14T0230641</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>236</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507580</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Diên</TEN_KHANG>
+    <DIA_CHI>2/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707087942</MA_CTO>
+    <SERY_CTO>07087942</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3741</CS_CU>
+    <TTR_CU />
+    <SL_CU>95</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3921</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>180</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>95</SLUONG_1>
+    <SLUONG_2>60</SLUONG_2>
+    <SLUONG_3>85</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:06</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22925</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023065</MA_KHANG>
+    <MA_DDO>PD14T0230651</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>241</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507582</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Thị Thanh Thuỷ</TEN_KHANG>
+    <DIA_CHI>6/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200707176696</MA_CTO>
+    <SERY_CTO>07176696</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3577</CS_CU>
+    <TTR_CU />
+    <SL_CU>158</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3695</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>118</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>158</SLUONG_1>
+    <SLUONG_2>152</SLUONG_2>
+    <SLUONG_3>129</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:09</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22926</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023054</MA_KHANG>
+    <MA_DDO>PD14T0230541</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>246</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507584</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lương Thanh Nhân</TEN_KHANG>
+    <DIA_CHI>Số 1 B7 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707146377</MA_CTO>
+    <SERY_CTO>07146377</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>1717</CS_CU>
+    <TTR_CU />
+    <SL_CU>80</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>1797</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>80</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>80</SLUONG_1>
+    <SLUONG_2>3</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:19</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22927</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023055</MA_KHANG>
+    <MA_DDO>PD14T0230551</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>251</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507585</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đỗ Thị Thuỷ</TEN_KHANG>
+    <DIA_CHI>24/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111061120</MA_CTO>
+    <SERY_CTO>11061120</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3705</CS_CU>
+    <TTR_CU />
+    <SL_CU>119</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3791</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>86</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>119</SLUONG_1>
+    <SLUONG_2>87</SLUONG_2>
+    <SLUONG_3>96</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:28</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22928</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023056</MA_KHANG>
+    <MA_DDO>PD14T0230561</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>256</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507587</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Đức Trường</TEN_KHANG>
+    <DIA_CHI>Số 17 ngõ 121/38/2 Sài Đồng, Long Biên, Hà Nội</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909155097</MA_CTO>
+    <SERY_CTO>09155097</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6016</CS_CU>
+    <TTR_CU />
+    <SL_CU>179</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6148</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>132</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>179</SLUONG_1>
+    <SLUONG_2>138</SLUONG_2>
+    <SLUONG_3>123</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:43</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22929</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023057</MA_KHANG>
+    <MA_DDO>PD14T0230571</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>261</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507596</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Huy Nghĩa</TEN_KHANG>
+    <DIA_CHI>1 C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909072192</MA_CTO>
+    <SERY_CTO>09072192</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>9349</CS_CU>
+    <TTR_CU />
+    <SL_CU>259</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>9553</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>204</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>259</SLUONG_1>
+    <SLUONG_2>250</SLUONG_2>
+    <SLUONG_3>240</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:34:47</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22930</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023058</MA_KHANG>
+    <MA_DDO>PD14T0230581</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>266</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507598</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Vũ Thị Ninh</TEN_KHANG>
+    <DIA_CHI>20/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909109263</MA_CTO>
+    <SERY_CTO>09109263</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>1660</CS_CU>
+    <TTR_CU />
+    <SL_CU>81</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>1706</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>46</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>81</SLUONG_1>
+    <SLUONG_2>56</SLUONG_2>
+    <SLUONG_3>44</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:35:03</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22931</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023059</MA_KHANG>
+    <MA_DDO>PD14T0230591</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>271</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507601</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Thảo</TEN_KHANG>
+    <DIA_CHI>8/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909154103</MA_CTO>
+    <SERY_CTO>09154103</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2039</CS_CU>
+    <TTR_CU />
+    <SL_CU>60</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2075</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>36</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>60</SLUONG_1>
+    <SLUONG_2>44</SLUONG_2>
+    <SLUONG_3>55</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:35:11</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22932</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023060</MA_KHANG>
+    <MA_DDO>PD14T0230601</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>276</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507741</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Mau</TEN_KHANG>
+    <DIA_CHI>22/2 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>505200909063047</MA_CTO>
+    <SERY_CTO>09063047</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10386</CS_CU>
+    <TTR_CU />
+    <SL_CU>285</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>10622</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>236</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>285</SLUONG_1>
+    <SLUONG_2>277</SLUONG_2>
+    <SLUONG_3>284</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:35:26</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22933</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023061</MA_KHANG>
+    <MA_DDO>PD14T0230611</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>281</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507755</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn An</TEN_KHANG>
+    <DIA_CHI>4/1 C6 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909073118</MA_CTO>
+    <SERY_CTO>09073118</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4333</CS_CU>
+    <TTR_CU />
+    <SL_CU>156</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4472</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>139</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>156</SLUONG_1>
+    <SLUONG_2>164</SLUONG_2>
+    <SLUONG_3>166</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:35:32</THOI_GIAN>
+    <X>21.037448333333334</X>
+    <Y>105.91067666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22934</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023043</MA_KHANG>
+    <MA_DDO>PD14T0230431</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>286</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507317</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Bùi Văn Lực</TEN_KHANG>
+    <DIA_CHI>2/121/B6 Tổ 7 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111076596</MA_CTO>
+    <SERY_CTO>11076596</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7592</CS_CU>
+    <TTR_CU />
+    <SL_CU>160</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7750</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>158</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>160</SLUONG_1>
+    <SLUONG_2>172</SLUONG_2>
+    <SLUONG_3>178</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:02</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22935</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023044</MA_KHANG>
+    <MA_DDO>PD14T0230441</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>291</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507806</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Võ Tấn Thặng</TEN_KHANG>
+    <DIA_CHI>22/121 C8 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201212048867</MA_CTO>
+    <SERY_CTO>12048867</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5998</CS_CU>
+    <TTR_CU />
+    <SL_CU>145</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6140</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>142</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>145</SLUONG_1>
+    <SLUONG_2>143</SLUONG_2>
+    <SLUONG_3>121</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:06</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22936</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023045</MA_KHANG>
+    <MA_DDO>PD14T0230451</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>296</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507811</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Đại Nghĩa</TEN_KHANG>
+    <DIA_CHI>20/121 C8 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201111008385</MA_CTO>
+    <SERY_CTO>11008385</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5183</CS_CU>
+    <TTR_CU />
+    <SL_CU>207</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>5343</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>160</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>207</SLUONG_1>
+    <SLUONG_2>164</SLUONG_2>
+    <SLUONG_3>179</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:11</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22937</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023046</MA_KHANG>
+    <MA_DDO>PD14T0230461</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>301</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507309</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Bùi Văn Tuấn</TEN_KHANG>
+    <DIA_CHI>2/121 C8 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201111009300</MA_CTO>
+    <SERY_CTO>11009300</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7343</CS_CU>
+    <TTR_CU />
+    <SL_CU>234</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7533</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>190</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>234</SLUONG_1>
+    <SLUONG_2>170</SLUONG_2>
+    <SLUONG_3>247</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:16</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22938</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023047</MA_KHANG>
+    <MA_DDO>PD14T0230471</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>306</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507315</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Minh</TEN_KHANG>
+    <DIA_CHI>19/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111054138</MA_CTO>
+    <SERY_CTO>11054138</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7490</CS_CU>
+    <TTR_CU />
+    <SL_CU>5</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7504</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>14</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>5</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:35</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22939</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023048</MA_KHANG>
+    <MA_DDO>PD14T0230481</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>311</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507302</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Bùi Văn Tái</TEN_KHANG>
+    <DIA_CHI>2/121 B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505018659</MA_CTO>
+    <SERY_CTO>05018659</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4442</CS_CU>
+    <TTR_CU />
+    <SL_CU>98</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4536</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>94</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>98</SLUONG_1>
+    <SLUONG_2>102</SLUONG_2>
+    <SLUONG_3>110</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:36:39</THOI_GIAN>
+    <X>21.03732</X>
+    <Y>105.91068500000002</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22940</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T026618</MA_KHANG>
+    <MA_DDO>PD14T0266181</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>316</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507885</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đào Thị Vân Anh</TEN_KHANG>
+    <DIA_CHI>11/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111028734</MA_CTO>
+    <SERY_CTO>11028734</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6052</CS_CU>
+    <TTR_CU />
+    <SL_CU>191</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6236</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>184</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>191</SLUONG_1>
+    <SLUONG_2>191</SLUONG_2>
+    <SLUONG_3>203</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:26</THOI_GIAN>
+    <X>21.037233333333333</X>
+    <Y>105.91046333333334</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22941</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023049</MA_KHANG>
+    <MA_DDO>PD14T0230491</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>321</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507894</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Khảo(Khoả)</TEN_KHANG>
+    <DIA_CHI>15/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707139662</MA_CTO>
+    <SERY_CTO>07139662</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6149</CS_CU>
+    <TTR_CU />
+    <SL_CU>207</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6347</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>198</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>207</SLUONG_1>
+    <SLUONG_2>212</SLUONG_2>
+    <SLUONG_3>211</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:32</THOI_GIAN>
+    <X>21.037295000000004</X>
+    <Y>105.91043833333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22942</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023050</MA_KHANG>
+    <MA_DDO>PD14T0230501</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>326</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507274</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Thọ</TEN_KHANG>
+    <DIA_CHI>3/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>506200707128967</MA_CTO>
+    <SERY_CTO>07128967</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7561</CS_CU>
+    <TTR_CU />
+    <SL_CU>203</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7733</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>172</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>203</SLUONG_1>
+    <SLUONG_2>185</SLUONG_2>
+    <SLUONG_3>209</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:35</THOI_GIAN>
+    <X>21.03731</X>
+    <Y>105.91042</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22943</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023051</MA_KHANG>
+    <MA_DDO>PD14T0230511</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>331</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507275</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Ma Thị Châm</TEN_KHANG>
+    <DIA_CHI>9/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707146081</MA_CTO>
+    <SERY_CTO>07146081</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>1843</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>1843</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:40</THOI_GIAN>
+    <X>21.037341666666666</X>
+    <Y>105.91040666666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22944</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000150910</MA_KHANG>
+    <MA_DDO>PD14000150910001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>333</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507898</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lưu Khắc Chào</TEN_KHANG>
+    <DIA_CHI>Số nhà 34B hẻm 121/38/2 Phố Sài đồng  Phường Sài Đồng Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111033950</MA_CTO>
+    <SERY_CTO>11033950</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3057</CS_CU>
+    <TTR_CU />
+    <SL_CU>71</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3123</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>66</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>71</SLUONG_1>
+    <SLUONG_2>80</SLUONG_2>
+    <SLUONG_3>94</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:48</THOI_GIAN>
+    <X>21.03735</X>
+    <Y>105.91034166666668</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22945</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023052</MA_KHANG>
+    <MA_DDO>PD14T0230521</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>336</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507276</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Hồng Hạnh</TEN_KHANG>
+    <DIA_CHI>3/07 C7 Tổ 16  Sài Đồng, Long Biên, Hà Nội</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201010202204</MA_CTO>
+    <SERY_CTO>10202204</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6214</CS_CU>
+    <TTR_CU />
+    <SL_CU>210</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6409</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>195</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>210</SLUONG_1>
+    <SLUONG_2>197</SLUONG_2>
+    <SLUONG_3>191</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:53</THOI_GIAN>
+    <X>21.037356666666664</X>
+    <Y>105.91032500000001</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22946</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T024345</MA_KHANG>
+    <MA_DDO>PD14T0243451</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>341</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507896</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Khởi</TEN_KHANG>
+    <DIA_CHI>5/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707142786</MA_CTO>
+    <SERY_CTO>07142786</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2511</CS_CU>
+    <TTR_CU />
+    <SL_CU>103</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2612</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>101</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>103</SLUONG_1>
+    <SLUONG_2>119</SLUONG_2>
+    <SLUONG_3>119</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:37:58</THOI_GIAN>
+    <X>21.037370000000003</X>
+    <Y>105.910315</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22947</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023053</MA_KHANG>
+    <MA_DDO>PD14T0230531</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>346</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507295</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Thị Nhi</TEN_KHANG>
+    <DIA_CHI>7/C7 Tổ 16 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201111009190</MA_CTO>
+    <SERY_CTO>11009190</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3277</CS_CU>
+    <TTR_CU />
+    <SL_CU>169</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3384</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>107</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>169</SLUONG_1>
+    <SLUONG_2>93</SLUONG_2>
+    <SLUONG_3>80</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:38:04</THOI_GIAN>
+    <X>21.037333333333329</X>
+    <Y>105.91037833333333</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22948</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023426</MA_KHANG>
+    <MA_DDO>PD14T0234261</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>351</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507759</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Công Khánh</TEN_KHANG>
+    <DIA_CHI>Căn hộ 102 nhà B7, tổ 17 P. Sài Đồng, Long Biên, Hà Nội</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707134934</MA_CTO>
+    <SERY_CTO>07134934</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2540</CS_CU>
+    <TTR_CU />
+    <SL_CU>155</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2786</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>246</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>155</SLUONG_1>
+    <SLUONG_2>137</SLUONG_2>
+    <SLUONG_3>159</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:38:56</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22949</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023427</MA_KHANG>
+    <MA_DDO>PD14T0234271</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>356</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507793</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Huy Dũng</TEN_KHANG>
+    <DIA_CHI>7/B7 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201111007017</MA_CTO>
+    <SERY_CTO>11007017</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4077</CS_CU>
+    <TTR_CU />
+    <SL_CU>118</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4206</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>129</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>118</SLUONG_1>
+    <SLUONG_2>181</SLUONG_2>
+    <SLUONG_3>179</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:00</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22950</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000150657</MA_KHANG>
+    <MA_DDO>PD14000150657001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>357</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507764</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Minh Hùng</TEN_KHANG>
+    <DIA_CHI>Số 5 Hẻm 121/18/4 Phường Sài đồng  Phường Sài Đồng Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303029572</MA_CTO>
+    <SERY_CTO>03029572</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3076</CS_CU>
+    <TTR_CU />
+    <SL_CU>86</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3131</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>55</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>86</SLUONG_1>
+    <SLUONG_2>106</SLUONG_2>
+    <SLUONG_3>108</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:05</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22951</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023430</MA_KHANG>
+    <MA_DDO>PD14T0234301</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>366</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507777</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Ngọc Hà</TEN_KHANG>
+    <DIA_CHI>7/B7 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111076487</MA_CTO>
+    <SERY_CTO>11076487</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8596</CS_CU>
+    <TTR_CU />
+    <SL_CU>284</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>8833</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>237</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>284</SLUONG_1>
+    <SLUONG_2>225</SLUONG_2>
+    <SLUONG_3>234</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:08</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22952</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000108646</MA_KHANG>
+    <MA_DDO>PD14000108646001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>371</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507558</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Anh Tuấn</TEN_KHANG>
+    <DIA_CHI>107/B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909154581</MA_CTO>
+    <SERY_CTO>09154581</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2338</CS_CU>
+    <TTR_CU />
+    <SL_CU>56</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>2385</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>47</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>56</SLUONG_1>
+    <SLUONG_2>58</SLUONG_2>
+    <SLUONG_3>56</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:13</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22953</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023431</MA_KHANG>
+    <MA_DDO>PD14T0234311</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>376</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507561</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Chát</TEN_KHANG>
+    <DIA_CHI>5/B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909060055</MA_CTO>
+    <SERY_CTO>09060055</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4357</CS_CU>
+    <TTR_CU />
+    <SL_CU>129</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4459</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>102</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>129</SLUONG_1>
+    <SLUONG_2>151</SLUONG_2>
+    <SLUONG_3>172</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:17</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22954</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023432</MA_KHANG>
+    <MA_DDO>PD14T0234321</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>381</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507553</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Khúc Trường Sơn</TEN_KHANG>
+    <DIA_CHI>6/B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707082591</MA_CTO>
+    <SERY_CTO>07082591</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4457</CS_CU>
+    <TTR_CU />
+    <SL_CU>279</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>4678</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>221</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>279</SLUONG_1>
+    <SLUONG_2>244</SLUONG_2>
+    <SLUONG_3>266</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:23</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22955</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023433</MA_KHANG>
+    <MA_DDO>PD14T0234331</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>386</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507555</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đặng Thị Hoan</TEN_KHANG>
+    <DIA_CHI>205 - B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201010504111</MA_CTO>
+    <SERY_CTO>10504111</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3774</CS_CU>
+    <TTR_CU />
+    <SL_CU>136</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>3904</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>130</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>136</SLUONG_1>
+    <SLUONG_2>140</SLUONG_2>
+    <SLUONG_3>154</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:27</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22956</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14000159874</MA_KHANG>
+    <MA_DDO>PD14000159874001</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>390</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23951071</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Minh Khải</TEN_KHANG>
+    <DIA_CHI>Số 11A Ngõ 121/18/4 Phố Sài đồng, Tổ 17  Phường Sài Đồng Long Biên</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808080088</MA_CTO>
+    <SERY_CTO>08080088</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>11149</CS_CU>
+    <TTR_CU />
+    <SL_CU>646</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>11592</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>443</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>646</SLUONG_1>
+    <SLUONG_2>458</SLUONG_2>
+    <SLUONG_3>719</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:45</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22957</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023434</MA_KHANG>
+    <MA_DDO>PD14T0234341</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>391</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507756</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đoàn Thị Vân</TEN_KHANG>
+    <DIA_CHI>10/B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201010002190</MA_CTO>
+    <SERY_CTO>10002190</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7569</CS_CU>
+    <TTR_CU />
+    <SL_CU>271</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>7822</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>253</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>271</SLUONG_1>
+    <SLUONG_2>274</SLUONG_2>
+    <SLUONG_3>302</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:49</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22958</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023435</MA_KHANG>
+    <MA_DDO>PD14T0234351</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>396</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507786</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đào Thị Vân Anh</TEN_KHANG>
+    <DIA_CHI>11/B7 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808162310</MA_CTO>
+    <SERY_CTO>08162310</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10025</CS_CU>
+    <TTR_CU />
+    <SL_CU>225</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>10234</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>209</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>225</SLUONG_1>
+    <SLUONG_2>314</SLUONG_2>
+    <SLUONG_3>446</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:39:55</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22959</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD14T023436</MA_KHANG>
+    <MA_DDO>PD14T0234361</MA_DDO>
+    <MA_DVIQLY>PD1400</MA_DVIQLY>
+    <MA_GC>401</MA_GC>
+    <MA_QUYEN>PD143282</MA_QUYEN>
+    <MA_TRAM>PD1480328</MA_TRAM>
+    <BOCSO_ID>23507782</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>nguyễn Thị Nhờ</TEN_KHANG>
+    <DIA_CHI>15/B6 Tổ 17 TT Sài Đồng - LBHN</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>503201010202117</MA_CTO>
+    <SERY_CTO>10202117</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5883</CS_CU>
+    <TTR_CU />
+    <SL_CU>195</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2017-02-06T00:00:00</NGAY_CU>
+    <CS_MOI>6045</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>162</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>3</THANG>
+    <NAM>2017</NAM>
+    <NGAY_MOI>2017-03-05T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>195</SLUONG_1>
+    <SLUONG_2>186</SLUONG_2>
+    <SLUONG_3>202</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1000-01-01T00:00:00</NGAY_PMAX>
+    <ID>0</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>02/01/2010 05:40:00</THOI_GIAN>
+    <X>21.037276666666671</X>
+    <Y>105.91087166666667</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD143282_7311.xml</TEN_FILE>
+    <ID_SQLITE>22960</ID_SQLITE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+</NewDataSet>

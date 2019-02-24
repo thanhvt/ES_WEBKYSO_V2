@@ -1,0 +1,102 @@
+﻿@model ES_WEBKYSO.Models.D_SOGCS
+
+<div style="margin: -15px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+    @using (Html.BeginForm("Create", "QuanLySoGcs", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+    {
+        <div class="modal-body">
+            @Html.AntiForgeryToken()
+            @*@Html.HiddenFor(x => x.MA_DVIQLY)*@
+            <div class="form-group">
+                @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @Value = ViewBag.MaDviQly, @readonly = "readonly"} })
+                @Html.EditorFor(model => model.MA_SOGCS, new { htmlAttributes = new { @class = "form-control" }, autofocus = "autofocus" })
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.TEN_SOGCS)
+                @Html.EditorFor(x => x.SO_KY)
+            </div>
+            <div class="form-group">
+                <div class="col-md-6">
+                    <label class="control-label">
+                        Tình trạng
+                    </label>
+                    @*@Html.DropDownListFor(model => model.TINH_TRANG, new SelectList(ViewBag.TinhTrang, "Value", "Text"), "--- Chọn tình trạng ---", new { @class = "form-control" })*@
+                    <select class="combobox form-control" id="TINH_TRANG" name="TINH_TRANG">
+                        <option>---Chọn tình trạng---</option>
+                        <option value="1" selected="selected">Đang hoạt động</option>
+                        <option value="0">Không hoạt động</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="control-label">
+                        Loại sổ
+                    </label>
+                    @Html.DropDownListFor(model => model.LOAI_SOGCS, new SelectList(ViewBag.LoaiSo, "Value", "Text"), "--- Chọn loại sổ ---", new { @class = "form-control" })
+                </div>
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.NGAY_GHI)
+                <div class="col-md-6">
+                    <label class="control-label">
+                        Hình thức
+                    </label>
+                    @Html.DropDownListFor(model => model.HINH_THUC, new SelectList(ViewBag.HinhThuc, "Value", "Text"), "--- Chọn hình thức ---", new { @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="QuanLySoGcsCreate">Lưu lại</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="QuanLySoGcsClose">Đóng</button>
+            @*<button type="button" class="btn btn-primary" id="QuanLySoGcsCreate">Cập nhật</button>*@
+        </div>
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+    });
+    $(function () {
+        $(".focus :input").focus();
+    });
+    //$(document).ready(function () {
+
+    @*$("#QuanLySoGcsCreate").on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                async: true,
+                url: "@Url.Action("Create", "QuanLySoGcs")",
+                dataType: 'json',
+                data: $("#QuanLySoGcsCreateForm").serialize(),
+                success: function (result) {
+                    if (result.status === false) {
+                        alert(result.messenger);
+                    }
+                    if (result.status === true) {
+                        alert(result.messenger);
+                        $("#QuanLySoGcsClose").click();
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                },
+                complete: function (result) {
+                    window.TableGenericQuanLySoGcsGrid.ajax.reload();
+                }
+            });
+
+        });*@
+
+    $('#popupStaticModal').on('hidden.bs.modal', function () {
+        $("#popupStaticModal").html('<div class="modal-body"><div></div></div>');
+    });
+
+    //});
+
+</script>

@@ -1,0 +1,66 @@
+﻿@model Administrator.Department.Models.Administrator_Department
+
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Tên đơn vị <span class="symbol required"></span></label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.DepartmentName, new { @class = "form-control", @placeholder = "Tên đơn vị" })
+        @Html.ValidationMessageFor(item => item.DepartmentName)
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Mã đơn vị <span class="symbol required"></span></label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.DepartmentCode, new { @class = "form-control", @placeholder = "Mã đơn vị" })
+        @Html.ValidationMessageFor(item => item.DepartmentCode)
+
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Cấp đơn vị </label>
+    <div class="col-sm-9">
+        <input id="Level" type="text" value="@ViewBag.DepartmentLevel" placeholder=" " class="form-control" disabled="disabled" />
+        <input id="txtDepartmentLevel" name="DepartmentLevel" type="hidden" value=" @ViewBag.DepartmentLevel" />
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">STT<span class="symbol required"></span></label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.DepartmentIndex, new { @class = "form-control", @placeholder = "STT" })
+        @Html.ValidationMessageFor(item => item.DepartmentIndex)
+
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Địa chỉ </label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.Address, new { @class = "form-control", @placeholder = "Địa chỉ" })
+        @Html.ValidationMessageFor(item => item.Address)
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Số điện thoại </label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", @placeholder = "Số điện thoại" })
+        @Html.ValidationMessageFor(item => item.PhoneNumber)
+    </div>
+</div>
+<div class="form-group">
+    <label for="form-field-1" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-9">
+        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email" })
+        @Html.ValidationMessageFor(item => item.Email)
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <hr>
+    </div>
+    <div class="col-md-8">
+    </div>
+    <div class="col-md-4">
+        <input class="btn btn-primary" type="submit" value="Cập nhật" id="btnAdd" style="width: 100px;" />
+        <a class="btn btn-dark-grey" href="@Url.Action("DepartmentManager")" style="width: 100px;">Thoát
+                            <i class="fa fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://service.mdms.ftu.com/" targetNamespace="http://service.mdms.ftu.com/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Exception" type="tns:Exception" />
+  <xs:element name="NewDataSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" name="Table1">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MA_NVGCS" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_KHANG" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_DDO" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_DVIQLY" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_GC" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_QUYEN" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_TRAM" type="xs:string" />
+              <xs:element minOccurs="0" name="BOCSO_ID" type="xs:long" />
+              <xs:element minOccurs="0" name="LOAI_BCS" type="xs:string" />
+              <xs:element minOccurs="0" name="LOAI_CS" type="xs:string" />
+              <xs:element minOccurs="0" name="TEN_KHANG" type="xs:string" />
+              <xs:element minOccurs="0" name="DIA_CHI" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_NN" type="xs:string" />
+              <xs:element minOccurs="0" name="SO_HO" type="xs:string" />
+              <xs:element minOccurs="0" name="MA_CTO" type="xs:string" />
+              <xs:element minOccurs="0" name="SERY_CTO" type="xs:string" />
+              <xs:element minOccurs="0" name="HSN" type="xs:string" />
+              <xs:element minOccurs="0" name="CS_CU" type="xs:string" />
+              <xs:element minOccurs="0" name="TTR_CU" type="xs:string" />
+              <xs:element minOccurs="0" name="SL_CU" type="xs:string" />
+              <xs:element minOccurs="0" name="SL_TTIEP" type="xs:string" />
+              <xs:element minOccurs="0" name="NGAY_CU" type="xs:string" />
+              <xs:element minOccurs="0" name="CS_MOI" type="xs:string" />
+              <xs:element minOccurs="0" name="TTR_MOI" type="xs:string" />
+              <xs:element minOccurs="0" name="SL_MOI" type="xs:string" />
+              <xs:element minOccurs="0" name="CHUOI_GIA" type="xs:string" />
+              <xs:element minOccurs="0" name="KY" type="xs:long" />
+              <xs:element minOccurs="0" name="THANG" type="xs:long" />
+              <xs:element minOccurs="0" name="NAM" type="xs:long" />
+              <xs:element minOccurs="0" name="NGAY_MOI" type="xs:string" />
+              <xs:element minOccurs="0" name="NGUOI_GCS" type="xs:string" />
+              <xs:element minOccurs="0" name="SL_THAO" type="xs:string" />
+              <xs:element minOccurs="0" name="KIMUA_CSPK" type="xs:long" />
+              <xs:element minOccurs="0" name="MA_COT" type="xs:string" />
+              <xs:element minOccurs="0" name="SLUONG_1" type="xs:string" />
+              <xs:element minOccurs="0" name="SLUONG_2" type="xs:string" />
+              <xs:element minOccurs="0" name="SLUONG_3" type="xs:string" />
+              <xs:element minOccurs="0" name="SO_HOM" type="xs:string" />
+              <xs:element minOccurs="0" name="PMAX" type="xs:string" />
+              <xs:element minOccurs="0" name="NGAY_PMAX" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getBCTData_Ngay" type="tns:getBCTData_Ngay" />
+  <xs:element name="getBCTData_NgayResponse" type="tns:getBCTData_NgayResponse" />
+  <xs:element name="getBillingDataFromMDMS" type="tns:getBillingDataFromMDMS" />
+  <xs:element name="getBillingDataFromMDMSResponse" type="tns:getBillingDataFromMDMSResponse" />
+  <xs:element name="getBillingSpcFromMDMS" type="tns:getBillingSpcFromMDMS" />
+  <xs:element name="getBillingSpcFromMDMSResponse" type="tns:getBillingSpcFromMDMSResponse" />
+  <xs:element name="getListBCTData_Ngay" type="tns:getListBCTData_Ngay" />
+  <xs:element name="getListBCTData_NgayResponse" type="tns:getListBCTData_NgayResponse" />
+  <xs:element name="getListMeterList" type="tns:getListMeterList" />
+  <xs:element name="getListMeterListBySerials" type="tns:getListMeterListBySerials" />
+  <xs:element name="getListMeterListBySerialsResponse" type="tns:getListMeterListBySerialsResponse" />
+  <xs:element name="getListMeterListResponse" type="tns:getListMeterListResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="getListBCTData_Ngay">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
+      <xs:element name="arg3" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListBCTData_NgayResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBillingDataFromMDMS">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Table1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" name="MA_NVGCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_KHANG" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_DDO" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_DVIQLY" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_GC" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_QUYEN" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_TRAM" type="xs:string" />
+                  <xs:element minOccurs="0" name="BOCSO_ID" type="xs:long" />
+                  <xs:element minOccurs="0" name="LOAI_BCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="LOAI_CS" type="xs:string" />
+                  <xs:element minOccurs="0" name="TEN_KHANG" type="xs:string" />
+                  <xs:element minOccurs="0" name="DIA_CHI" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_NN" type="xs:string" />
+                  <xs:element minOccurs="0" name="SO_HO" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_CTO" type="xs:string" />
+                  <xs:element minOccurs="0" name="SERY_CTO" type="xs:string" />
+                  <xs:element minOccurs="0" name="HSN" type="xs:string" />
+                  <xs:element minOccurs="0" name="CS_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="TTR_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_TTIEP" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGAY_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="CS_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="TTR_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="CHUOI_GIA" type="xs:string" />
+                  <xs:element minOccurs="0" name="KY" type="xs:long" />
+                  <xs:element minOccurs="0" name="THANG" type="xs:long" />
+                  <xs:element minOccurs="0" name="NAM" type="xs:long" />
+                  <xs:element minOccurs="0" name="NGAY_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGUOI_GCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_THAO" type="xs:string" />
+                  <xs:element minOccurs="0" name="KIMUA_CSPK" type="xs:long" />
+                  <xs:element minOccurs="0" name="MA_COT" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_1" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_2" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_3" type="xs:string" />
+                  <xs:element minOccurs="0" name="SO_HOM" type="xs:string" />
+                  <xs:element minOccurs="0" name="PMAX" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGAY_PMAX" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="arg1" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBillingDataFromMDMSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Table1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" name="MA_NVGCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_KHANG" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_DDO" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_DVIQLY" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_GC" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_QUYEN" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_TRAM" type="xs:string" />
+                  <xs:element minOccurs="0" name="BOCSO_ID" type="xs:long" />
+                  <xs:element minOccurs="0" name="LOAI_BCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="LOAI_CS" type="xs:string" />
+                  <xs:element minOccurs="0" name="TEN_KHANG" type="xs:string" />
+                  <xs:element minOccurs="0" name="DIA_CHI" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_NN" type="xs:string" />
+                  <xs:element minOccurs="0" name="SO_HO" type="xs:string" />
+                  <xs:element minOccurs="0" name="MA_CTO" type="xs:string" />
+                  <xs:element minOccurs="0" name="SERY_CTO" type="xs:string" />
+                  <xs:element minOccurs="0" name="HSN" type="xs:string" />
+                  <xs:element minOccurs="0" name="CS_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="TTR_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_TTIEP" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGAY_CU" type="xs:string" />
+                  <xs:element minOccurs="0" name="CS_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="TTR_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="CHUOI_GIA" type="xs:string" />
+                  <xs:element minOccurs="0" name="KY" type="xs:long" />
+                  <xs:element minOccurs="0" name="THANG" type="xs:long" />
+                  <xs:element minOccurs="0" name="NAM" type="xs:long" />
+                  <xs:element minOccurs="0" name="NGAY_MOI" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGUOI_GCS" type="xs:string" />
+                  <xs:element minOccurs="0" name="SL_THAO" type="xs:string" />
+                  <xs:element minOccurs="0" name="KIMUA_CSPK" type="xs:long" />
+                  <xs:element minOccurs="0" name="MA_COT" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_1" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_2" type="xs:string" />
+                  <xs:element minOccurs="0" name="SLUONG_3" type="xs:string" />
+                  <xs:element minOccurs="0" name="SO_HOM" type="xs:string" />
+                  <xs:element minOccurs="0" name="PMAX" type="xs:string" />
+                  <xs:element minOccurs="0" name="NGAY_PMAX" type="xs:string" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="message" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListMeterList">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListMeterListResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListMeterListBySerials">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getListMeterListBySerialsResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBCTData_Ngay">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:int" />
+      <xs:element name="arg3" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBCTData_NgayResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBillingSpcFromMDMS">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element name="arg2" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getBillingSpcFromMDMSResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

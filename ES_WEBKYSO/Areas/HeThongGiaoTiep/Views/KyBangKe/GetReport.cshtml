@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Bảng kê";
+}
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3><span style="color: teal">Report bảng kê chỉ số</span></h3>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("/ReportViewer/TongReport.aspx")
+
+</div>

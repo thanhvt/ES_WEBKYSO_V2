@@ -1,0 +1,244 @@
+﻿@model ES_WEBKYSO.Models.D_IMEI
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Phân quyền User - IMEI";
+}
+@*<script type="text/javascript">
+    var runDatePicker = function () {
+        $('.date-picker').datepicker({
+            language: 'vi',
+            autoclose: true
+        });
+    };
+    runDatePicker();
+</script>*@
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Phân quyền User - IMEI</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Đơn vị
+                                        </label>
+                                        <input type="text" placeholder="Đơn vị" id="MaDonVi" name="MaDonVi" class="form-control" value="@ViewBag.MA_DIVQLY" disabled="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Người dùng
+                                        </label>
+                                        <input class="form-control" placeholder="Lã Hồng Dương" type="text" id="NguoiDung" name="NguoiDung" tabindex="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="row">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        <label class="control-label">
+                                            Loại máy
+                                        </label>
+                                        <input class="form-control" placeholder="Asus" type="text" id="LoaiMay" name="LoaiMay" tabindex="2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">
+                                            Người cấp
+                                        </label>
+                                        <input class="form-control" placeholder="Admin" type="text" id="NguoiCap" name="NguoiCap" tabindex="3">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="control-label">
+                                            Ngày cấp
+                                        </label>
+                                        <input class="form-control date-picker" data-date-format="dd/mm/yyyy" type="text" id="NgayCapString" name="NgayCapString" tabindex="4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                            <button type="submit" class="btn btn-primary" value="Tìm kiếm" id="btnGetData">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- start: SOGCS TABLE PANEL -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    @ViewBag.Title
+                    <div class="panel-tools">
+                        <a href="@Url.Action("Create")" data-toggle="modal" data-target="#popupStaticModal" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end: SOGCS TABLE PANEL -->
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    @*<script src="~/Scripts/jquery.validate.new.js"></script>*@
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        $('.date-picker').datepicker({
+            autoclose: true
+        });
+        (function ($) {
+            "use strict";
+
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                //funcgr: function (grid) {
+                //    window.TableGenericQuanLySoGcsGrid = grid;
+                //},
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MaDonVi").val();
+                    d.NguoiDung = $("#NguoiDung").val();
+                    d.LoaiMay = $("#LoaiMay").val();
+                    d.NguoiCap = $("#NguoiCap").val();
+                    d.NgayCapString = $("#NgayCapString").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" data-toggle="modal" data-target="#popupStaticModal" href="@Url.Action("Update", "PhanQuyenUserImei", new { D_IMEIId = "D_IMEIIdParameter" })"><i class="fa fa-edit"></i></a>  ' +
+                                    '<a class="btn btn-xs btn-bricky tooltips Delete" data-id="D_IMEIIdParameter" href="#"><i class="fa fa-trash-o"></i></a></div>';
+                                ret = ret.replace(/D_IMEIIdParameter/g, data.ID);
+                                return ret;
+                            }
+                        }
+                    ]
+                },
+                columns: [
+                    //{
+                    //    header: "ID",
+                    //    data: "ID", className: "center",
+                    //    width: "5%"
+                    //},
+                    {
+                        header: "Người dùng",
+                        data: "NGUOI_DUNG"
+                    },
+                    {
+                        header: "Mã đơn vị quản lý",
+                        data: "MA_DVIQLY"
+                    },
+                    {
+                        header: "IMEI",
+                        data: "IMEI"
+                    },
+                    {
+                        header: "Loại máy",
+                        data: "LOAI_MAY"
+                    },
+                    {
+                        header: "Ngày cấp",
+                        data: "NgayCapString"
+                    },
+                    {
+                        header: "Người cấp",
+                        data: "NGUOI_CAP"
+                    },
+                    {
+                        'bSortable': false,
+                        header: "Tác vụ",
+                        className: "center",
+                        data: null
+                    }
+                ],
+                func: function (grid) {
+                    window.TableGenericPhanQuyenUserImeiGrid = grid;
+                    $("#TableGeneric")
+                        .on('click',
+                            '.Delete',
+                            function (e) {
+                                e.preventDefault();
+
+                                var thisTrData = $(this).attr('data-id');
+
+
+                                if (confirm("Bạn có chắc chắn muốn xóa ?")) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        cache: false,
+                                        async: true,
+                                        url: "@Html.Raw(Url.Action("Delete"))",
+                                        dataType: 'json',
+                                        data: JSON.stringify({ D_IMEIId: thisTrData }),
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (result) {
+                                            if (result.success === true) {
+                                                alert(result.message);
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+
+                                        },
+                                        complete: function (result) {
+                                            grid.ajax.reload();
+                                        }
+                                    });
+                                }
+
+                            });
+                }
+            };
+            $("#btnGetData").on('click',
+                function () {
+                    AutoDataTable();
+                });
+        })(jQuery);
+    </script>
+}

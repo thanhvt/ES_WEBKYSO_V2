@@ -1,0 +1,268 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Trả lại bảng kê";
+}
+<div class="container" style="min-height: 900px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Trả lại bảng kê</span></h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã đơn vị
+                                        </label>
+                                        <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value="PD1100" disabled="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Ngày ghi
+                                        </label>
+                                        <input type="text" placeholder="Ngày ghi" id="NgayGhi" name="NgayGhi" class="form-control" size="2" maxlength="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã sổ
+                                        </label>
+                                        <input class="form-control" placeholder="Mã sổ" type="text" id="MaSo" name="MaSo">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Loại sổ
+                                        </label>
+                                        <select id="LoaiSo" name="LoaiSo" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn loại sổ ---</option>
+                                            <option value="LDL">KH</option>
+                                            <option value="CNDL">DN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="control-label">
+                                        Tổ đội
+                                    </label>
+                                    <select name="ToDoi" id="ToDoi" class="form-control" required>
+                                        <option value="">--- Chọn tổ đội ---</option>
+                                        <option value="01">Đội 1</option>
+                                        <option value="02">Đội 2</option>
+                                        <option value="03">Đội 3</option>
+                                        <option value="04">Đội 4</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Kỳ GCS
+                                    </label>
+                                    <select name="Ky" id="Ky" class="form-control" required>
+                                        <option value="">--- Chọn kỳ ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Tháng
+                                    </label>
+                                    <select name="Thang" id="Thang" class="form-control" required>
+                                        <option value="">--- Chọn tháng ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Năm
+                                    </label>
+                                    <input type="text" placeholder="Năm" id="Nam" name="Nam" class="form-control" value="2017" required>
+                                </div>
+                                <div class="col-md-3">
+
+                                    <label class="control-label">
+                                        Trạng thái
+                                    </label>
+                                    <select id="TrangThai" name="TrangThai" class="form-control">
+                                        <option value="">--- Chọn trạng thái ---</option>
+                                        <option value="MTB">Đã ký</option>
+                                        <option value="HHU">Chưa ký</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Thao tác
+            <i class="fa fa-pencil-square-o text-right"></i>
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fa fa-reply"></i>
+                                    Trả lại bảng kê
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-external-link-square"></i>
+                    Danh sách sổ
+                    <div class="panel-tools">
+                        <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="sample-table-1">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </th>
+                                    <th>Mã sổ</th>
+                                    <th>Tên sổ</th>
+                                    <th>Hình thức ghi</th>
+                                    <th>Ngày ghi</th>
+                                    <th>Kỳ</th>
+                                    <th>Tháng</th>
+                                    <th>Năm</th>
+                                    <th>Tổ đội</th>
+                                    <th>Nhân viên GCS</th>
+                                    <th>Trạng thái ký</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </td>
+                                    <td>SPHU3KY</td>
+                                    <td>CC-141</td>
+                                    <td>MDMS</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                    <td>03</td>
+                                    <td>2017</td>
+                                    <td>Đội A</td>
+                                    <td>Lã Hồng Dương</td>
+                                    <td>
+                                        <span class="label label-sm label-info">Đội trưởng</span>
+                                        &nbsp;
+                                        <span class="label label-sm label-success">NV GCS</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </td>
+                                    <td>D018135</td>
+                                    <td>CC-308</td>
+                                    <td>MDMS</td>
+                                    <td>19</td>
+                                    <td>1</td>
+                                    <td>05</td>
+                                    <td>2017</td>
+                                    <td>Đội B</td>
+                                    <td>Đỗ Hồng Nhung</td>
+                                    <td>
+                                        <span class="label label-sm label-success">NV GCS</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </td>
+                                    <td>D018110</td>
+                                    <td>CC-232</td>
+                                    <td>MDMS</td>
+                                    <td>29</td>
+                                    <td>1</td>
+                                    <td>12</td>
+                                    <td>2017</td>
+                                    <td>Đội C</td>
+                                    <td>Nguyễn Khắc Tiệp</td>
+                                    <td>
+                                        <span class="label label-sm label-info">Đội trưởng</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-10" align="left">
+
+        </div>
+    </div>
+
+</div>

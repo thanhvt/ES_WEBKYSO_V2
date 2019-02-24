@@ -1,0 +1,253 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Cấu hình đội mặc định";
+}
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Cấu hình đội mặc định</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" align="left">
+            @Html.ValidationSummary()
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+                </div>
+            }
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">
+                    <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Mã đơn vị
+                                        </label>
+                                        @if (@ViewBag.MA_DVIQLY == null)
+                                        {
+                                            <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value="@ViewBag.MA_DVIQLY">
+                                        }
+                                        else
+                                        {
+                                            <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value="@ViewBag.MA_DVIQLY" readonly>
+                                        }
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Mã đội
+                                        </label>
+                                        <input class="form-control" placeholder="Mã đội" type="text" id="MaDoi" name="MaDoi">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Chọn nhân viên
+                                        </label>
+                                        <select id="cbNhanvien" name="ThaoTac" class="form-control search-select" onclick="disable(value);">
+                                            <option value="">--- Chọn nhân viên ---</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top:5px;">
+                            <br />
+                            <button type="submit" class="btn btn-primary" id="btnGetData">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    @ViewBag.Title
+                    <div class="panel-tools">
+                        <a href="@Url.Action("Create")" data-toggle="modal" data-target="#popupStaticModal" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetAllNVIEN")',
+                dataType: 'json',
+                data: {},
+                success: function (tous) {
+                    $("#cbNhanvien").append(tous);
+                },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình tải dữ liệu: ' + ex);
+                }
+            });
+            return false;
+        });
+        var runSelect2 = function () {
+            $(".search-select").select2({
+                allowClear: true
+            });
+        };
+        runSelect2();
+        (function ($) {
+            "use strict";
+            window.TableConfig = [];
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                reloadFunc: function (d) {
+                    d.MaDoi = $("#MaDoi").val();
+                    d.USERID = $("#cbNhanvien").val();
+                    d.MaDonVi = $("#MaDonVi").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" data-toggle="modal" data-target="#popupStaticModal" href="@Url.Action("Update", "CauHinhDoiMacDinh", new { ID = "IDParameter" })"><i class="fa fa-edit"></i> Sửa</a>  ' +
+                                    '<a class="btn btn-xs btn-bricky tooltips Delete" data-id="IDParameter" href="#"><i class="fa fa-trash-o"></i> Xóa</a></div>';
+                                ret = ret.replace(/IDParameter/g, data.ID);
+                                return ret;
+                            }
+                        }
+                    ]
+                },
+                columns: [
+
+                    {
+                        header: "Mã đội",
+                        className: "center",
+                        data: "MA_DOIGCS"
+                    },
+                     {
+                         header: "Tên đội",
+                         'bSortable': false,
+                         className: "center",
+                         data: "TEN_DOIGCS"
+                     },
+                     {
+                         header: "Mã đơn vị",
+                         className: "center",
+                         data: "MA_DVIQLY"
+                     },
+                    {
+                        header: "Nhân viên GCS",
+                        'bSortable': false,
+                        data: "TEN_NVIEN_GCS"
+                    },
+                    {
+                        'bSortable': false,
+                        header: "Tác vụ",
+                        className: "center",
+                        data: null
+                    }
+                ],
+                func: function (grid) {
+                    window.TableGenericDanhMucDoiGrid = grid;
+                    $("#TableGeneric")
+                        .on('click',
+                            '.Delete',
+                            function (e) {
+                                e.preventDefault();
+                                var thisTrData = $(this).attr('data-id');
+                                if (confirm("Bạn có chắc chắn muốn xóa ?")) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        cache: false,
+                                        async: true,
+                                        url: "@Html.Raw(Url.Action("Delete"))",
+                                        dataType: 'json',
+                                        data: JSON.stringify({ ID: thisTrData }),
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (result) {
+                                            if (result.success === true) {
+                                                alert(result.message);
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+                                            alert(result.message);
+                                        },
+                                        complete: function (result) {
+                                            grid.ajax.reload();
+                                        }
+                                    });
+                                }
+
+                            });
+                }
+            };
+            $("#btnGetData").on('click',
+                function () {
+                    AutoDataTable();
+                });
+        })(jQuery);
+    </script>
+}

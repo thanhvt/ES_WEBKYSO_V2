@@ -1,0 +1,90 @@
+﻿@model ES_WEBKYSO.Models.CFG_SOGCS_NVIEN
+
+<div style="margin: -15px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+    @using (Html.BeginForm("Update_sm", "CauHinhNvGcsMacDinh", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+    {
+        <div class="modal-body">
+            @Html.AntiForgeryToken()
+            @*@Html.ValidationSummary()*@
+            <div class="form-group">
+                @Html.HiddenFor(x => x.MA_SOGCS_NVIEN)
+                <input type="hidden" value="@ViewBag.MaDoi" id="MaDoi" />
+                <input type="hidden" value="@ViewBag.IDUser" id="IDUser" />
+                @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @*@Html.EditorFor(x => x.MA_SOGCS)*@
+                @Html.EditorFor(x => x.MA_SOGCS, new { dropKey = "MA_SOGCS", label = "--- Chọn Mã sổ ---", htmlAttributes = new { @class = "form-control " } })
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.MA_DOIGCS, new { dropKey = "MA_DOIGCS", label = "--- Chọn đội GCS ---", htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(x => x.USERID, new { dropKey = "USERID", label = "--- Chọn nhân viên ---", htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12" align="left">
+                    @*@Html.ValidationSummary()*@
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="NVGCS_MacDinhUpdate">Cập nhật</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="NVGCS_MacDinhClose">Đóng</button>
+        </div>
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+    });
+    $(function () { //lấy giá trị phân công cũ cho combo
+        //lấy lại danh sách nhân viên thuộc đội
+        $("#USERID").empty();
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("GetNV_GCS_TheoDoi")',
+            dataType: 'json',
+            traditional: true,
+            data: { MaDoi: $("#MaDoi").val() },
+            success:
+                function (tous) {
+                    $.each(tous, function (i, tou) {
+                        $("#USERID").append('<option value="' + tou.MA_NVIEN_GCS + '">' + tou.TEN_NVIEN_GCS + '</option>');
+                    });
+                },
+            error: function (ex) {
+                alert('Có lỗi xảy ra trong quá trình tải dữ liệu: ' + ex);
+            }
+        });
+        $("#USERID").val($("#IDUser").val());
+    });
+    $(document).ready(function () {
+        $("#MA_DOIGCS").change(function () { //danh sách nhân viên khi chọn đội
+            $("#USERID").empty();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetNV_GCS_TheoDoi")',
+                dataType: 'json',
+                traditional: true,
+                data: { MaDoi: $("#MA_DOIGCS").val() },
+                success:
+                    function (tous) {
+                        $.each(tous, function (i, tou) {
+                            $("#USERID").append('<option value="' + tou.MA_NVIEN_GCS + '">' + tou.TEN_NVIEN_GCS + '</option>');
+                        });
+                    },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình tải dữ liệu: ' + ex);
+                }
+            });
+            return false;
+        });
+    });
+    $('#popupStaticModal').on('hidden.bs.modal', function () {
+        $("#popupStaticModal").html('<div class="modal-body"><div></div></div>');
+    });
+
+</script>

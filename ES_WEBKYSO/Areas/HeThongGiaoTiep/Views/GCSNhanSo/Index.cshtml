@@ -1,0 +1,403 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Phân công ghi chỉ số";
+}
+@model ES_WEBKYSO.Areas.HeThongGiaoTiep.Models.PHANCONG
+
+<style>
+    .btn span.glyphicon {
+        opacity: 0;
+    }
+
+    .btn.active span.glyphicon {
+        opacity: 1;
+    }
+</style>
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Nhận sổ Ghi chỉ số</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã đơn vị
+                                        </label>
+
+                                        <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value=@ViewBag.MA_DVIQLY disabled="">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Ngày ghi
+                                        </label>
+                                        <input type="text" placeholder="Ngày ghi" id="NgayGhi" name="NgayGhi" class="form-control" size="2" maxlength="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Mã sổ
+                                        </label>
+                                        <input class="form-control" placeholder="Mã sổ" type="text" id="MaSo" name="MaSo">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Loại sổ
+                                        </label>
+                                        <select id="LoaiSo" name="LoaiSo" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn loại sổ ---</option>
+                                            <option value="KH">KH</option>
+                                            <option value="DN">DN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+
+                                    <label class="control-label">
+                                        Kỳ GCS
+                                    </label>
+                                    <select name="Ky" id="Ky" class="form-control" required>
+                                        <option value="">--- Chọn kỳ ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Tháng
+                                    </label>
+                                    <select name="Thang" id="Thang" class="form-control" required>
+                                        <option value="">--- Chọn tháng ---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Năm
+                                    </label>
+                                    <input type="text" placeholder="Năm" id="Nam" name="Nam" class="form-control" value="2017" required>
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="control-label">
+                                        Trạng thái
+                                    </label>
+                                    <select id="TrangThai" name="TrangThai" class="form-control">
+                                        <option value="">--- Chọn trạng thái ---</option>
+                                        <option value="DTH">Đã thực hiện</option>
+                                        <option value="DPC">Chưa thực hiện</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button type="submit" class="btn btn-primary" value="Tìm kiếm" id="btnGetData">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm sổ
+                            </button>
+                        </div>
+                    </fieldset>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Thao tác
+            <i class="fa fa-pencil-square-o text-right"></i>
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                <div class="col-md-1">
+                    <div class="row">
+                        <div class="form-group">
+                            <label class="control-label">
+                                Tất cả trang
+                            </label>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-success" id="lblCheckBox">
+                                    <input type="checkbox" id="checkAll" name="checkAll"> @*autocomplete="on"*@
+                                    <span class="glyphicon glyphicon-ok"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-2" style="padding-top:38px;">
+                                <button @*type="submit"*@ id="btnXuatSo" class="btn btn-primary">
+                                    <i class="clip-arrow-down-2"></i>
+                                    Xuất sổ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+            </fieldset>
+        </div>
+    </div>
+    @using (Html.BeginForm("DownloadFiles", "GCSNhanSo", FormMethod.Post, new { name = "frm", id = "frm" }))
+    {
+        <input type="hidden" id="txtLichID" name="txtLichID" value="" />
+    }
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-file-text"></i>
+                    @ViewBag.Title
+                </div>
+                <div class="panel-body" id="divtable">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section PageScripts{
+    @*<script src="~/Scripts/jquery.validate.new.js"></script>*@
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#checkAll").change(function () {
+                if ($("#checkAll").prop('checked')) {
+                    $(".grey").iCheck('check');
+                }
+                else { $(".grey").iCheck('uncheck'); }
+            })
+            return false;
+        });
+
+        (function ($) {
+            "use strict";
+
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                //funcgr: function (grid) {
+                //    window.TableGenericCapNhatChiSoGrid = grid;
+                //},
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MaDonVi").val();
+                    d.NgayGhi = $("#NgayGhi").val();
+                    d.MaSo = $("#MaSo").val();
+                    d.LoaiSo = $("#LoaiSo").val();
+                    d.Ky = $("#Ky").val();
+                    d.Thang = $("#Thang").val();
+                    d.Nam = $("#Nam").val();
+                    d.TrangThai = $("#TrangThai").val();
+                    d.Gio = $("#Gio").val();
+                    d.MaDoi = $("#ToDoi").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                if (data.STATUS == "DPC") {
+                                    var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" href="@Url.Action("Download", "GCSNhanSo", new { ID_LICHGCS = "ID_LICHGCSParameter" })"><i class="clip-download-2"></i> Tải</a></div> ';
+                                    ret = ret.replace(/ID_LICHGCSParameter/g, data.ID_LICHGCS);
+                                    return ret;
+                                }
+                                else
+                                {
+                                    var ret = '<div></div>';
+                                    return ret;
+                                }
+                            }
+                        }
+                    ]
+                },
+                columns: [
+                    {
+                        data: null,
+                        header: "Chọn",
+                        className: 'dt-center center',
+                        'bSortable': false,
+                        render: function (data) {
+                            if (data.STATUS == "DPC") {
+                                return '<div class="checkbox-table"><label><input type="checkbox" name="chkSO" class="grey chkAll" id="chkSO" value="' + data.ID_LICHGCS + '"/></label></div>';
+                            }
+                            else {
+                                return '<div class="checkbox-table"><label><input type="checkbox"  disabled  name="chkSO" class="grey chkAll" id="chkSO" value="' + data.ID_LICHGCS + '"/></label></div>';
+                            }
+                        }
+                    },
+                    {
+                        header: "Mã sổ",
+                        data: "MA_SOGCS"
+                    },
+                    {
+                        header: "Tên sổ",
+                        data: "TEN_SOGCS"
+                    },
+                     {
+                         header: "Hình thức",
+                         data: "HINHTHUC"
+                     },
+                     {
+                         header: "Ngày ghi",
+                         data: "NGAY_GHI"
+                     },
+                     {
+                         header: "Kỳ",
+                         data: "KY"
+                     },
+                     {
+                         header: "Tháng",
+                         data: "THANG"
+                     },
+                     {
+                         header: "Năm",
+                         data: "NAM"
+                     },
+                     {
+                         header: "Tổ đội",
+                         data: "MA_DOIGCS"
+                     },
+                     {
+                         header: "Nhân viên GCS",
+                         data: "TEN_NVIEN_GCS"
+                     },
+                    {
+                        header: "Trạng thái",
+                        data: "STATUS",
+                        render: function (data) {
+                            if (data === "DTH") {
+                                return "<div class='label label-sm label-warning'>Đã thực hiện</div>";
+                            }
+                            if (data === "CPC") {
+                                return "<div class='label label-sm label-info'>Chưa phân công</div>";
+                            }
+                            if (data === "DPC") {
+                                return "<div class='label label-sm label-success'>Đã phân công</div>";
+                            }
+                            else {
+                                return "<div class='label label-sm label-success'></div>";
+                            }
+                        }
+                    },
+                     {
+                         'bSortable': false,
+                         header: "Tác vụ",
+                         className: "center",
+                         data: null
+                     }
+                ]
+            };
+
+            $(function () {
+                var temp = "01";
+                var gio = "0";
+                var d = new Date();
+                $("#Ky").val(temp);
+                $("#Gio").val(gio);
+                $("#Nam").val(d.getFullYear());
+            });
+            $(function () {
+                var d = new Date();
+                var m = d.getMonth() + 1;
+                $('#Thang option:eq(' + m + ')').prop('selected', true);
+            });
+            $("#btnGetData").on('click',
+               function () {
+                   $('#checkAll').prop('checked', false);
+                   $("#lblCheckBox").attr('class', 'btn btn-success');
+                   AutoDataTable();
+               });
+
+            
+            $(".grey .iCheck-helper").on('click', function (event) {
+                alert(1);
+                $('#checkAll').prop('checked', false);
+                $("#lblCheckBox").attr('class', 'btn btn-success');
+                $('#checkAll').iCheck('uncheck');
+            });
+            $("#btnXuatSo").on('click',
+               function () {
+                   if (getCheckedId() == "") { alert('Mời chọn sổ GCS'); return };
+                   var list = getCheckedId();
+                   document.getElementById("txtLichID").value = list;
+                   document.getElementById("frm").submit();
+               });
+
+            function getCheckedId() {
+                var checkboxes = document.getElementsByName('chkSO');
+                var listIDs = new Array();
+                for (var i = 0, n = checkboxes.length; i < n; i++) {
+                    if (checkboxes[i].checked) {
+                        listIDs.push(checkboxes[i].value);
+                    }
+                }
+                return listIDs;
+            }
+
+            function uncheckAll() {
+                alert(1);
+            }
+        })(jQuery);
+
+    </script>
+}
+
+

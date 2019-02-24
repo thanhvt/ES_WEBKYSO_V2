@@ -1,0 +1,185 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Danh sách cấu hình tham số";
+}
+
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Danh mục cấu hình tham số</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="control-label">
+                                        Loại tham số
+                                    </label>
+                                    <input type="text" placeholder="Loại tham số" id="LoaiThamSo" name=">" class="form-control">
+                                </div>
+                                <div class="col-md-3">
+                                    <label class="control-label">
+                                        Giá trị
+                                    </label>
+                                    <input type="text" placeholder="Giá trị" id="GiaTri" name="GiaTri" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <br />
+                            <button type="submit" class="btn btn-primary" value="Tìm kiếm" id="btnGetData">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- start: SOGCS TABLE PANEL -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    @ViewBag.Title
+                    @*<div class="panel-tools">
+                        <a href="@Url.Action("Create")" data-toggle="modal" data-target="#popupStaticModal" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                    </div>*@
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end: SOGCS TABLE PANEL -->
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        (function ($) {
+            "use strict";
+            window.TableConfig = [];
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                reloadFunc: function (d) {
+                    d.LoaiThamSo = $("#LoaiThamSo").val();
+                    d.GiaTri = $("#GiaTri").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" data-toggle="modal" data-target="#popupStaticModal" href="@Url.Action("Update", "ConfigInput", new { ConfigId = "ConfigIdParameter" })"><i class="fa fa-edit"></i></a>  ' +
+                                    '</div>';
+                                ret = ret.replace(/ConfigIdParameter/g, data.ConfigId);
+                                return ret;
+                            }
+                        }
+                    ]
+                },
+                columns: [
+                    {
+                        header: "Thứ tự",
+                        data: "ConfigId"
+                    },
+                     {
+                         header: "Loại tham số",
+                         data: "TypeInput"
+                     },
+                    {
+                        header: "Mô tả",
+                        data: "Desctiption"
+                    },
+                    {
+                        header: "Giá trị",
+                        data: "Value"
+                    },
+                    {
+                        'bSortable': false,
+                        header: "Tác vụ",
+                        className: "center",
+                        data: null
+                    }
+                ],
+                func: function (grid) {
+                    window.TableGenericConfigInputGrid = grid;
+                    $("#TableGeneric")
+                        .on('click',
+                            '.Delete',
+                            function (e) {
+                                e.preventDefault();
+
+                                var thisTrData = $(this).attr('data-id');
+
+
+                                if (confirm("Bạn có chắc chắn muốn xóa ?")) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        cache: false,
+                                        async: true,
+                                        url: "@Html.Raw(Url.Action("Delete"))",
+                                        dataType: 'json',
+                                        data: JSON.stringify({ MaDoi: thisTrData }),
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (result) {
+                                            if (result.success === true) {
+                                                alert(result.message);
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+
+                                        },
+                                        complete: function (result) {
+                                            grid.ajax.reload();
+                                        }
+                                    });
+                                }
+
+                            });
+                }
+            };
+            $("#btnGetData").on('click',
+                function () {
+                    AutoDataTable();
+                });
+        })(jQuery);
+    </script>
+}
+
+

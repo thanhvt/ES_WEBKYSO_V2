@@ -1,0 +1,253 @@
+﻿
+@{
+    ViewBag.Title = "Cấu hình ký bảng kê";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Cấu hình ký bảng kê </span></h3>
+            </div>
+        </div>
+    </div>
+
+    @*thông báo*@ 
+    <div class="col-sm-12" align="left">
+        @Html.ValidationSummary()
+        @if (TempData["Error"] != null)
+            {
+            @*<div class="alert alert-danger">
+                    <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+                </div>*@
+            <div class="alert alert-danger">
+                <button data-dismiss="alert" class="close">
+                    ×
+                </button>
+                <i class="fa fa-times-circle"></i>
+                <strong>Error!</strong> @TempData["Error"].ToString()
+            </div>
+        }
+        @if (TempData["Success"] != null)
+            {
+            @*<div class="alert alert-success">
+                    <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+                </div>*@
+            <div class="alert alert-success">
+                <button data-dismiss="alert" class="close">
+                    ×
+                </button>
+                <i class="fa fa-check-circle"></i>
+                <strong>Success!</strong> @TempData["Success"].ToString()
+            </div>
+        }
+    </div>
+
+
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    Tìm kiếm
+                    <i class="fa fa-search text-right"></i>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <fieldset>
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <label class="control-label">
+                                                Đơn vị
+                                            </label>
+                                            <input type="text" placeholder="Đơn vị" id="DonVi" name="DonVi" class="form-control" value="@ViewBag.MA_DVIQLY" disabled="disabled">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label class="control-label">
+                                                Loại bảng kê
+                                            </label>
+                                            <select id="LoaiBangKe" name="LoaiBangKe" class="form-control">
+                                                <option value="">--- Chọn bảng kê ---</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <button type="submit" class="btn btn-primary" id="btnGetData" style="margin-top:25px;">
+                                                <i class="fa fa-search"></i>
+                                                Tìm kiếm
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="clip-list-2"></i>
+                    Danh sách ký bảng kê
+                    <div class="panel-tools">
+                        <a href="@Url.Action("Create")" data-toggle="modal" data-target="#popupStaticModal" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-collapse expand"></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+<script type="text/javascript">
+
+   
+    $(function () {
+        $('.form-control :input:first').focus();
+        //$('.form-control :input').focus();
+    });
+
+    // lấy toàn bộ loại bảng kê get vào listbox
+    $(document).ready(function () {
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("GetAllLoaiBangKe")',
+            dataType: 'json',
+            data: {},
+            success: function (tous) {
+                $("#LoaiBangKe").append(tous);
+            },
+            error: function (ex) {
+                alert('Có lỗi xảy ra trong quá trình tải dữ liệu: ' + ex);
+            }
+        });
+        return false;
+    });
+
+
+    //đổ dự liệu vào data-table có chức năng sửa xóa
+    (function ($) {
+        "use strict";
+        window.TableConfig = [];
+        window.TableConfig[0] = {
+            id: "TableGeneric",
+            url: "@Url.Action("GetJson")",
+            reloadFunc: function (d) {
+                d.MaBangKe = $("#LoaiBangKe").val();
+                d.MaDonVi = $("#DonVi").val();
+        },
+        AddOn: {
+            "columnDefs": [
+                {
+                    "targets": -1,
+                    "data": null,
+                    "render": function (data, type, full) {
+                        var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" data-toggle="modal" data-target="#popupStaticModal" data-original-title="Sửa" href="@Url.Action("Update", "CauHinhKyBangKe", new { ID = "IDParameter" })"><i class="fa fa-edit"></i> Sửa</a>  ' +
+                            '<a class="btn btn-xs btn-bricky tooltips Delete" data-id="IDParameter" href="#"><i class="fa fa-trash-o"></i> Xóa</a></div>';
+                        ret = ret.replace(/IDParameter/g, data.ID);
+                        return ret;
+                    }
+                }
+            ]
+        },
+            columns: [
+            {
+                header: "Mã đơn vị",
+                'bSortable': false,
+                className: "center",
+                data: "MA_DVIQLY"
+            },
+            
+             {
+                 header: "Mã bảng kê",
+                 'bSortable': false,
+                 className: "center",
+                 data: "MA_LOAIBANGKE"
+             },
+             {
+                 header: "Tên bảng kê",
+                 'bSortable': false,
+                 className: "center",
+                 data: "Ten_LoaiBangKe"
+             },
+            {
+                header: "Ghi chú",
+                'bSortable': false,
+                className: "center",
+                data: "GHI_CHU"
+            },
+            {
+                'bSortable': false,
+                header: "Tác vụ",
+                className: "center",
+                data: null
+            }
+        ],
+        func: function (grid) {
+            window.TableGenericCAUHINHGrid = grid;
+            $("#TableGeneric")
+                .on('click',
+                    '.Delete',
+                    function (e) {
+                        e.preventDefault();
+                        var thisTrData = $(this).attr('data-id');
+
+                        if (confirm("Bạn có chắc chắn muốn xóa ?")) {
+                            $.ajax({
+                                type: 'POST',
+                                cache: false,
+                                async: true,
+                                url: "@Url.Action("Delete")",
+                                dataType: 'json',
+                                data: JSON.stringify({ ID: thisTrData }),
+                            contentType: "application/json; charset=utf-8",
+                            success: function (result) {
+                                if (result.success == true) {
+                                    alert(result.message);
+                                }
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+
+                            },
+                            complete: function (result) {
+                                grid.ajax.reload();
+                            }
+                        });
+                    }
+
+            });
+    }
+    };
+    $("#btnGetData").on('click',
+        function () {
+            AutoDataTable();
+        });
+    })(jQuery);
+
+
+</script>
+   
+
+    }

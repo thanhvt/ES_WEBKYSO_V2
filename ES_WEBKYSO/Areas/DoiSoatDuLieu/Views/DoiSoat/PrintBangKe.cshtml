@@ -1,0 +1,94 @@
+﻿@model ES_WEBKYSO.Models.GCS_CHISO_HHU
+
+<div style="margin: -15px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+
+    @*@using (Html.BeginForm("PrintBangKe", "DoiSoat", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+    {*@
+
+        <div class="modal-body">
+            @*<form>*@
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Bảng kê</label>
+                            <select id="LoaiBangKe" class="form-control search-select">
+                                <option value="">&nbsp;</option>
+                                <option value="01">01. Danh sách khách hàng không chụp ảnh</option>
+                                <option value="02">02. Danh sách khách hàng không được đối soát</option>
+                                <option value="03">03. Danh sách khách hàng đã đối soát</option>
+                                <option value="04">04. Danh sách khách hàng đối soát đạt</option>
+                                <option value="05">05. Danh sách khách hàng đối soát không đạt</option>
+                                <option value="06">06. Danh sách công tơ có sản lượng bất thường</option>
+                                <option value="07">07. Danh sách công tơ điện tử</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label">Người đối soát</label>
+                            <input class="form-control" id="NguoiDoiSoat" placeholder="Nhập tên người đối soát" type="text" name="title">
+                        </div>
+                    </div>
+                </div>
+            @*</form>*@
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12" align="left">
+                @Html.ValidationSummary()
+            </div>
+        </div>
+                <div class="modal-footer">
+                    @*<button class="btn btn-primary" id="PrintBangKe" href="/ReportViewer/DoiSoatReport.aspx" target="_blank">
+                        &nbsp;
+                        <i class="fa fa-print"></i> In bảng kê
+                    </button>*@
+                    <a href="/ReportViewer/DoiSoatReport.aspx?MaBangKe='+NguoiDoiSoat+'" target="_blank">MDN</a>
+                    
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="PrintBangKeClose">Đóng</button>
+                </div>
+    @*}*@
+</div>
+@*<div id="#popupStaticModal" class="modal fade" tabindex="-1" data-width="760" style="display: none;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+        </button>
+        <h4 class="modal-title">Event Management</h4>
+    </div>
+    
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-light-grey">
+            Close
+        </button>
+        <button type="button" class="btn btn-danger remove-event no-display">
+            <i class='fa fa-trash-o'></i> Delete Event
+        </button>
+        <button type='submit' class='btn btn-success save-event'>
+            <i class='fa fa-check'></i> Save
+        </button>
+    </div>
+</div>*@
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+    });
+    $(function () {
+        $(".focus :input").focus();
+    });
+    var runSelect2 = function () {
+        $(".search-select").select2({
+            allowClear: true
+        });
+    };
+    runSelect2();
+</script>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}

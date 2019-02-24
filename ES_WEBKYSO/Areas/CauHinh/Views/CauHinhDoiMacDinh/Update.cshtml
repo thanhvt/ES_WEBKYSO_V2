@@ -1,0 +1,43 @@
+﻿@model ES_WEBKYSO.Models.CFG_DOIGCS_NVIEN
+
+<div style="margin: -15px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+    @using (Html.BeginForm("Update_sm", "CauHinhDoiMacDinh", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+    {
+        <div class="modal-body">
+            @Html.AntiForgeryToken()
+            @*@Html.ValidationSummary()*@
+            <div class="form-group">
+                @Html.HiddenFor(x => x.ID)
+                @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.MA_DOIGCS, new { dropKey = "MA_DOIGCS", label = "--- Chọn đội GCS ---", htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(x => x.USERID, new { dropKey = "USERID", label = "--- Chọn nhân viên ---", htmlAttributes = new { @class = "form-control" } })
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12" align="left">
+                    @*@Html.ValidationSummary()*@
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="NVGCS_MacDinhUpdate">Cập nhật</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="NVGCS_MacDinhClose">Đóng</button>
+        </div>
+    }
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+    });
+    $('#popupStaticModal').on('hidden.bs.modal', function () {
+        $("#popupStaticModal").html('<div class="modal-body"><div></div></div>');
+    });
+
+</script>

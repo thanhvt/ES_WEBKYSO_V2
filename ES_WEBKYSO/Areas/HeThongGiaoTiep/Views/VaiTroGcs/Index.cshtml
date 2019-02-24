@@ -1,0 +1,182 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Hệ thống giao tiếp - Vai trò GCS";
+}
+@section Styles{
+    @Styles.Render("~/css/datatables")
+    <style type="text/css">
+        a.current-page {
+            color: #23527C !important;
+            background-color: #EEEEEE !important;
+        }
+
+        #linkTemplateExcel {
+            display: none;
+        }
+    </style>
+    <link href="~/Content/themes/ClipOne/plugins/dropzone/downloads/css/dropzone.css" rel="stylesheet" />
+}
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span class="page-header-text">Vai trò GCS</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    Nhận sổ phân công
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="sample-table-1">
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mã đơn vị quản lý</th>
+                                <th>Mã sổ</th>
+                                <th>Tên sổ</th>
+                                <th>Số kỳ</th>
+                                <th>Tình trạng</th>
+                                <th>Loại sổ</th>
+                                <th>Ngày ghi</th>
+                                <th>Hình thức</th>
+                                <th class="center">Tác vụ</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>PD1100</td>
+                                <td>SPHU3KY</td>
+                                <td>CC-141</td>
+                                <td>1</td>
+                                <td>Có</td>
+                                <td>KH</td>
+                                <td>8</td>
+                                <td>MDMS</td>
+                                <td class="center">
+                                    <div>
+                                        <a class="btn btn-xs btn-teal tooltips Edit" href="">
+                                            <i class="fa fa-edit"></i> Cập nhật
+                                        </a>
+                                        <a class="btn btn-xs btn-bricky tooltips Delete" data-id="1" href="#"><i class="fa fa-trash-o"></i> Xóa</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>PD2100</td>
+                                <td>D018110</td>
+                                <td>CC-232</td>
+                                <td>1</td>
+                                <td>Không</td>
+                                <td>KH</td>
+                                <td>18</td>
+                                <td>MDMS</td>
+                                <td class="center">
+                                    <div>
+                                        <a class="btn btn-xs btn-teal tooltips Edit" href="#">
+                                            <i class="fa fa-edit"></i> Cập nhật
+                                        </a>
+                                        <a class="btn btn-xs btn-bricky tooltips Delete" data-id="1" href="#"><i class="fa fa-trash-o"></i> Xóa</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>PD1100</td>
+                                <td>D018135</td>
+                                <td>CC-308</td>
+                                <td>1</td>
+                                <td>Có</td>
+                                <td>KH</td>
+                                <td>28</td>
+                                <td>MDMS</td>
+                                <td class="center">
+                                    <div>
+                                        <a class="btn btn-xs btn-teal tooltips Edit" href="#">
+                                            <i class="fa fa-edit"></i> Cập nhật
+                                        </a>
+                                        <a class="btn btn-xs btn-bricky tooltips Delete" data-id="1" href="#"><i class="fa fa-trash-o"></i> Xóa</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+               
+            </div>
+            <div class="form-group">
+                <div class="col-md-12" style="padding-bottom: 25px;">
+                    <input class="btn btn-primary" type="submit" value="Nhận File" id="btnGetData">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- start: UPLOAD FILE PANEL -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-apple"></i>
+                            Upload dữ liệu cho <span id="upload-plant-name"></span>
+                            <div class="panel-tools">
+                                <a href="#" id="linkTemplateExcel" class="btn btn-xs tooltips" data-original-title="Tải mẫu dữ liệu">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                                <a class="btn btn-xs btn-link panel-collapse collapses"></a>
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p>
+                                        Các file dữ liệu được lựa chọn khi gửi lên server sẽ được kiểm tra khả năng trùng lặp dựa trên trường "năm" của mỗi dòng dữ liệu.
+                                        <br />
+                                        Dữ liệu mới bị trùng lặp sẽ được ghi đè lên dữ liệu cũ. Các dữ liệu còn lại sẽ được thêm mới.
+                                        <br />
+                                        Tại mỗi thời điểm chỉ có thể upload một file duy nhất. Khi chọn nhiều file. Dữ liệu sẽ phải upload lần lượt lên server.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row">
+                                <div class="col-md-12">
+                                    <form role="form" class="form-horizontal">
+                                        <div class="col-md-3 form-group">
+                                            <select class="form-control search-select">
+                                                <option value="1" selected="selected">Phú Mỹ 1</option>
+                                                <option value="2">Phú Mỹ 2.1</option>
+                                                <option value="3">Phú Mỹ 2.2</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> -->
+
+                            <div class="row">
+                                <form action="#" class="dropzone" id="file-dropzone">
+                                    <div class="dropzone-previews"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end: UPLOAD FILE PANEL -->
+                </div>
+            </div>
+
+            @*}*@
+            <!-- end: PLANT TABLE PANEL -->
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/themes/ClipOne/plugins/dropzone/downloads/dropzone.js"></script>

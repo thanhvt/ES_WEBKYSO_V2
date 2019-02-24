@@ -1,0 +1,707 @@
+﻿@model ES_WEBKYSO.Models.GCS_LICHGCS
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Nhân viên đối soát dữ liệu";
+}
+<style>
+    #TableGeneric td {
+        padding: 0;
+    }
+
+        #TableGeneric td label {
+            display: block;
+            padding: 0;
+            padding-top: 13em;
+            padding-bottom: 13em;
+        }
+</style>
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3><span style="color: teal">@ViewBag.Title</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Đơn vị
+                                    </label>
+                                    <input type="text" placeholder="Đơn vị" id="MaDonVi" name="MaDonVi" class="form-control"
+                                           value="@Html.Raw(ViewBag.MaDviQly)" disabled="">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">Mã sổ</label>
+                                    <label style="color: red">(*)</label>
+                                    @Html.DropDownList("ID", (IEnumerable<SelectListItem>)ViewBag.ID, null,
+                                    new { @multiple = "multiple", @class = "SlectBox", @style = "width: 140px" })
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="control-label">
+                                        Kỳ GCS
+                                    </label>
+                                    <select name="Ky" id="Ky" class="form-control" value="1" required>
+                                        <option value="01" selected="">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Tháng
+                                    </label>
+                                    <select name="Thang" id="Thang" class="form-control">
+                                        <option value="01">Tháng 1</option>
+                                        <option value="02">Tháng 2</option>
+                                        <option value="03">Tháng 3</option>
+                                        <option value="04">Tháng 4</option>
+                                        <option value="05">Tháng 5</option>
+                                        <option value="06">Tháng 6</option>
+                                        <option value="07">Tháng 7</option>
+                                        <option value="08">Tháng 8</option>
+                                        <option value="09">Tháng 9</option>
+                                        <option value="10">Tháng 10</option>
+                                        <option value="11">Tháng 11</option>
+                                        <option value="12">Tháng 12</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="control-label">
+                                        Năm
+                                    </label>
+                                    <input type="text" placeholder="Năm" id="Nam" name="Nam" class="form-control" required>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Lọc công tơ
+                                    </label>
+                                    <select name="LocCongTo" id="LocCongTo" class="form-control search-select" required>
+                                        <option value="" selected="">01. Tất cả</option>
+                                        <option value="CHECK">02. Công tơ đạt</option>
+                                        <option value="UNCHECK">03. Công tơ không đạt</option>
+                                        <option value="CHUA_DOI_SOAT">04. Công tơ chưa đối soát</option>
+                                        <option value="CTO_DTU">05. Công tơ điện tử</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label" style="padding-top: 15px"> </label>
+                                    <br />
+                                    <button type="submit" class="btn btn-primary" value="Tìm kiếm" id="btnGetData">
+                                        <i class="fa fa-search"></i>
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                @*<div class="panel-heading">
+                    <i class="fa fa-file-text"></i>
+                    @ViewBag.Title
+                    </div>*@
+                <div class="panel-heading">
+                    <i class="fa fa-file-text"></i>
+                    @ViewBag.Title
+                    <div class="panel-tools">
+
+                        @*<button class="btn btn-xs tooltips" data-original-title="In bảng kê" id="btnPrintBangKe1" disabled="disabled">
+                                <i class="fa fa-print" style="font-size: 20px"></i>
+                            </button>
+                            &nbsp;*@
+                        <button type="submit" class="btn btn-primary btn-xs" id="btnXuatGhiLai" disabled="disabled">
+                            <i class="fa fa-retweet"></i>
+                            Xuất ghi lại
+                        </button>
+                        &nbsp;
+                        <button type="submit" class="btn btn-primary btn-xs" id="btnTuDongDoiSoat" disabled="disabled">
+                            <i class="fa fa-check"></i>
+                            Tự động đối soát
+                        </button>
+                    </div>
+
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-12" align="center" style="padding-bottom: 20px">
+                        <label class="control-label">Đã đối soát :</label>
+                        <label class="badge badge-primary" id="ttrcd">0</label>
+                        &nbsp;
+                        <label class="control-label">Đối soát đạt :</label>
+                        <label class="badge badge-success" id="dsd">0</label>
+                        &nbsp;
+                        <label class="control-label">Đối soát không đạt :</label>
+                        <label class="badge badge-danger" id="dskd">0</label>
+                        &nbsp;
+                        <label class="control-label">Công tơ điện tử :</label>
+                        <label class="badge badge-warning" id="ctdt">0</label>
+                        &nbsp;
+                    </div>
+                    <p></p>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="control-label">Bảng kê</label>
+                                <select id="LoaiBangKe" class="form-control search-select">
+                                    @*<option value="">&nbsp;</option>*@
+                                    <option value="01" selected="selected">01. Danh sách khách hàng không chụp ảnh</option>
+                                    <option value="02">02. Danh sách khách hàng không được đối soát</option>
+                                    <option value="03">03. Danh sách khách hàng đã đối soát</option>
+                                    <option value="04">04. Danh sách khách hàng đối soát đạt</option>
+                                    <option value="05">05. Danh sách khách hàng đối soát không đạt</option>
+                                    @*<option value="06">06. Danh sách công tơ có sản lượng bất thường</option>
+                                    <option value="07">07. Danh sách công tơ điện tử</option>*@
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="control-label">Người đối soát</label>
+                                <label style="color: red">(*)</label>
+                                <input class="form-control" id="NguoiDoiSoat" placeholder="Nhập tên người đối soát" type="text" name="title" required>
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top: 30px">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-xs" id="btnPrintBangKe" disabled="disabled">
+                                    <i class="fa fa-print"></i>
+                                    In bảng kê
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    <link href="~/Content/themes/ClipOne/css/dropdownliststyle.css" rel="stylesheet" />
+    <script src="~/Content/themes/ClipOne/js/jquery.sumoselect.js"></script>
+
+    <link href="~/Content/themes/ClipOne/css/multiple-select.css" rel="stylesheet" />
+    <script src="~/Content/themes/ClipOne/js/multiple-select.js"></script>
+
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+
+        var currentRow = null;
+        var currentColumn = null;
+
+        //Selected dropdownlist
+        $(document).ready(function () {
+            window.asd = $('.SlectBox').SumoSelect({ csvDispCount: 100 });
+        });
+        $('.SlectBox').SumoSelect({ selectAll: true });
+
+        //Hide btnPrintBangKe và btnTuDongDoiSoat when click btnSearch
+        //document.getElementById("btnGetData").addEventListener("click",
+        //    function (e) {
+        //        document.getElementById("btnPrintBangKe").disabled = false;
+        //        document.getElementById("btnXuatGhiLai").disabled = false;
+        //        document.getElementById("btnTuDongDoiSoat").disabled = false;
+        //    },
+        //    false);
+
+        //$(document).keypress(function (e) {
+        //    var table = document.getElementById("TableGeneric");
+        //    if (table != null) {
+        //        if (e.which == 97) {
+        //            for (var j = 1; j < 3; j++) {
+        //                debugger;
+        //                var data3 = $(this).find("td:eq(2) input[type='checkbox']").attr('id');
+        //                var data4 = $(this).find("td:eq(3) input[type='checkbox']").attr('id');
+        //                var data5 = $(this).find("td:eq(4) input[type='checkbox']").attr('id');
+
+        //                var a1 = $(this).find("td:eq(2) input[type='checkbox']").attr('checked');
+        //                var a2 = $(this).find("td:eq(3) input[type='checkbox']").attr('checked');
+        //                var a3 = $(this).find("td:eq(4) input[type='checkbox']").attr('checked');
+        //                debugger;
+
+        //                if (a1 === 'checked') {
+        //                    document.getElementById(data3).checked = false;
+        //                    document.getElementById(data5).checked = false;
+        //                    document.getElementById(data4).checked = true;
+
+        //                    var key = data4.substr(0, 1);
+        //                    savedoisoat(data4.substr(1), key);
+
+        //                } else if (a2 === 'checked') {
+
+        //                    document.getElementById(data3).checked = false;
+        //                    document.getElementById(data4).checked = false;
+        //                    document.getElementById(data5).checked = true;
+
+        //                    var key1 = data5.substr(0, 1);
+        //                    savedoisoat(data5.substr(1), key1);
+        //                }
+        //                else if (a3 === 'checked') {
+
+        //                    document.getElementById(data5).checked = false;
+        //                    document.getElementById(data4).checked = false;
+        //                    document.getElementById(data3).checked = true;
+
+        //                    var key2 = data3.substr(0, 1);
+        //                    savedoisoat(data3.substr(1), key2);
+
+        //                } else {
+        //                    document.getElementById(data3).checked = true;
+        //                }
+        //            }
+
+        //        }
+        //        debugger;
+        //        if (e.which == 13) {
+
+        //            var parent = $(this).parent();
+
+        //            $(this).parent().next();
+        //            $(this).closest('tr').next();
+        //            var dataa1 = $(this)._findNextTab("td:eq(2) input[type='checkbox']").attr('id');
+        //            $(this).closest('td').next('td').find('input:text').show();
+        //            alert(dataa1);
+        //        }
+        //    }
+        //});
+
+        //$(function () {
+        //    //$('#btnPrintBangKe').unbind('click');
+        //    $('#btnPrintBangKe').on('click',
+        //        function () {
+        //            //var maso = $("#ID").val();
+        //            var txtNds = $("#NguoiDoiSoat").val();
+        //            if (txtNds === "") { alert('Vui lòng nhập họ tên người đối soát!'); return; }
+
+        //            window.open("/ReportViewer/DoiSoatReport.aspx?MaDonVi=" + $("#MaDonVi").val() +
+        //                "&MaSo=" + $("#ID").val() +
+        //                "&Ky=" + $("#Ky").val() +
+        //                "&Thang=" + $("#Thang").val() +
+        //                "&Nam=" + $("#Nam").val() +
+        //                "&LoaiBangKe=" + $("#LoaiBangKe").val() +
+        //                "&NguoiDoiSoat=" + $("#NguoiDoiSoat").val(), "target", "_blank");
+        //        });
+        //});
+
+        $("#btnPrintBangKe").click(function () {
+            var dataToPost = {};
+            var txtNds = $("#NguoiDoiSoat").val();
+            if (txtNds === "") { alert('Vui lòng nhập họ tên người đối soát!'); return; }
+            dataToPost.MaDonVi = $("#MaDonVi").val();
+            dataToPost.MaSos = $("#ID").val();
+            dataToPost.Ky = $("#Ky").val();
+            dataToPost.Thang = $("#Thang").val();
+            dataToPost.Nam = $("#Nam").val();
+            dataToPost.LoaiBangKe = $("#LoaiBangKe").val();
+            dataToPost.NguoiDoiSoat = $("#NguoiDoiSoat").val();
+            $.ajax({
+                type: "POST",
+                url: "/DoiSoat/PrintBangKe",
+                dataType: 'json',
+                data: {
+                    madv: dataToPost.MaDonVi,
+                    maso: dataToPost.MaSos,
+                    ky: dataToPost.Ky,
+                    thang: dataToPost.Thang,
+                    nam: dataToPost.Nam,
+                    loaibk: dataToPost.LoaiBangKe,
+                    nguoids: dataToPost.NguoiDoiSoat
+                },
+                success: function (data) {
+                    if (data.success == true) {
+                        window.open("/ReportViewer/DoiSoatReport.aspx?MaDonVi=" + $("#MaDonVi").val() +
+                        "&MaSo=" + $("#ID").val() +
+                        "&Ky=" + $("#Ky").val() +
+                        "&Thang=" + $("#Thang").val() +
+                        "&Nam=" + $("#Nam").val() +
+                        "&LoaiBangKe=" + $("#LoaiBangKe").val() +
+                        "&NguoiDoiSoat=" + $("#NguoiDoiSoat").val(), "target", "_blank");
+                    } else {
+                        alert(data.message);
+                    }
+                },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
+                }
+            });
+        });
+
+
+        $(function () {
+            var runSelect2 = function () {
+                $(".search-select").select2({
+                    allowClear: true
+                });
+            };
+            runSelect2();
+        });
+        (function ($) {
+            "use strict";
+
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MaDonVi").val();
+                    d.MaSos = $("#ID").val();
+                    d.Ky = $("#Ky").val();
+                    d.Thang = $("#Thang").val();
+                    d.Nam = $("#Nam").val();
+                    d.LocCongTo = $("#LocCongTo").val();
+                },
+                // Hàm xử lý grids sau cùng, biến trả về từ json
+                ajaxComplete: function (respon) {
+                    $("#ttrcd").html(respon.responseJSON.DaDoiSoat + " / " + respon.responseJSON.recordsTotal);
+                    $("#dsd").html(respon.responseJSON.DoiSoatDat);
+                    $("#dskd").html(respon.responseJSON.DoiSoatKhongDat);
+                    $("#ctdt").html(respon.responseJSON.CongToDienTu);
+                },
+
+                columns: [
+                    {
+                        "targets": -1,
+                        "data": null,
+                        header: "Thông tin",
+                        "width": "30%",
+                        "render": function (data, type, row, meta) {
+                            return '<div style="padding-left: 20px; padding-bottom: 160px; font-size: 16px"><tr>' +
+                                '<td>Tên khách hàng: ' + data.TEN_KHANG + '</td></br>' +
+                                '<td>Địa chỉ: ' + data.DIA_CHI + '</td></br>' +
+                                '<td>Tình trạng mới: ' + data.TTR_MOI + '</td></br>' +
+                                '<td>Loại bộ chỉ số: ' + data.LOAI_BCS + '</td></br>' +
+                                '<td>Mã trạm: ' + data.MA_TRAM + '</td></br>' +
+                                '<td>Mã khách hàng: ' + data.MA_KHANG + '</td></br>' +
+                                '<td>Số công tơ: ' + data.SERY_CTO + '</td></br>' +
+                                '<td>Chỉ số cũ: ' + data.CS_CU + '</td></br>' +
+                                '<td>Chỉ số mới: ' + data.CS_MOI + '</td></br>' +
+                                '<td>Sản lượng mới: ' + data.SL_MOI + '</td></br>' +
+                                '<td>ĐNTT tháng liền kề: ' + data.SLUONG_1 + ' / ' + data.SLUONG_2 + ' / ' + data.SLUONG_3 + '</td></br>' +
+                                '</tr></div>' +
+                                '<input style="position:absolute;z-index=-1;opacity:0;" key="' + data.ID + '" row="' + meta.row
+                                + '" type="text"/>';
+                        }
+                    },
+                    {
+                        header: "Hình ảnh",
+                        data: "ANH_GCS",
+                        "width": "15%",
+                        "render": function (data) {
+                            return '<img src="' + data + '" style="width:100%">';
+                        }
+                    },
+                    {
+                        header: "Đạt",
+                        "data": null,
+                        "width": "5%",
+                        "render": function (data) {
+                            if (data.STR_CHECK_DSOAT === 'CHECK') {
+                                return '<label for="a' +
+                                    data.ID +
+                                    '"><input actor id="a' +
+                                    data.ID +
+                                    '" type="checkbox" checked></label>';
+                            } else {
+                                return '<label for="a' +
+                                    data.ID +
+                                    '"><input actor id="a' +
+                                    data.ID +
+                                    '" type="checkbox" margin="0" display="block"></label>';
+                            }
+                        }
+                    },
+                    {
+                        header: "Không đạt",
+                        "data": null,
+                        "width": "5%",
+                        "render": function (data) {
+                            if (data.STR_CHECK_DSOAT === 'UNCHECK') {
+                                return '<label for="b' +
+                                    data.ID +
+                                    '"><input actor id="b' +
+                                    data.ID +
+                                    '" type="checkbox" checked></label>';
+                            } else {
+                                return '<label for="b' +
+                                    data.ID +
+                                    '"><input actor id="b' +
+                                    data.ID +
+                                    '" type="checkbox" margin="0" display="block"></label>';
+                            }
+                        }
+                    },
+                    {
+                        header: "Công tơ điện tử",
+                        "data": null,
+                        "width": "5%",
+                        "render": function (data) {
+                            if (data.STR_CHECK_DSOAT === 'CTO_DTU') {
+                                return '<label for="c' +
+                                    data.ID +
+                                    '"><input actor id="c' +
+                                    data.ID +
+                                    '" type="checkbox" checked></label>';
+                            } else {
+                                return '<label for="c' +
+                                    data.ID +
+                                    '"><input actor id="c' +
+                                    data.ID +
+                                    '" type="checkbox" margin="0" display="block"/></label>';
+                            }
+                        }
+                    }
+                ]
+            };
+
+            $(function () {
+                var temp = "01";
+                var d = new Date();
+                $("#Ky").val(temp);
+                $("#Nam").val(d.getFullYear());
+            });
+            $(function () {
+                var d = new Date();
+                var m = d.getMonth();
+                $('#Thang option:eq(' + m + ')').prop('selected', true);
+            });
+            $("#btnGetData").on('click',
+                function () {
+                    var maso = $("#ID").val();
+                    if (maso === null) {
+                        alert('Vui lòng chọn mã sổ GCS!');
+                        return;
+                    } else {
+                        AutoDataTable();
+                        document.getElementById("btnPrintBangKe").disabled = false;
+                        document.getElementById("btnXuatGhiLai").disabled = false;
+                        document.getElementById("btnTuDongDoiSoat").disabled = false;
+                    };
+                });
+
+            // Click checkbox này ẩn checkbox khác
+            $(document).on('change',
+                '[actor]',
+                function () {
+                    //console.log(989090);
+                    var id = this.id;
+                    var key = id.substr(0, 1);
+                    var arrKey = ['a', 'b', 'c'];
+                    if (this.checked) {
+                        arrKey.forEach(function (k) {
+                            if (k !== key) {
+                                $('#' + k + id.substr(1)).prop('checked', false);
+                            }
+                        });
+                        savedoisoat(id.substr(1), key);
+                    } else {
+                        savedoisoat(id.substr(1), 'cbk');
+                    }
+                });
+
+            $("#btnXuatGhiLai").click(function () {
+                var dataToPost = {};
+                var maso = $("#ID").val();
+                if (maso === null) { alert('Vui lòng chọn mã sổ GCS!'); return; }
+                dataToPost.MaDonVi = $("#MaDonVi").val();
+                dataToPost.maSo = $("#ID").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/DoiSoat/XuatGhiLai",
+                    dataType: 'json',
+                    data: {
+                        madv: dataToPost.MaDonVi,
+                        maso: dataToPost.maSo,
+                        ky: dataToPost.Ky,
+                        thang: dataToPost.Thang,
+                        nam: dataToPost.Nam
+                    },
+                    success: function (data) {
+                        if (data.success === true) {
+                            alert(data.message);
+                            //document.getElementById("btnGetData").click();
+                        } else {
+                            alert(data.message);
+                        }
+                    },
+                    error: function (ex) {
+                        alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
+                    }
+                });
+            });
+
+            $("#btnTuDongDoiSoat").click(function () {
+                var dataToPost = {};
+                var maso = $("#ID").val();
+                if (maso === null) { alert('Vui lòng chọn mã sổ GCS!'); return; }
+                dataToPost.MaDonVi = $("#MaDonVi").val();
+                dataToPost.MaSo = $("#ID").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                dataToPost.LocCongTo = $("#LocCongTo").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/DoiSoat/DoiSoatTuDong",
+                    dataType: 'json',
+                    data: {
+                        madv: dataToPost.MaDonVi,
+                        maso: dataToPost.MaSo,
+                        ky: dataToPost.Ky,
+                        thang: dataToPost.Thang,
+                        nam: dataToPost.Nam,
+                        loccto: dataToPost.LocCongTo
+                    },
+                    success: function (data) {
+                        if (data.success == true) {
+                            alert(data.message);
+                            document.getElementById("btnGetData").click();
+                        } else {
+                            alert(data.message);
+                        }
+                    },
+                    error: function (ex) {
+                        alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
+                    }
+                });
+            });
+
+        })(jQuery);
+
+        //Delete confirm
+        @*function xoaXacNhan(Id) {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("XoaXacNhan")',
+                dataType: 'json',
+                data: { id: Id },
+                success: function (data) {
+                    if (data.success == true) {
+                        alert(data.message);
+                        document.getElementById("btnGetData").click();
+                    }
+                },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
+                }
+            });
+        }*@
+
+        function savedoisoat(id, actor) {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("SaveDoiSoat")',
+                dataType: 'json',
+                data: { idr: id, idc: actor },
+                success: function (data) {
+                    if (data.success === false) {
+                        alert(data.message);
+                        AutoDataTable();
+                    }
+                },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình lưu dữ liệu: ' + ex);
+                }
+            });
+        }
+        @*function printBangKe(ID) {
+            $.ajax({
+                type: 'GET',
+                url: '@Url.Action("SaveDoiSoat")',
+                dataType: 'json',
+                data: { id: ID, ids: actor },
+                success: function (data) {
+                    if (data.success == true) {
+                        document.getElementById("btnGetData").click();
+                    }
+                },
+                error: function (ex) {
+                    alert('Có lỗi xảy ra trong quá trình lưu dữ liệu: ' + ex);
+                }
+            });
+        }*@
+        //Next paginate
+        $(document).bind('keyup',
+            function (e) {
+                e.preventDefault();
+                if (e.keyCode !== 13) return;
+
+                if (currentRow == null) {
+                    currentRow = 0;
+                } else {
+                    currentRow++;
+                }
+                currentColumn = null;
+                if ($("input[row='" + currentRow + "']").length == 0) {
+                    currentRow = null;
+                    $("#TableGeneric_paginate [class='next']").not("[class='disabled']").find("a").click();
+                } else {
+                    $("input[row='" + currentRow + "']").focus();
+                }
+            });
+        // Keyup Space checked
+        $(document).on('keyup',
+            'input[row]',
+            function (e) {
+                e.preventDefault();
+
+                if (e.keyCode !== 32) return;
+
+                var thisColumn = null;
+                if (currentColumn == null || currentColumn === 'c') {
+                    thisColumn = 'a';
+                } else if (currentColumn === 'a') {
+                    thisColumn = 'b';
+                } else if (currentColumn === 'b') {
+                    thisColumn = 'c';
+                }
+                $("#" + thisColumn + $("input[row='" + currentRow + "']").attr('key')).prop('checked', true)
+                    .trigger("change");
+                currentColumn = thisColumn;
+            });
+        // Keyup Enter
+        $(document).on('click',
+            '#TableGeneric tr',
+            function (e) {
+                var findKey = $(this).find("td input[key]");
+                if (currentRow !== findKey.attr("row")) {
+                    currentRow = findKey.attr("row");
+                    $("input[row='" + currentRow + "']").focus();
+                }
+            });
+
+    </script>
+}

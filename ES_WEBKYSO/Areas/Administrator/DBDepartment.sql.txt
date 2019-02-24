@@ -1,0 +1,59 @@
+﻿/****** Object:  Table [dbo].[UserProfile]    Script Date: 07/27/2016 08:48:22 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER TABLE [dbo].[UserProfile] ADD	[DepartmentId] [int] 
+
+GO
+
+/****** Object:  Table [dbo].[Administrator_Department]    Script Date: 07/27/2016 08:49:27 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Administrator_Department](
+	[DepartmentId] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentName] [nvarchar](500) NOT NULL,
+	[Address] [nvarchar](500) NULL,
+	[PhoneNumber] [nvarchar](50) NULL,
+	[Email] [nvarchar](100) NULL,
+	[ParentId] [int] NOT NULL,
+	[DepartmentLevel] [int] NOT NULL,
+	[DepartmentCode] [nvarchar](20) NOT NULL,
+	[DepartmentIndex] [int] NOT NULL,
+	[CreateDate] [datetime] NOT NULL,
+	[CreateUser] [int] NOT NULL,
+	[IsActive] [bit] NOT NULL,
+ CONSTRAINT [PK_Administrator_Department] PRIMARY KEY CLUSTERED 
+(
+	[DepartmentId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[Administrator_Department]  WITH CHECK ADD  CONSTRAINT [FK_Administrator_Department_UserProfile] FOREIGN KEY([CreateUser])
+REFERENCES [dbo].[UserProfile] ([UserId])
+GO
+
+ALTER TABLE [dbo].[Administrator_Department] CHECK CONSTRAINT [FK_Administrator_Department_UserProfile]
+GO
+
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'88CEF129-8063-4F6C-8538-5E3217B2C6DB', N'Administrator_Thêm mới đơn vị', N'/Administrator/Department/AddDepartment')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'4A4BA626-E31D-4B8F-AC55-A4539CCADE3B', N'Administrator_Cập nhật đơn vị', N'/Administrator/Department/EditDepartment')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'B10CA495-3E71-438A-A61A-AEE9D2AD2AC7', N'Administrator_Chuyển đơn vị', N'/Administrator/Custom/ChangeLevel')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'7F1F1F21-9202-4608-B0E9-D08151F7849D', N'Administrator_Xóa đơn vị', N'/Administrator/Department/DeleteDepartment')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'1E92FEBD-0B98-41D2-80BA-E6316E269F74', N'Administrator_Quản lý đơn vị', N'/Administrator/Department/DepartmentManager')
+
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'5373571f-118d-43b5-991c-0fd5d6da22bc', N'eba55f95-6c65-4334-9e07-cf8f40d111bb', N'Cập nhật đơn vị', NULL, 2, N'4a4ba626-e31d-4b8f-ac55-a4539ccade3b', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'9dcef38b-4901-48a6-92a8-3fa9a6b6c0a1', N'eba55f95-6c65-4334-9e07-cf8f40d111bb', N'Xóa đơn vị', NULL, 3, N'7f1f1f21-9202-4608-b0e9-d08151f7849d', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'26661f9c-a391-4afa-be8f-9a0649d47681', N'eba55f95-6c65-4334-9e07-cf8f40d111bb', N'Thêm mới đơn vị', NULL, 1, N'88cef129-8063-4f6c-8538-5e3217b2c6db', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'86220849-7abd-4244-b3a2-b1d6f76773c2', N'70188854-141c-4135-ab4e-e21c63f2a02d', N'Chuyển đơn vị', NULL, 5, N'b10ca495-3e71-438a-a61a-aee9d2ad2ac7', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'eba55f95-6c65-4334-9e07-cf8f40d111bb', N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'Quản trị đơn vị', NULL, 5, N'1e92febd-0b98-41d2-80ba-e6316e269f74', 1)
+
+UPDATE [dbo].[UserProfile] SET [DepartmentId] = 0 WHERE UserName = 'admistrator'

@@ -1,0 +1,323 @@
+﻿USE [DB]
+GO
+/****** Object:  Table [dbo].[webpages_Roles]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[webpages_Roles](
+	[RoleId] [int] IDENTITY(1,1) NOT NULL,
+	[RoleName] [nvarchar](256) NOT NULL,
+	[Description] [nvarchar](300) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[RoleId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[RoleName] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[webpages_OAuthMembership]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[webpages_OAuthMembership](
+	[Provider] [nvarchar](30) NOT NULL,
+	[ProviderUserId] [nvarchar](100) NOT NULL,
+	[UserId] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Provider] ASC,
+	[ProviderUserId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[webpages_Membership]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[webpages_Membership](
+	[UserId] [int] NOT NULL,
+	[CreateDate] [datetime] NULL,
+	[ConfirmationToken] [nvarchar](128) NULL,
+	[IsConfirmed] [bit] NULL,
+	[LastPasswordFailureDate] [datetime] NULL,
+	[PasswordFailuresSinceLastSuccess] [int] NOT NULL,
+	[Password] [nvarchar](128) NOT NULL,
+	[PasswordChangedDate] [datetime] NULL,
+	[PasswordSalt] [nvarchar](128) NOT NULL,
+	[PasswordVerificationToken] [nvarchar](128) NULL,
+	[PasswordVerificationTokenExpirationDate] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[webpages_Membership] ([UserId], [CreateDate], [ConfirmationToken], [IsConfirmed], [LastPasswordFailureDate], [PasswordFailuresSinceLastSuccess], [Password], [PasswordChangedDate], [PasswordSalt], [PasswordVerificationToken], [PasswordVerificationTokenExpirationDate]) VALUES (1, CAST(0x0000A645003FD7E0 AS DateTime), NULL, 1, NULL, 0, N'AJ9NauOFb8PLM+3yP7G9BbhebLYCNMQpi0AV2d1NKYOzweBacUfbLmCT9JsRJPt/Jw==', CAST(0x0000A645003FD7E0 AS DateTime), N'', NULL, NULL)
+/****** Object:  Table [dbo].[UserProfile]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[UserProfile](
+	[UserId] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [nvarchar](56) NOT NULL,
+	[FullName] [nvarchar](150) NULL,
+	[Email] [nvarchar](100) NULL,
+	[PhoneNumber] [nvarchar](20) NULL,
+	[SkypeID] [nvarchar](100) NULL,
+	[CompanyName] [nvarchar](200) NULL,
+	[Address] [nvarchar](200) NULL,
+	[GenderId] [int] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+UNIQUE NONCLUSTERED 
+(
+	[UserName] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[UserProfile] ON
+INSERT [dbo].[UserProfile] ([UserId], [UserName], [FullName], [Email], [PhoneNumber], [SkypeID], [CompanyName], [Address], [GenderId]) VALUES (1, N'administrator', NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+SET IDENTITY_INSERT [dbo].[UserProfile] OFF
+/****** Object:  Table [dbo].[Gender]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Gender](
+	[GenderId] [int] IDENTITY(1,1) NOT NULL,
+	[GenderName] [nvarchar](20) NULL,
+ CONSTRAINT [PK_dbo.Gender] PRIMARY KEY CLUSTERED 
+(
+	[GenderId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET IDENTITY_INSERT [dbo].[Gender] ON
+INSERT [dbo].[Gender] ([GenderId], [GenderName]) VALUES (1, N'Nam')
+INSERT [dbo].[Gender] ([GenderId], [GenderName]) VALUES (2, N'Nữ')
+SET IDENTITY_INSERT [dbo].[Gender] OFF
+/****** Object:  Table [dbo].[Administrator_RoleGroups]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_RoleGroups](
+	[RoleGroupId] [int] IDENTITY(1,1) NOT NULL,
+	[RoleGroupName] [nvarchar](max) NULL,
+ CONSTRAINT [PK_dbo.Administrator_RoleGroups] PRIMARY KEY CLUSTERED 
+(
+	[RoleGroupId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Administrator_Pages]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_Pages](
+	[PageId] [uniqueidentifier] NOT NULL,
+	[PageTitle] [nvarchar](max) NULL,
+	[Url] [nvarchar](max) NULL,
+ CONSTRAINT [PK_dbo.Administrator_Pages] PRIMARY KEY CLUSTERED 
+(
+	[PageId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'd014a1bb-0f2a-407e-907f-1657ccf4c08b', N'Administrator_Cập nhật menu', N'/Administrator/Account/EditMenu')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'9b792bb4-6032-4724-a391-36c4c8c5662b', N'Administrator_Xóa người dùng', N'/Administrator/Custom/DeleteUser')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'e8bfab8e-8de8-4a80-92fb-38d781c01794', N'Administrator_Xóa menu', N'/Administrator/Account/DeleteMenu')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'b8cf202f-e615-4566-bdcf-3b76fab49b6c', N'Administrator_Quản lý menu', N'/Administrator/Account/MenuConfig')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'dc1b209b-4735-4311-b917-4774578c422f', N'Administrator_Quản lý trang', N'/Administrator/Security/PageManager')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'6b2926f0-c84b-47f1-bd62-6bebfff7003c', N'Administrator_Quản lý người dùng', N'/Administrator/Custom/UserManager')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'fb617034-4c7c-4abd-8c24-712949eef294', N'Administrator_Thêm mới trang', N'/Administrator/Security/AddPage')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'3c508e48-0190-4ae2-8aff-83c468b85df2', N'Administrator_Cập nhật role', N'/Administrator/Security/EditRole')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'6613fe6f-b171-41a2-81e6-95ac0c84b10e', N'Administrator_Cập nhật trang', N'/Administrator/Security/EditPage')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'0f6d159a-da28-4fba-a884-97e5b347f2a6', N'Administrator_Thêm mới người dùng', N'/Administrator/Custom/AddUser')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'd9e1260f-f4f2-4f52-b899-ae9d1ed588bf', N'Administrator_Thêm mới role', N'/Administrator/Security/AddRole')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'f6d29523-2e58-4a88-b2a3-ccd87c16012a', N'Administrator_Phân quyền người dùng', N'/Administrator/Custom/Authorize')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'3b9ec6cf-62ec-400c-b534-d45227d40369', N'Administrator_Xóa trang', N'/Administrator/Security/DeletePage')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'0403545a-1ab2-4fd4-b205-d85ac62607a7', N'Administrator_Quản lý role', N'/Administrator/Security/RoleManager')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'a5614c06-0a3d-4434-a209-e18d45c1796d', N'Administrator_Xóa role', N'/Administrator/Security/DeleteRole')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'dd5d121b-e7b7-4e4c-8447-f3162250221a', N'Administrator_Thêm mới menu', N'/Administrator/Account/AddMenu')
+INSERT [dbo].[Administrator_Pages] ([PageId], [PageTitle], [Url]) VALUES (N'bb18e33f-bd25-4ee3-afd6-f884ce5d2dca', N'Administrator_Reset mật khẩu', N'/Administrator/Security/ResetPass')
+/****** Object:  Table [dbo].[Administrator_Menu]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_Menu](
+	[MenuId] [uniqueidentifier] NOT NULL,
+	[ParentId] [uniqueidentifier] NOT NULL,
+	[Name] [nvarchar](150) NULL,
+	[Style] [nvarchar](max) NULL,
+	[Index] [int] NOT NULL,
+	[PageId] [uniqueidentifier] NOT NULL,
+	[ShowUp] [bit] NOT NULL,
+ CONSTRAINT [PK_dbo.Administrator_Menu] PRIMARY KEY CLUSTERED 
+(
+	[MenuId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'c9d16039-c4e2-4114-8610-0540f053c0a2', N'70188854-141c-4135-ab4e-e21c63f2a02d', N'Phân quyền người dùng', NULL, 2, N'f6d29523-2e58-4a88-b2a3-ccd87c16012a', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'5b11551a-198b-413c-93bb-30feea81c747', N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'Quản trị trang', NULL, 2, N'dc1b209b-4735-4311-b917-4774578c422f', 1)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'b4e12470-9496-43f3-ad65-3c1207062bf1', N'5b11551a-198b-413c-93bb-30feea81c747', N'Cập nhật trang', NULL, 2, N'6613fe6f-b171-41a2-81e6-95ac0c84b10e', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'd2862595-c562-41ae-b1ed-3cc7ccc96d39', N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'Quản trị menu', NULL, 2, N'b8cf202f-e615-4566-bdcf-3b76fab49b6c', 1)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'88677c09-0472-4cfa-9285-3da7b66d125f', N'd2862595-c562-41ae-b1ed-3cc7ccc96d39', N'Thêm mới menu', NULL, 1, N'dd5d121b-e7b7-4e4c-8447-f3162250221a', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'39b51d74-3ffc-4071-80b8-575006cb89cd', N'8b42d778-ec86-4b80-a7d5-991f4fb7ac2c', N'Thêm mới quyền', NULL, 1, N'd9e1260f-f4f2-4f52-b899-ae9d1ed588bf', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'2b38f147-e4da-4760-82ef-692fcde82859', N'8b42d778-ec86-4b80-a7d5-991f4fb7ac2c', N'Cập nhật quyền', NULL, 2, N'3c508e48-0190-4ae2-8aff-83c468b85df2', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'25966ac9-69e9-4d76-a969-7ea215550973', N'70188854-141c-4135-ab4e-e21c63f2a02d', N'Reset mật khẩu', NULL, 3, N'bb18e33f-bd25-4ee3-afd6-f884ce5d2dca', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'00000000-0000-0000-00aa-aaaaaaaaaa00', N'Quản trị hệ thống', N'clip-home-3', 0, N'00000000-0000-0000-00aa-aaaaaaaaaa00', 1)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'8b42d778-ec86-4b80-a7d5-991f4fb7ac2c', N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'Quản trị quyền', NULL, 1, N'0403545a-1ab2-4fd4-b205-d85ac62607a7', 1)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'0371527b-ce1a-4400-930b-a95a35683130', N'70188854-141c-4135-ab4e-e21c63f2a02d', N'Thêm mới người dùng', NULL, 1, N'0f6d159a-da28-4fba-a884-97e5b347f2a6', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'ae9765ed-05fc-40d1-b98a-c914d9c2f39d', N'8b42d778-ec86-4b80-a7d5-991f4fb7ac2c', N'Xóa quyền', NULL, 3, N'a5614c06-0a3d-4434-a209-e18d45c1796d', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'6ad0889e-a41c-43eb-b100-cf84bd939616', N'5b11551a-198b-413c-93bb-30feea81c747', N'Thêm mới trang', NULL, 1, N'fb617034-4c7c-4abd-8c24-712949eef294', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'5aa15abc-1ee2-4112-9f51-d3055feb813e', N'd2862595-c562-41ae-b1ed-3cc7ccc96d39', N'Cập nhật menu', NULL, 2, N'd014a1bb-0f2a-407e-907f-1657ccf4c08b', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'f2de8d08-1e30-4059-a9e8-d7ad0de7e14b', N'5b11551a-198b-413c-93bb-30feea81c747', N'Xóa trang', NULL, 3, N'3b9ec6cf-62ec-400c-b534-d45227d40369', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'e3dfdcef-39ac-4118-8a25-deff75784141', N'70188854-141c-4135-ab4e-e21c63f2a02d', N'Xóa người dùng', NULL, 4, N'9b792bb4-6032-4724-a391-36c4c8c5662b', 0)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'70188854-141c-4135-ab4e-e21c63f2a02d', N'8e5e6134-f0c4-4350-a760-902d0e76b876', N'Quản trị người dùng', NULL, 4, N'6b2926f0-c84b-47f1-bd62-6bebfff7003c', 1)
+INSERT [dbo].[Administrator_Menu] ([MenuId], [ParentId], [Name], [Style], [Index], [PageId], [ShowUp]) VALUES (N'69a35858-5a9c-4141-9183-fa204d61d626', N'd2862595-c562-41ae-b1ed-3cc7ccc96d39', N'Xóa menu', NULL, 3, N'e8bfab8e-8de8-4a80-92fb-38d781c01794', 0)
+/****** Object:  Table [dbo].[Administrator_Application]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_Application](
+	[ApplicationId] [nvarchar](128) NOT NULL,
+	[Key] [nvarchar](max) NULL,
+ CONSTRAINT [PK_dbo.Administrator_Application] PRIMARY KEY CLUSTERED 
+(
+	[ApplicationId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[Administrator_Application] ([ApplicationId],[Key]) VALUES ( char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65)+char(rand()*26+65), 'XXXX-XXXX-XXXX-XXX')
+/****** Object:  Table [dbo].[webpages_UsersInRoles]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[webpages_UsersInRoles](
+	[UserId] [int] NOT NULL,
+	[RoleId] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[UserId] ASC,
+	[RoleId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Administrator_PageInRoles]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_PageInRoles](
+	[RoleId] [int] NOT NULL,
+	[PageId] [uniqueidentifier] NOT NULL,
+ CONSTRAINT [PK_dbo.Administrator_PageInRoles] PRIMARY KEY CLUSTERED 
+(
+	[RoleId] ASC,
+	[PageId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Administrator_Notifications]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_Notifications](
+	[NotificationId] [int] IDENTITY(1,1) NOT NULL,
+	[Content] [nvarchar](max) NULL,
+	[Link] [nvarchar](max) NULL,
+	[CreateDate] [datetime] NOT NULL,
+	[Icon] [nvarchar](max) NULL,
+	[Type] [nvarchar](max) NULL,
+	[IsRead] [bit] NOT NULL,
+	[UserId] [int] NOT NULL,
+ CONSTRAINT [PK_dbo.Administrator_Notifications] PRIMARY KEY CLUSTERED 
+(
+	[NotificationId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Administrator_RoleInGroups]    Script Date: 07/16/2016 10:54:30 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Administrator_RoleInGroups](
+	[RoleId] [int] NOT NULL,
+	[RoleGroupId] [int] NOT NULL,
+	[UserProfile_UserId] [int] NULL,
+ CONSTRAINT [PK_dbo.Administrator_RoleInGroups] PRIMARY KEY CLUSTERED 
+(
+	[RoleId] ASC,
+	[RoleGroupId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Default [DF__webpages___IsCon__0BC6C43E]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[webpages_Membership] ADD  DEFAULT ((0)) FOR [IsConfirmed]
+GO
+/****** Object:  Default [DF__webpages___Passw__0CBAE877]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[webpages_Membership] ADD  DEFAULT ((0)) FOR [PasswordFailuresSinceLastSuccess]
+GO
+/****** Object:  ForeignKey [FK_dbo.Administrator_Notifications_dbo.UserProfile_UserId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[Administrator_Notifications]  WITH CHECK ADD  CONSTRAINT [FK_dbo.Administrator_Notifications_dbo.UserProfile_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[UserProfile] ([UserId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Administrator_Notifications] CHECK CONSTRAINT [FK_dbo.Administrator_Notifications_dbo.UserProfile_UserId]
+GO
+/****** Object:  ForeignKey [FK_dbo.Administrator_PageInRoles_dbo.Administrator_Pages_PageId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[Administrator_PageInRoles]  WITH CHECK ADD  CONSTRAINT [FK_dbo.Administrator_PageInRoles_dbo.Administrator_Pages_PageId] FOREIGN KEY([PageId])
+REFERENCES [dbo].[Administrator_Pages] ([PageId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Administrator_PageInRoles] CHECK CONSTRAINT [FK_dbo.Administrator_PageInRoles_dbo.Administrator_Pages_PageId]
+GO
+/****** Object:  ForeignKey [FK_dbo.Administrator_PageInRoles_dbo.webpages_Roles_RoleId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[Administrator_PageInRoles]  WITH CHECK ADD  CONSTRAINT [FK_dbo.Administrator_PageInRoles_dbo.webpages_Roles_RoleId] FOREIGN KEY([RoleId])
+REFERENCES [dbo].[webpages_Roles] ([RoleId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Administrator_PageInRoles] CHECK CONSTRAINT [FK_dbo.Administrator_PageInRoles_dbo.webpages_Roles_RoleId]
+GO
+/****** Object:  ForeignKey [FK_dbo.Administrator_RoleInGroups_dbo.Administrator_RoleGroups_RoleGroupId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[Administrator_RoleInGroups]  WITH CHECK ADD  CONSTRAINT [FK_dbo.Administrator_RoleInGroups_dbo.Administrator_RoleGroups_RoleGroupId] FOREIGN KEY([RoleGroupId])
+REFERENCES [dbo].[Administrator_RoleGroups] ([RoleGroupId])
+ON DELETE CASCADE
+GO
+ALTER TABLE [dbo].[Administrator_RoleInGroups] CHECK CONSTRAINT [FK_dbo.Administrator_RoleInGroups_dbo.Administrator_RoleGroups_RoleGroupId]
+GO
+/****** Object:  ForeignKey [FK_dbo.Administrator_RoleInGroups_dbo.UserProfile_UserProfile_UserId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[Administrator_RoleInGroups]  WITH CHECK ADD  CONSTRAINT [FK_dbo.Administrator_RoleInGroups_dbo.UserProfile_UserProfile_UserId] FOREIGN KEY([UserProfile_UserId])
+REFERENCES [dbo].[UserProfile] ([UserId])
+GO
+ALTER TABLE [dbo].[Administrator_RoleInGroups] CHECK CONSTRAINT [FK_dbo.Administrator_RoleInGroups_dbo.UserProfile_UserProfile_UserId]
+GO
+/****** Object:  ForeignKey [fk_RoleId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[webpages_UsersInRoles]  WITH CHECK ADD  CONSTRAINT [fk_RoleId] FOREIGN KEY([RoleId])
+REFERENCES [dbo].[webpages_Roles] ([RoleId])
+GO
+ALTER TABLE [dbo].[webpages_UsersInRoles] CHECK CONSTRAINT [fk_RoleId]
+GO
+/****** Object:  ForeignKey [fk_UserId]    Script Date: 07/16/2016 10:54:30 ******/
+ALTER TABLE [dbo].[webpages_UsersInRoles]  WITH CHECK ADD  CONSTRAINT [fk_UserId] FOREIGN KEY([UserId])
+REFERENCES [dbo].[UserProfile] ([UserId])
+GO
+ALTER TABLE [dbo].[webpages_UsersInRoles] CHECK CONSTRAINT [fk_UserId]
+GO

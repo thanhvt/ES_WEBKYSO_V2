@@ -1,0 +1,2890 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MA_NVGCS" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DDO" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_DVIQLY" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_GC" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_QUYEN" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_TRAM" type="xs:string" minOccurs="0" />
+                <xs:element name="BOCSO_ID" type="xs:long" minOccurs="0" />
+                <xs:element name="LOAI_BCS" type="xs:string" minOccurs="0" />
+                <xs:element name="LOAI_CS" type="xs:string" minOccurs="0" />
+                <xs:element name="TEN_KHANG" type="xs:string" minOccurs="0" />
+                <xs:element name="DIA_CHI" type="xs:string" minOccurs="0" />
+                <xs:element name="MA_NN" type="xs:string" minOccurs="0" />
+                <xs:element name="SO_HO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="MA_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="SERY_CTO" type="xs:string" minOccurs="0" />
+                <xs:element name="HSN" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CS_CU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_CU" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_CU" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SL_TTIEP" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_CU" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CS_MOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="TTR_MOI" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_MOI" type="xs:decimal" minOccurs="0" />
+                <xs:element name="CHUOI_GIA" type="xs:string" minOccurs="0" />
+                <xs:element name="KY" type="xs:int" minOccurs="0" />
+                <xs:element name="THANG" type="xs:int" minOccurs="0" />
+                <xs:element name="NAM" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_MOI" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGUOI_GCS" type="xs:string" minOccurs="0" />
+                <xs:element name="SL_THAO" type="xs:decimal" minOccurs="0" />
+                <xs:element name="KIMUA_CSPK" type="xs:short" minOccurs="0" />
+                <xs:element name="MA_COT" type="xs:string" minOccurs="0" />
+                <xs:element name="SLUONG_1" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SLUONG_2" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SLUONG_3" type="xs:decimal" minOccurs="0" />
+                <xs:element name="SO_HOM" type="xs:string" minOccurs="0" />
+                <xs:element name="PMAX" type="xs:decimal" minOccurs="0" />
+                <xs:element name="NGAY_PMAX" msdata:DateTimeMode="Unspecified" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000109897</MA_KHANG>
+    <MA_DDO>PD05000109897001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-001</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23690636</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Vũ Hồng Anh</TEN_KHANG>
+    <DIA_CHI>Lô 13 Nhà B7 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>783201111009070</MA_CTO>
+    <SERY_CTO>11009070</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>65704</CS_CU>
+    <TTR_CU />
+    <SL_CU>5481</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>71357</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>5653</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>t? bt4</MA_COT>
+    <SLUONG_1>5481</SLUONG_1>
+    <SLUONG_2>5211</SLUONG_2>
+    <SLUONG_3>5582</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006680</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:18:54</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000107174</MA_KHANG>
+    <MA_DDO>PD05000107174001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-006</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056631</BOCSO_ID>
+    <LOAI_BCS>BT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Văn Sâm</TEN_KHANG>
+    <DIA_CHI>Lô 12 Nhà B7 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>582201616191686</MA_CTO>
+    <SERY_CTO>16191686</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>13</CS_CU>
+    <TTR_CU />
+    <SL_CU>2345</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>1394</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1381</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>665</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>PL32</MA_COT>
+    <SLUONG_1>2345</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006681</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:19:12</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000107174</MA_KHANG>
+    <MA_DDO>PD05000107174001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-006</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056632</BOCSO_ID>
+    <LOAI_BCS>VC</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Văn Sâm</TEN_KHANG>
+    <DIA_CHI>Lô 12 Nhà B7 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>582201616191686</MA_CTO>
+    <SERY_CTO>16191686</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2</CS_CU>
+    <TTR_CU />
+    <SL_CU>472</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>0</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>152</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>PL32</MA_COT>
+    <SLUONG_1>472</SLUONG_1>
+    <SLUONG_2>426</SLUONG_2>
+    <SLUONG_3>364</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006682</ID>
+    <GHICHU />
+    <TT_KHAC />
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN />
+    <X>0</X>
+    <Y>0</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>0</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CTO_DTU</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000035841</MA_KHANG>
+    <MA_DDO>PD05000035841001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-011</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989902</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đào Văn Quân</TEN_KHANG>
+    <DIA_CHI>Số 10 B7 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404001578</MA_CTO>
+    <SERY_CTO>04001578</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10448</CS_CU>
+    <TTR_CU />
+    <SL_CU>898</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>11313</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>865</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? 32 B7</MA_COT>
+    <SLUONG_1>898</SLUONG_1>
+    <SLUONG_2>1020</SLUONG_2>
+    <SLUONG_3>1029</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006683</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:19:24</THOI_GIAN>
+    <X>21.03201</X>
+    <Y>105.76538</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000076564</MA_KHANG>
+    <MA_DDO>PD05000076564001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-016</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989909</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Kim Thanh</TEN_KHANG>
+    <DIA_CHI>Số 11 B7 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200202048121</MA_CTO>
+    <SERY_CTO>02048121</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>9635</CS_CU>
+    <TTR_CU />
+    <SL_CU>802</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>10263</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>628</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>802</SLUONG_1>
+    <SLUONG_2>734</SLUONG_2>
+    <SLUONG_3>906</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006684</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:19:31</THOI_GIAN>
+    <X>21.03052</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000082322</MA_KHANG>
+    <MA_DDO>PD05000082322001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-021</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989939</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Văn Thành</TEN_KHANG>
+    <DIA_CHI>Số 9 Nhà B7 Dự Án Khu ĐT Mới Mỹ Đình1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200202049471</MA_CTO>
+    <SERY_CTO>02049471</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>18752</CS_CU>
+    <TTR_CU />
+    <SL_CU>2394</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>20654</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1902</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P33</MA_COT>
+    <SLUONG_1>2394</SLUONG_1>
+    <SLUONG_2>2353</SLUONG_2>
+    <SLUONG_3>2571</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006685</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:20:52</THOI_GIAN>
+    <X>21.03277</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000081861</MA_KHANG>
+    <MA_DDO>PD05000081861001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-026</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989979</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đặng Thị Thu Hằng</TEN_KHANG>
+    <DIA_CHI>3B7 Khu ĐT Mỹ Đình Mễ Trì</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200000006270</MA_CTO>
+    <SERY_CTO>00006270</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5257</CS_CU>
+    <TTR_CU />
+    <SL_CU>341</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>5478</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>221</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P33</MA_COT>
+    <SLUONG_1>341</SLUONG_1>
+    <SLUONG_2>343</SLUONG_2>
+    <SLUONG_3>379</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006686</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:20:56</THOI_GIAN>
+    <X>21.03277</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000100937</MA_KHANG>
+    <MA_DDO>PD05000100937001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-031</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>10369157</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đỗ Hoài Anh</TEN_KHANG>
+    <DIA_CHI>Lô Số 1 Nhà B7 Khu ĐTM Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303004617</MA_CTO>
+    <SERY_CTO>03004617</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>26006</CS_CU>
+    <TTR_CU />
+    <SL_CU>464</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>26439</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>433</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>464</SLUONG_1>
+    <SLUONG_2>453</SLUONG_2>
+    <SLUONG_3>462</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006687</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:20:59</THOI_GIAN>
+    <X>21.03277</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000106420</MA_KHANG>
+    <MA_DDO>PD05000106420001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-036</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>10976360</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đoàn Chí Nghĩa</TEN_KHANG>
+    <DIA_CHI>Lô Số 8 Nhà B7 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707060743</MA_CTO>
+    <SERY_CTO>07060743</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>63121</CS_CU>
+    <TTR_CU />
+    <SL_CU>1978</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>65032</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1911</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>1978</SLUONG_1>
+    <SLUONG_2>2002</SLUONG_2>
+    <SLUONG_3>2123</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006688</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:21:04</THOI_GIAN>
+    <X>21.03277</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000033899</MA_KHANG>
+    <MA_DDO>PD05000033899001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-041</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989983</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Hồng Minh</TEN_KHANG>
+    <DIA_CHI>Số 2 B7 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707009917</MA_CTO>
+    <SERY_CTO>07009917</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6060</CS_CU>
+    <TTR_CU />
+    <SL_CU>377</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>6446</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>386</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>377</SLUONG_1>
+    <SLUONG_2>403</SLUONG_2>
+    <SLUONG_3>455</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006689</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:21:08</THOI_GIAN>
+    <X>21.03277</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000078126</MA_KHANG>
+    <MA_DDO>PD05000078126001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-046</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>24000846</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Trinh Hà</TEN_KHANG>
+    <DIA_CHI>05 B8 Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505060487</MA_CTO>
+    <SERY_CTO>05060487</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4888</CS_CU>
+    <TTR_CU />
+    <SL_CU>242</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>5360</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>472</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>242</SLUONG_1>
+    <SLUONG_2>417</SLUONG_2>
+    <SLUONG_3>376</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006690</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:21:56</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000053532</MA_KHANG>
+    <MA_DDO>PD05000053532001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-051</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23989988</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Kim Trâm</TEN_KHANG>
+    <DIA_CHI>Số 2 B8 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505093819</MA_CTO>
+    <SERY_CTO>05093819</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10899</CS_CU>
+    <TTR_CU />
+    <SL_CU>965</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>11737</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>838</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>965</SLUONG_1>
+    <SLUONG_2>1013</SLUONG_2>
+    <SLUONG_3>1054</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006691</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:22:01</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000078931</MA_KHANG>
+    <MA_DDO>PD05000078931001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-056</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>10948069</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đinh Anh Tuấn</TEN_KHANG>
+    <DIA_CHI>Lô 6 Nhà B8 KĐT  Mỹ Đình1-Huyện Từ liêm</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707013604</MA_CTO>
+    <SERY_CTO>07013604</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>30140</CS_CU>
+    <TTR_CU />
+    <SL_CU>1915</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>30724</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>584</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>1915</SLUONG_1>
+    <SLUONG_2>1031</SLUONG_2>
+    <SLUONG_3>1006</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006692</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:22:09</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000090864</MA_KHANG>
+    <MA_DDO>PD05000090864001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-061</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23990003</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Mai Anh Dũng</TEN_KHANG>
+    <DIA_CHI>Số 1 Nhà B8 Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505201111222448</MA_CTO>
+    <SERY_CTO>11222448</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>14590</CS_CU>
+    <TTR_CU />
+    <SL_CU>1603</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>15801</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1211</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? PILER</MA_COT>
+    <SLUONG_1>1603</SLUONG_1>
+    <SLUONG_2>1723</SLUONG_2>
+    <SLUONG_3>2198</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006693</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:22:18</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000034951</MA_KHANG>
+    <MA_DDO>PD05000034951001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-066</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23990008</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Văn Tiến</TEN_KHANG>
+    <DIA_CHI>Số 6 B5 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200606040062</MA_CTO>
+    <SERY_CTO>06040062</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4430</CS_CU>
+    <TTR_CU />
+    <SL_CU>460</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>4829</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>399</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>460</SLUONG_1>
+    <SLUONG_2>520</SLUONG_2>
+    <SLUONG_3>631</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006694</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:23:03</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000089430</MA_KHANG>
+    <MA_DDO>PD05000089430001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-071</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23268944</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lương Cường</TEN_KHANG>
+    <DIA_CHI>Số 2 - B9 - Khu ĐTM Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>668201434072514</MA_CTO>
+    <SERY_CTO>34072514</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>44958</CS_CU>
+    <TTR_CU />
+    <SL_CU>2148</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>46845</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1887</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>PILER T6</MA_COT>
+    <SLUONG_1>2148</SLUONG_1>
+    <SLUONG_2>2303</SLUONG_2>
+    <SLUONG_3>2386</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006695</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:23:09</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000073335</MA_KHANG>
+    <MA_DDO>PD05000073335001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-076</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23990047</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Chí Thiện</TEN_KHANG>
+    <DIA_CHI>Số 5 B9 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707026681</MA_CTO>
+    <SERY_CTO>07026681</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>11582</CS_CU>
+    <TTR_CU />
+    <SL_CU>944</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>12565</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>983</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>944</SLUONG_1>
+    <SLUONG_2>834</SLUONG_2>
+    <SLUONG_3>955</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006696</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:23:11</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000037573</MA_KHANG>
+    <MA_DDO>PD05000037573001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-081</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994628</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Bùi Huy Tưởng</TEN_KHANG>
+    <DIA_CHI>Số 1 B9 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909229142</MA_CTO>
+    <SERY_CTO>09229142</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7666</CS_CU>
+    <TTR_CU />
+    <SL_CU>750</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>8362</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>696</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>750</SLUONG_1>
+    <SLUONG_2>848</SLUONG_2>
+    <SLUONG_3>653</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006697</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:23:14</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000029210</MA_KHANG>
+    <MA_DDO>PD05000029210001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-086</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994634</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Duy Toàn</TEN_KHANG>
+    <DIA_CHI>Lô 5 B10 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505044421</MA_CTO>
+    <SERY_CTO>05044421</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6242</CS_CU>
+    <TTR_CU />
+    <SL_CU>399</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>6613</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>371</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>399</SLUONG_1>
+    <SLUONG_2>428</SLUONG_2>
+    <SLUONG_3>681</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006698</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:23:59</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000093025</MA_KHANG>
+    <MA_DDO>PD05000093025001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-091</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994644</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Trung Kiên</TEN_KHANG>
+    <DIA_CHI>Số 6 B10 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200202050095</MA_CTO>
+    <SERY_CTO>02050095</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6783</CS_CU>
+    <TTR_CU />
+    <SL_CU>583</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>7327</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>544</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>583</SLUONG_1>
+    <SLUONG_2>622</SLUONG_2>
+    <SLUONG_3>763</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006699</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:24:02</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000047488</MA_KHANG>
+    <MA_DDO>PD05000047488001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-096</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994664</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Mạnh Hùng</TEN_KHANG>
+    <DIA_CHI>Lô Số 7 B10 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303052448</MA_CTO>
+    <SERY_CTO>03052448</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3321</CS_CU>
+    <TTR_CU />
+    <SL_CU>268</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>3581</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>260</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>268</SLUONG_1>
+    <SLUONG_2>264</SLUONG_2>
+    <SLUONG_3>376</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006700</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:24:06</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000079153</MA_KHANG>
+    <MA_DDO>PD05000079153001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-101</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994676</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Ngọc Thịnh</TEN_KHANG>
+    <DIA_CHI>Số 8  Nhà B10 DA KĐT mới Mỹ Đình 1 TL</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303044049</MA_CTO>
+    <SERY_CTO>03044049</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8098</CS_CU>
+    <TTR_CU />
+    <SL_CU>507</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>8470</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>372</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P14B10</MA_COT>
+    <SLUONG_1>507</SLUONG_1>
+    <SLUONG_2>501</SLUONG_2>
+    <SLUONG_3>679</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006701</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:24:10</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000048341</MA_KHANG>
+    <MA_DDO>PD05000048341001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-106</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994960</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Khắc Hán</TEN_KHANG>
+    <DIA_CHI>Số 3 B9 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404045891</MA_CTO>
+    <SERY_CTO>04045891</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7635</CS_CU>
+    <TTR_CU />
+    <SL_CU>579</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>8137</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>502</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P21</MA_COT>
+    <SLUONG_1>579</SLUONG_1>
+    <SLUONG_2>609</SLUONG_2>
+    <SLUONG_3>790</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006702</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:24:45</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000064981</MA_KHANG>
+    <MA_DDO>PD05000064981001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-111</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994962</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đào Duy Sinh</TEN_KHANG>
+    <DIA_CHI>Lô số 8 Nhà B9 Khu ĐTM Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404024906</MA_CTO>
+    <SERY_CTO>04024906</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>12008</CS_CU>
+    <TTR_CU />
+    <SL_CU>919</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>12673</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>665</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>919</SLUONG_1>
+    <SLUONG_2>942</SLUONG_2>
+    <SLUONG_3>1279</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006703</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:24:55</THOI_GIAN>
+    <X>21.03259</X>
+    <Y>105.76684</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000083222</MA_KHANG>
+    <MA_DDO>PD05000083222001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-116</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994967</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Hữu Huê</TEN_KHANG>
+    <DIA_CHI>Số 7 B9 Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404023969</MA_CTO>
+    <SERY_CTO>04023969</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6998</CS_CU>
+    <TTR_CU />
+    <SL_CU>533</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>7477</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>479</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>533</SLUONG_1>
+    <SLUONG_2>552</SLUONG_2>
+    <SLUONG_3>727</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006704</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:45:08</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000076519</MA_KHANG>
+    <MA_DDO>PD05000076519001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-121</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994973</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Thị Khánh Tùng</TEN_KHANG>
+    <DIA_CHI>Số 3 B8 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505108790</MA_CTO>
+    <SERY_CTO>05108790</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7580</CS_CU>
+    <TTR_CU />
+    <SL_CU>665</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>8124</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>544</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>665</SLUONG_1>
+    <SLUONG_2>659</SLUONG_2>
+    <SLUONG_3>942</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006705</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:18:51</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000088538</MA_KHANG>
+    <MA_DDO>PD05000088538001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-126</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056381</BOCSO_ID>
+    <LOAI_BCS>BT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Quốc Hương</TEN_KHANG>
+    <DIA_CHI>Số 8 - B8 -  Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>582201616191635</MA_CTO>
+    <SERY_CTO>16191635</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>8</CS_CU>
+    <TTR_CU />
+    <SL_CU>3327</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>2112</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>2104</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>906</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>TU PILER</MA_COT>
+    <SLUONG_1>3327</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006706</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:19:14</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000088538</MA_KHANG>
+    <MA_DDO>PD05000088538001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-126</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056382</BOCSO_ID>
+    <LOAI_BCS>VC</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Hoàng Quốc Hương</TEN_KHANG>
+    <DIA_CHI>Số 8 - B8 -  Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>2</SO_HO>
+    <MA_CTO>582201616191635</MA_CTO>
+    <SERY_CTO>16191635</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>2</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>583</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>581</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>TU PILER</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006707</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:19:28</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000086299</MA_KHANG>
+    <MA_DDO>PD05000086299001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-131</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994977</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trần Thị Xuân</TEN_KHANG>
+    <DIA_CHI>Số 7 - B8 - ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505075298</MA_CTO>
+    <SERY_CTO>05075298</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>6</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>0</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006708</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:20:11</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000104661</MA_KHANG>
+    <MA_DDO>PD05000104661001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-136</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056393</BOCSO_ID>
+    <LOAI_BCS>BT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Bích Dung</TEN_KHANG>
+    <DIA_CHI>Lô 4 Nhà B8 Khu ĐTM Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>582201616191353</MA_CTO>
+    <SERY_CTO>16191353</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>21</CS_CU>
+    <TTR_CU />
+    <SL_CU>150</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>547</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>526</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>79</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>150</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>T? P24</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006709</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:19:43</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000104661</MA_KHANG>
+    <MA_DDO>PD05000104661001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-136</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>25056394</BOCSO_ID>
+    <LOAI_BCS>VC</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Bích Dung</TEN_KHANG>
+    <DIA_CHI>Lô 4 Nhà B8 Khu ĐTM Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>582201616191353</MA_CTO>
+    <SERY_CTO>16191353</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>4</CS_CU>
+    <TTR_CU />
+    <SL_CU>0</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-20T00:00:00</NGAY_CU>
+    <CS_MOI>149</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>145</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>0</SLUONG_1>
+    <SLUONG_2>0</SLUONG_2>
+    <SLUONG_3>0</SLUONG_3>
+    <SO_HOM>T? P24</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006710</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 14:19:58</THOI_GIAN>
+    <X>21.03608</X>
+    <Y>105.76588</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000083549</MA_KHANG>
+    <MA_DDO>PD05000083549001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-141</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994980</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Tường Khanh</TEN_KHANG>
+    <DIA_CHI>B7  Số 4 Mỹ Đình I Từ Liêm</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303041200</MA_CTO>
+    <SERY_CTO>03041200</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>6152</CS_CU>
+    <TTR_CU />
+    <SL_CU>87</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>6259</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>107</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P33 B7</MA_COT>
+    <SLUONG_1>87</SLUONG_1>
+    <SLUONG_2>116</SLUONG_2>
+    <SLUONG_3>86</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006711</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:31:02</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000079791</MA_KHANG>
+    <MA_DDO>PD05000079791001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-146</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994988</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Triệu Thị Chính</TEN_KHANG>
+    <DIA_CHI>B7-7 Khu Đô THị Mỹ Đình Từ Liêm</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505009759</MA_CTO>
+    <SERY_CTO>05009759</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>5259</CS_CU>
+    <TTR_CU />
+    <SL_CU>638</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>5973</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>714</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>638</SLUONG_1>
+    <SLUONG_2>466</SLUONG_2>
+    <SLUONG_3>197</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006712</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:31:08</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000048338</MA_KHANG>
+    <MA_DDO>PD05000048338001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-151</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994992</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Huy Đức</TEN_KHANG>
+    <DIA_CHI>Số 6 B7 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200000004255</MA_CTO>
+    <SERY_CTO>00004255</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7132</CS_CU>
+    <TTR_CU />
+    <SL_CU>405</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>7656</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>524</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P31</MA_COT>
+    <SLUONG_1>405</SLUONG_1>
+    <SLUONG_2>561</SLUONG_2>
+    <SLUONG_3>843</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006713</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:31:12</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000047881</MA_KHANG>
+    <MA_DDO>PD05000047881001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-156</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23994997</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Thị Mai Thu</TEN_KHANG>
+    <DIA_CHI>Lô 14 B7 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200202005080</MA_CTO>
+    <SERY_CTO>02005080</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>26064</CS_CU>
+    <TTR_CU />
+    <SL_CU>2879</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>28514</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>2450</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>2879</SLUONG_1>
+    <SLUONG_2>2959</SLUONG_2>
+    <SLUONG_3>3107</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006714</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:31:17</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000080692</MA_KHANG>
+    <MA_DDO>PD05000080692001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-161</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995000</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Khổng Văn Hoạt</TEN_KHANG>
+    <DIA_CHI>Số 5 Nhà B7 - Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200505031610</MA_CTO>
+    <SERY_CTO>05031610</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3905</CS_CU>
+    <TTR_CU />
+    <SL_CU>247</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>4125</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>220</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>247</SLUONG_1>
+    <SLUONG_2>268</SLUONG_2>
+    <SLUONG_3>275</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006715</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:31:20</THOI_GIAN>
+    <X>21.03349</X>
+    <Y>105.76501</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000076303</MA_KHANG>
+    <MA_DDO>PD05000076303001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-166</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>24019134</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Tạ Trân</TEN_KHANG>
+    <DIA_CHI>Lô Số 4 B10, Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>783201111015086</MA_CTO>
+    <SERY_CTO>11015086</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3126</CS_CU>
+    <TTR_CU />
+    <SL_CU>328</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>3416</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>290</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>328</SLUONG_1>
+    <SLUONG_2>353</SLUONG_2>
+    <SLUONG_3>456</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006716</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:32:57</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000032377</MA_KHANG>
+    <MA_DDO>PD05000032377001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-171</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995004</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Hữu Hoè</TEN_KHANG>
+    <DIA_CHI>Lô 2 B10 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404067098</MA_CTO>
+    <SERY_CTO>04067098</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>10663</CS_CU>
+    <TTR_CU />
+    <SL_CU>817</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>11428</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>765</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>817</SLUONG_1>
+    <SLUONG_2>767</SLUONG_2>
+    <SLUONG_3>1080</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006717</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:33:03</THOI_GIAN>
+    <X>21.03259</X>
+    <Y>105.76684</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000064977</MA_KHANG>
+    <MA_DDO>PD05000064977001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-176</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995008</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Văn Chiến</TEN_KHANG>
+    <DIA_CHI>Căn hộ 01 nhà B10 KĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303050012</MA_CTO>
+    <SERY_CTO>03050012</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>13069</CS_CU>
+    <TTR_CU />
+    <SL_CU>285</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>13278</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>209</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>285</SLUONG_1>
+    <SLUONG_2>846</SLUONG_2>
+    <SLUONG_3>1211</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006718</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:33:06</THOI_GIAN>
+    <X>21.03259</X>
+    <Y>105.76684</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000074691</MA_KHANG>
+    <MA_DDO>PD05000074691001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-181</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995012</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đỗ Minh Cương</TEN_KHANG>
+    <DIA_CHI>Lô 3 B10 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404046904</MA_CTO>
+    <SERY_CTO>04046904</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>3731</CS_CU>
+    <TTR_CU />
+    <SL_CU>241</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>3978</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>247</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>241</SLUONG_1>
+    <SLUONG_2>314</SLUONG_2>
+    <SLUONG_3>427</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006719</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:33:09</THOI_GIAN>
+    <X>21.03259</X>
+    <Y>105.76684</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000064978</MA_KHANG>
+    <MA_DDO>PD05000064978001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-186</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995017</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Đặng Hải Châu</TEN_KHANG>
+    <DIA_CHI>Số 3 B11 Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200404006106</MA_CTO>
+    <SERY_CTO>04006106</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>17667</CS_CU>
+    <TTR_CU />
+    <SL_CU>1469</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>18970</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1303</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>1469</SLUONG_1>
+    <SLUONG_2>1609</SLUONG_2>
+    <SLUONG_3>1918</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006720</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:34:54</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000112000</MA_KHANG>
+    <MA_DDO>PD05000112000001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-191</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>22681448</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Đức Thắng</TEN_KHANG>
+    <DIA_CHI>Lô số 8 Nhà B11 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909207261</MA_CTO>
+    <SERY_CTO>09207261</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>11870</CS_CU>
+    <TTR_CU />
+    <SL_CU>538</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>12704</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>834</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>538</SLUONG_1>
+    <SLUONG_2>718</SLUONG_2>
+    <SLUONG_3>814</SLUONG_3>
+    <SO_HOM>T? P12</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006721</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:35:03</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000013516</MA_KHANG>
+    <MA_DDO>PD05000013516001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-196</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995019</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Văn Xuyền</TEN_KHANG>
+    <DIA_CHI>Số 6 B11 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200101022454</MA_CTO>
+    <SERY_CTO>01022454</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7418</CS_CU>
+    <TTR_CU />
+    <SL_CU>524</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>7932</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>514</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>BU?NG KT</MA_COT>
+    <SLUONG_1>524</SLUONG_1>
+    <SLUONG_2>521</SLUONG_2>
+    <SLUONG_3>868</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006722</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:35:12</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000109285</MA_KHANG>
+    <MA_DDO>PD05000109285001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-201</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>11346421</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Phạm Ngọc Tới</TEN_KHANG>
+    <DIA_CHI>Lô đất số 7 - Nhà B11 - Khu đô thị mới Mỹ  đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808269353</MA_CTO>
+    <SERY_CTO>08269353</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>23359</CS_CU>
+    <TTR_CU />
+    <SL_CU>517</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>23714</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>355</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>t? p12</MA_COT>
+    <SLUONG_1>517</SLUONG_1>
+    <SLUONG_2>573</SLUONG_2>
+    <SLUONG_3>1059</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006723</ID>
+    <GHICHU />
+    <TT_KHAC>1</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:35:16</THOI_GIAN>
+    <X>21.03226</X>
+    <Y>105.76648</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000048326</MA_KHANG>
+    <MA_DDO>PD05000048326001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-206</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995021</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Đình Cừ</TEN_KHANG>
+    <DIA_CHI>Số 5 B11 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200707119454</MA_CTO>
+    <SERY_CTO>07119454</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>7825</CS_CU>
+    <TTR_CU />
+    <SL_CU>686</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>8315</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>490</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T? P11</MA_COT>
+    <SLUONG_1>686</SLUONG_1>
+    <SLUONG_2>655</SLUONG_2>
+    <SLUONG_3>676</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006724</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:36:23</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000109103</MA_KHANG>
+    <MA_DDO>PD05000109103001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-211</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>11323083</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Nguyễn Đức Vỹ</TEN_KHANG>
+    <DIA_CHI>Lô 1 Nhà B11 KĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200808230019</MA_CTO>
+    <SERY_CTO>08230019</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>45407</CS_CU>
+    <TTR_CU />
+    <SL_CU>2118</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>47353</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>1946</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT />
+    <SLUONG_1>2118</SLUONG_1>
+    <SLUONG_2>2055</SLUONG_2>
+    <SLUONG_3>2251</SLUONG_3>
+    <SO_HOM>PLT18H</SO_HOM>
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006725</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:36:28</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000037539</MA_KHANG>
+    <MA_DDO>PD05000037539001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-216</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995023</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Trịnh Sỹ Lan</TEN_KHANG>
+    <DIA_CHI>Lô 2 B11 Khu ĐT Mỹ Đình 1</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>506200303034906</MA_CTO>
+    <SERY_CTO>03034906</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>639</CS_CU>
+    <TTR_CU />
+    <SL_CU>28</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>663</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>24</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>28</SLUONG_1>
+    <SLUONG_2>34</SLUONG_2>
+    <SLUONG_3>25</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006726</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:36:33</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+  <Table1>
+    <MA_NVGCS />
+    <MA_KHANG>PD05000038698</MA_KHANG>
+    <MA_DDO>PD05000038698001</MA_DDO>
+    <MA_DVIQLY>PD0500</MA_DVIQLY>
+    <MA_GC>05-221</MA_GC>
+    <MA_QUYEN>PD051531</MA_QUYEN>
+    <MA_TRAM>PD0581531</MA_TRAM>
+    <BOCSO_ID>23995025</BOCSO_ID>
+    <LOAI_BCS>KT</LOAI_BCS>
+    <LOAI_CS>DDK</LOAI_CS>
+    <TEN_KHANG>Lê Thanh</TEN_KHANG>
+    <DIA_CHI>Số 4 Nhà B11 Khu ĐT Mỹ Đình I</DIA_CHI>
+    <MA_NN />
+    <SO_HO>1</SO_HO>
+    <MA_CTO>505200909092882</MA_CTO>
+    <SERY_CTO>09092882</SERY_CTO>
+    <HSN>1</HSN>
+    <CS_CU>11837</CS_CU>
+    <TTR_CU />
+    <SL_CU>857</SL_CU>
+    <SL_TTIEP>0</SL_TTIEP>
+    <NGAY_CU>2016-10-11T00:00:00</NGAY_CU>
+    <CS_MOI>12463</CS_MOI>
+    <TTR_MOI />
+    <SL_MOI>626</SL_MOI>
+    <CHUOI_GIA> KT: 100%*SHBT-A</CHUOI_GIA>
+    <KY>1</KY>
+    <THANG>11</THANG>
+    <NAM>2016</NAM>
+    <NGAY_MOI>2016-11-10T00:00:00</NGAY_MOI>
+    <NGUOI_GCS />
+    <SL_THAO>0</SL_THAO>
+    <KIMUA_CSPK>0</KIMUA_CSPK>
+    <MA_COT>T?</MA_COT>
+    <SLUONG_1>857</SLUONG_1>
+    <SLUONG_2>898</SLUONG_2>
+    <SLUONG_3>1313</SLUONG_3>
+    <SO_HOM />
+    <PMAX>0</PMAX>
+    <NGAY_PMAX>1753-01-01T00:00:00</NGAY_PMAX>
+    <ID>1006727</ID>
+    <GHICHU />
+    <TT_KHAC>0</TT_KHAC>
+    <CGPVTHD />
+    <HTHUC_TBAO_DK />
+    <DTHOAI_SMS />
+    <EMAIL />
+    <THOI_GIAN>10/11/2016 10:36:39</THOI_GIAN>
+    <X>21.0327</X>
+    <Y>105.76574</Y>
+    <SO_TIEN>0</SO_TIEN>
+    <HTHUC_TBAO_TH />
+    <TENKHANG_RUTGON />
+    <TTHAI_DBO>1</TTHAI_DBO>
+    <DU_PHONG />
+    <TEN_FILE>PD051531_61111.xml</TEN_FILE>
+    <STR_CHECK_DSOAT>CHECK</STR_CHECK_DSOAT>
+  </Table1>
+</NewDataSet>

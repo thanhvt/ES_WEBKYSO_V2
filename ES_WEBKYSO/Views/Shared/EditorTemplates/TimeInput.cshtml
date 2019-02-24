@@ -1,0 +1,18 @@
+﻿@using ES_WEBKYSO.HtmlHelpers
+@model dynamic
+@{
+    var htmlAttributes = ViewData["htmlAttributes"] ?? new { @class = "form-control date-picker", @data_date_format = "dd/mm/yyyy" };
+    var labelAttributes = ViewData["labelAttributes"] ?? new { @class = "control-label" };
+}
+
+<div class="col-sm-6">
+    @LabelExtensionsNb.LabelFor(Html, model => model, labelAttributes)
+    <div class="input-group">
+        @Html.TextBoxFor(model => model, htmlAttributes)
+        <span class="input-group-addon">
+            <i class="fa fa-calendar"></i>
+        </span>
+    </div>
+    @Html.ValidationMessageFor(model => model)
+</div>
+

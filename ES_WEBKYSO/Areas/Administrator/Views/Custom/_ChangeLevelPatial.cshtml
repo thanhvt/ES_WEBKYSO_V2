@@ -1,0 +1,67 @@
+﻿@model Administrator.Department.Models.UserProfile
+@Html.HiddenFor(item => item.UserId, new { id = "UserID" })
+<div class="row">
+    <div class="col-md-12">
+        <h3>Thông tin tài khoản</h3>
+        <hr>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label">
+                Tên đăng nhập				
+            </label>
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "Tên đăng nhập" , @disabled="disabled"})
+            @Html.ValidationMessageFor(item => item.UserName)
+        </div>
+        
+       
+        <div class="form-group">
+            <label class="control-label" for="form-field-1">Chọn đơn vị<span class="symbol required"></span></label>
+            <div >
+                <select id="form-field-select-2" class="form-control search-select" name="DepartmentId">
+                    @foreach (var item in @ViewBag.ListDepartment)
+                    {
+                        if (item.DepartmentId.ToString() == Model.DepartmentId.ToString())
+                        { 
+                        <option value="@item.DepartmentId" selected="selected">@Html.Raw(item.DepartmentName)</option>
+                        }
+                        else
+                        {
+                        <option value="@item.DepartmentId">@Html.Raw(item.DepartmentName)</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label">
+                Họ tên			
+            </label>
+            @Html.TextBoxFor(m => m.FullName, new { @class = "form-control", @placeholder = "Họ tên", @disabled="disabled" })
+            @Html.ValidationMessageFor(item => item.FullName)
+        </div>
+        <div class="form-group">
+            <label class="control-label">
+                Email		
+            </label>
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "Email", @disabled="disabled" })
+            @Html.ValidationMessageFor(item => item.Email)
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <hr>
+    </div>
+    <div class="col-md-8">
+    </div>
+    <div class="col-md-4">
+        <input class="btn btn-primary" type="submit" value="Xác nhận" id="btnAdd" style="width: 100px;" />
+        <a class="btn btn-dark-grey" href="@Url.Action("UserManager")" style="width: 100px;">Thoát
+                            <i class="fa fa-arrow-circle-right"></i>
+        </a>
+    </div>
+</div>

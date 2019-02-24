@@ -1,0 +1,392 @@
+﻿@model ES_WEBKYSO.Models.D_SOGCS
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Quản lý sổ GCS";
+}
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Quản lý sổ GCS</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" align="left">
+            @Html.ValidationSummary()
+            @if (TempData["Error"] != null)
+            {
+                @*<div class="alert alert-danger">
+                        <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+                    </div>*@
+                <div class="alert alert-danger">
+                    <button data-dismiss="alert" class="close">
+                        ×
+                    </button>
+                    <i class="fa fa-times-circle"></i>
+                    <strong>Error!</strong> @TempData["Error"].ToString()
+                </div>
+            }
+            @if (TempData["Success"] != null)
+            {
+                @*<div class="alert alert-success">
+                        <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+                    </div>*@
+                <div class="alert alert-success">
+                    <button data-dismiss="alert" class="close">
+                        ×
+                    </button>
+                    <i class="fa fa-check-circle"></i>
+                    <strong>Success!</strong> @TempData["Success"].ToString()
+                </div>
+            }
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <fieldset>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-1">
+                                    <label class="control-label">
+                                        Mã đơn vị
+                                    </label>
+                                    <input class="form-control" placeholder="Mã đơn vị" type="text" id="MaDonVi" name="MaDonVi" value="@Html.Raw(ViewBag.MaDviQly)" disabled="">
+                                </div>
+                                <div class="col-md-1">
+                                    <label class="control-label">
+                                        Số kỳ
+                                    </label>
+                                    <input type="text" placeholder="Số kỳ" id="SoKy" name="SoKy" class="form-control" size="2" maxlength="2" autofocus="autofocus">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Ngày ghi
+                                    </label>
+                                    <select name="NgayGhi" id="NgayGhi" class="form-control" required>
+                                        <option value="">---Chọn ngày ghi---</option>
+                                        <option value="01">1</option>
+                                        <option value="02">2</option>
+                                        <option value="03">3</option>
+                                        <option value="04">4</option>
+                                        <option value="05">5</option>
+                                        <option value="06">6</option>
+                                        <option value="07">7</option>
+                                        <option value="08">8</option>
+                                        <option value="09">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Hình thức
+                                    </label>
+                                    <select id="HinhThuc" name="HinhThuc" class="form-control" onclick="disable(value);">
+                                        <option value="">--Chọn hình thức--</option>
+                                        <option value="MDMS">MDMS</option>
+                                        <option value="MTB">MTB</option>
+                                        <option value="HHU">HHU</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Tên sổ
+                                    </label>
+                                    <input class="form-control" placeholder="Tên sổ" type="text" id="TenSo" name="TenSo">
+                                </div>
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        Loại sổ
+                                    </label>
+                                    <select id="LoaiSo" name="LoaiSo" class="form-control" onclick="disable(value);">
+                                        <option value="">--- Chọn loại sổ ---</option>
+                                        <option value="TP">TP</option>
+                                        <option value="KH">KH</option>
+                                        <option value="DN">DN</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <br />
+                                    <button type="submit" class="btn btn-primary" value="Tìm kiếm" id="btnGetData">
+                                        <i class="fa fa-search"></i>
+                                        Tìm kiếm
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Thao tác
+            <i class="fa fa-pencil-square-o text-right"></i>
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary" type="submit" value="Đồng bộ sổ từ CMIS" id="btnDataSyncCMIS">
+                                    <i class="fa fa-pencil"></i>
+                                    Đồng bộ sổ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- start: SOGCS TABLE PANEL -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    @ViewBag.Title
+                    <div class="panel-tools">
+                        <a href="@Url.Action("Create")" data-toggle="modal" title="Thêm" data-target="#popupStaticModal" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                            <thead></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- end: SOGCS TABLE PANEL -->
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    @*<script src="~/Scripts/jquery.validate.new.js"></script>*@
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+    <script type="text/javascript">
+        (function ($) {
+            "use strict";
+
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                funcgr: function (grid) {
+                    window.TableGenericQuanLySoGcsGrid = grid;
+                },
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MaDonVi").val();
+                    d.Ky = $("#SoKy").val();
+                    d.NgayGhi = $("#NgayGhi").val();
+                    d.HinhThuc = $("#HinhThuc").val();
+                    d.TenSo = $("#TenSo").val();
+                    d.LoaiSo = $("#LoaiSo").val();
+                },
+                AddOn: {
+                    "columnDefs": [
+                        {
+                            "targets": -1,
+                            "data": null,
+                            "render": function (data, type, full) {
+                                var ret = '<div><a class="btn btn-xs btn-teal tooltips Edit" data-toggle="modal" data-target="#popupStaticModal" href="@Url.Action("Update", "QuanLySoGcs", new { soGcsId = "SoGcsIdParameter"})"><i class="fa fa-edit"></i></a>  ' +
+                                     '<a class="btn btn-xs btn-bricky tooltips Delete" title="Xóa" data-id="SoGcsIdParameter" href="#"><i class="fa fa-trash-o"></i></a></div>';
+                                ret = ret.replace(/SoGcsIdParameter/g, data.MA_SOGCS);
+                                return ret;
+                            }
+                        }
+                    ]
+                },
+                columns: [
+                    //{
+                    //    header: "ID",
+                    //    data: "ID", className: "center",
+                    //    width: "5%"
+                    //},
+                    {
+                        header: "Mã đơn vị quản lý",
+                        className: 'dt-center center',
+                        data: "MA_DVIQLY"
+                    },
+                    {
+                        header: "Mã sổ",
+                        className: 'dt-center center',
+                        data: "MA_SOGCS"
+                    },
+                    {
+                        header: "Tên sổ",
+                        className: 'dt-center center',
+                        data: "TEN_SOGCS"
+                    },
+                    {
+                        header: "Số kỳ",
+                        className: 'dt-center center',
+                        data: "SO_KY"
+                    },
+                    {
+                        header: "Tình trạng",
+                        className: 'dt-center center',
+                        data: "TINH_TRANG",
+                        render: function (data) {
+                            if (data === 1) {
+                                return '<div class="label label-success">Đang hoạt động</div>';
+                            } else {
+                                return '<div class="label label-warning">Không hoạt động</div>';
+                            }
+                        }
+                    },
+                    {
+                        header: "Loại sổ",
+                        className: 'dt-center center',
+                        data: "LOAI_SOGCS"
+                    },
+                    {
+                        header: "Ngày ghi",
+                        className: 'dt-center center',
+                        data: "NGAY_GHI"
+                    },
+                    {
+                        header: "Hình thức",
+                        className: 'dt-center center',
+                        data: "HINH_THUC"
+                    },
+                    {
+                        'bSortable': false,
+                        header: "Tác vụ",
+                        className: "center",
+                        data: null
+                    }
+                ],
+                func: function (grid) {
+                    window.TableGenericQuanLySoGcsGrid = grid;
+                    $("#TableGeneric")
+                        .on('click',
+                            '.Delete',
+                            function (e) {
+                                e.preventDefault();
+
+                                var thisTrData = $(this).attr('data-id');
+
+
+                                if (confirm("Bạn có chắc chắn muốn xóa ?")) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        cache: false,
+                                        async: true,
+                                        url: "@Html.Raw(Url.Action("Delete"))",
+                                        dataType: 'json',
+                                        data: JSON.stringify({ soGcsId: thisTrData }),
+                                        contentType: "application/json; charset=utf-8",
+                                        success: function (result) {
+                                            if (result.success === true) {
+                                                alert(result.message);
+                                            }
+                                        },
+                                        error: function (jqXHR, textStatus, errorThrown) {
+
+                                        },
+                                        complete: function (result) {
+                                            grid.ajax.reload(null, false);
+                                        }
+                                    });
+                                }
+
+                            });
+                }
+            };
+            //$(function () {
+            //    var d = new Date();
+            //    var m = d.getDate();
+            //    $('#NgayGhi option:eq(' + m + ')').prop('selected', true);
+            //});
+            $("#btnGetData").on('click',
+               function () {
+                   AutoDataTable();
+               });
+
+            $('#btnDataSyncCMIS').click(function () {
+
+                var dataToPost = {};
+                dataToPost.MaDonVi = $("#MaDonVi").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                dataToPost.MaSo = $("#MaSo").val();
+                dataToPost.NgayGhi = $("#NgayGhi").val();
+                dataToPost.HinhThuc = $("#HinhThuc").val();
+                dataToPost.ThaoTac = $("#ThaoTac").val();
+                dataToPost.search = $("#TableGeneric_wrapper").find("[type='search']").val();
+                dataToPost.maDvQly = $("#MaDonVi").val();
+                dataToPost.TrangThai = $("#TrangThai").val();
+
+                $.ajax({
+                    contentType: 'application/json; charset=utf-8',
+                    type: "POST",
+                    url: "/QuanLySoGcs/JsonDataSyncCmis",
+                    dataType: 'json',
+                    data: JSON.stringify(dataToPost),
+                    traditional: true,
+                    async: true,
+                    processData: false,
+                    cache: false,
+                    success: function (result) {
+                        if (result.success === true) {
+                            alert(result.message);
+                            //window.TableGenericGrid.ajax.reload();
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert('request failed');
+                    }
+                });
+            });
+
+        })(jQuery);
+    </script>
+}
+

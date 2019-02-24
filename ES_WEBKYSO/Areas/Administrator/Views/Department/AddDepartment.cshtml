@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "AddDepartment";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+@section PageScripts{
+    <script type="text/javascript">
+        $("#ParentId").change(function () {
+            var status = $('#ParentId option:selected').attr('atr-level');
+            $('#Level').val(parseInt(status) + 1);
+            $('#txtDepartmentLevel').val(parseInt(status) + 1);
+
+        });
+        var runSelect2 = function () {
+            $(".search-select").select2({
+                allowClear: true
+            });
+        };
+        runSelect2();
+    </script>
+}
+<div class="col-md-12">
+    <div class="page-header">
+        <h1>Quản trị đơn vị</h1>
+    </div>
+    @Html.Partial("_MessagePartial")
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <i class="fa fa-external-link-square"></i><b>Thêm mới đơn vị</b>
+        </div>
+        <div class="panel-body">
+            @using (Html.BeginForm("AddDepartment", "Department", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+                <div class="form-group">
+                    <label for="form-field-1" class="col-sm-2 control-label">Đơn vị cấp trên  <span class="symbol required"></span></label>
+                    <div class="col-sm-9">
+                        <select id="ParentId" name="ParentId" class="form-control search-select">
+                            @if (@ViewBag.DepartmentId == 0)
+                            {
+                                <option value="0" atr-level="0">Root</option>
+                            }
+                            @foreach (var item in @ViewBag.ListDepartment)
+                            {
+                                if (Model != null)
+                                {
+                                    if (Model.ParentId != null && Model.ParentId > 0 && Model.ParentId == item.DepartmentId)
+                                    { 
+                                <option value="@item.DepartmentId" atr-level="@item.DepartmentLevel" selected="selected">@Html.Raw(item.DepartmentName)</option>
+                                    }
+                                    else
+                                    {
+                                <option value="@item.DepartmentId" atr-level="@item.DepartmentLevel">@Html.Raw(item.DepartmentName)</option>
+                                    }
+                                }
+                                else
+                                {
+                                <option value="@item.DepartmentId" atr-level="@item.DepartmentLevel">@Html.Raw(item.DepartmentName)</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                </div>
+                @Html.Partial("_DepartmentPartial")
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "LicenseInformation";
+    Layout = "~/Views/Shared/_LayoutError.cshtml";
+}
+
+<div class="col-sm-12 page-error">
+    <div class="error-number bricky" style="font-size: 80px !important;">LICENSING</div>
+    @using (Html.BeginForm("ActivateLicense", "License", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="error-details col-sm-6 col-sm-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;">Application ID:</div>
+                        <div class="col-sm-8" style="text-align: left;">@ViewBag.ApplicationId</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;">Activation date:</div>
+                        <div class="col-sm-8" style="text-align: left;">@ViewBag.CreationDate</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;">Expiration date:</div>
+                        <div class="col-sm-8" style="text-align: left;">@ViewBag.ExpireDate</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;">Enter your product key:</div>
+                        <div class="col-sm-8" style="text-align: left;">
+                            <input value="@ViewBag.Key" class="form-control" name="Key" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;"></div>
+                        <div class="col-sm-8" style="text-align: left;">Product key format: XXXXX-XXXXX-XXXXX-XXXXX</div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-4" style="text-align: right;"></div>
+                        <div class="col-sm-8" style="text-align: left;">
+                            <button class="btn btn-primary" type="submit">ACTIVATE PRODUCT KEY</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

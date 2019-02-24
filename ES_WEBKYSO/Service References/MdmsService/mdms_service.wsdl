@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://service.mdms.ftu.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="mdms_service" targetNamespace="http://service.mdms.ftu.com/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://10.9.226.42:8383/cmis_billing/mdms_service?xsd=1" namespace="http://service.mdms.ftu.com/" />
+    </xsd:schema>
+  </types>
+  <message name="getBCTData_Ngay">
+    <part name="parameters" element="tns:getBCTData_Ngay" />
+  </message>
+  <message name="getBCTData_NgayResponse">
+    <part name="parameters" element="tns:getBCTData_NgayResponse" />
+  </message>
+  <message name="getListBCTData_Ngay">
+    <part name="parameters" element="tns:getListBCTData_Ngay" />
+  </message>
+  <message name="getListBCTData_NgayResponse">
+    <part name="parameters" element="tns:getListBCTData_NgayResponse" />
+  </message>
+  <message name="getBillingDataFromMDMS">
+    <part name="parameters" element="tns:getBillingDataFromMDMS" />
+  </message>
+  <message name="getBillingDataFromMDMSResponse">
+    <part name="parameters" element="tns:getBillingDataFromMDMSResponse" />
+  </message>
+  <message name="Exception">
+    <part name="fault" element="tns:Exception" />
+  </message>
+  <message name="getBillingSpcFromMDMS">
+    <part name="parameters" element="tns:getBillingSpcFromMDMS" />
+  </message>
+  <message name="getBillingSpcFromMDMSResponse">
+    <part name="parameters" element="tns:getBillingSpcFromMDMSResponse" />
+  </message>
+  <message name="hello">
+    <part name="parameters" element="tns:hello" />
+  </message>
+  <message name="helloResponse">
+    <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="getListMeterList">
+    <part name="parameters" element="tns:getListMeterList" />
+  </message>
+  <message name="getListMeterListResponse">
+    <part name="parameters" element="tns:getListMeterListResponse" />
+  </message>
+  <message name="getListMeterListBySerials">
+    <part name="parameters" element="tns:getListMeterListBySerials" />
+  </message>
+  <message name="getListMeterListBySerialsResponse">
+    <part name="parameters" element="tns:getListMeterListBySerialsResponse" />
+  </message>
+  <portType name="mdms_service">
+    <operation name="getBCTData_Ngay">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getBCTData_NgayRequest" message="tns:getBCTData_Ngay" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getBCTData_NgayResponse" message="tns:getBCTData_NgayResponse" />
+    </operation>
+    <operation name="getListBCTData_Ngay">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getListBCTData_NgayRequest" message="tns:getListBCTData_Ngay" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getListBCTData_NgayResponse" message="tns:getListBCTData_NgayResponse" />
+    </operation>
+    <operation name="getBillingDataFromMDMS">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getBillingDataFromMDMSRequest" message="tns:getBillingDataFromMDMS" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getBillingDataFromMDMSResponse" message="tns:getBillingDataFromMDMSResponse" />
+      <fault wsam:Action="http://service.mdms.ftu.com/mdms_service/getBillingDataFromMDMS/Fault/Exception" name="Exception" message="tns:Exception" />
+    </operation>
+    <operation name="getBillingSpcFromMDMS">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getBillingSpcFromMDMSRequest" message="tns:getBillingSpcFromMDMS" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getBillingSpcFromMDMSResponse" message="tns:getBillingSpcFromMDMSResponse" />
+    </operation>
+    <operation name="hello">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/helloRequest" message="tns:hello" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="getListMeterList">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getListMeterListRequest" message="tns:getListMeterList" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getListMeterListResponse" message="tns:getListMeterListResponse" />
+    </operation>
+    <operation name="getListMeterListBySerials">
+      <input wsam:Action="http://service.mdms.ftu.com/mdms_service/getListMeterListBySerialsRequest" message="tns:getListMeterListBySerials" />
+      <output wsam:Action="http://service.mdms.ftu.com/mdms_service/getListMeterListBySerialsResponse" message="tns:getListMeterListBySerialsResponse" />
+    </operation>
+  </portType>
+  <binding name="mdms_servicePortBinding" type="tns:mdms_service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getBCTData_Ngay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListBCTData_Ngay">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getBillingDataFromMDMS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+      <fault name="Exception">
+        <soap:fault use="literal" name="Exception" namespace="" />
+      </fault>
+    </operation>
+    <operation name="getBillingSpcFromMDMS">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListMeterList">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getListMeterListBySerials">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="mdms_service">
+    <port name="mdms_servicePort" binding="tns:mdms_servicePortBinding">
+      <soap:address location="http://10.9.226.42:8383/cmis_billing/mdms_service" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,328 @@
+﻿@{
+    ViewBag.Title = "Manage Account";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div id="content">
+    <div class="demo-container">
+        <div id="placeholder" class="demo-placeholder"></div>
+    </div>
+</div>
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3><span class="page-header-text">Trang chủ</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="core-box">
+                <div class="heading">
+                    <i class="clip-info circle-icon circle-teal"></i>
+                    <h2>Giới thiệu</h2>
+                </div>
+                <div class="content">
+                    Hệ thống WEB KÝ SỐ được dành cho các vai trò Ghi chỉ số trong công ty Điện lực quận/huyện, giúp rút ngắn thời gian và các bước thao tác để cập nhật chỉ số công tơ mà vẫn đảm bảo chính xác cao.
+                    <br/>
+                </div>
+                @*<a class="view-more" href="#">
+                    View More <i class="clip-arrow-right-2"></i>
+                </a>*@
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="core-box">
+                <div class="heading">
+                    <i class="clip-puzzle-4 circle-icon circle-img"></i>
+                    <h2>Mô tả hệ thống</h2>
+                </div>
+                <div class="content">
+                    Phòng kinh doanh lấy sổ Ghi chỉ số từ CMIS và phân công, nhân viên Ghi chỉ số thực hiện cập nhật chỉ số công tơ, ký số thông qua USB Token và chuyển về cấp quản lý. Cuối cùng phòng kinh doanh trả dữ liệu về CMIS thông qua service.
+                </div>
+                @*<a class="view-more" href="#">
+                    View More <i class="clip-arrow-right-2"></i>
+                </a>*@
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="core-box">
+                <div class="heading">
+                    <i class="clip-stack circle-icon circle-bricky"></i>
+                    <h2>Tài liệu hướng dẫn</h2>
+                </div>
+                <div class="content">
+                    Hướng dẫn sử dụng hệ thống.&nbsp;&nbsp;
+                    <a class="view-more" href="~/Document/ES_Webkyso_MoHinh.pdf">
+                         Xem <i class="clip-arrow-right-2"></i>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        @*<div class="col-md-12">
+                <!-- start: DEFAULT PIE PANEL -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <i class="fa fa-external-link-square"></i>
+                        Tổng quát
+                    </div>
+                    <div class="panel-body">
+                        <div class="flot-small-container">
+                            <div id="placeholder" class="flot-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end: DEFAULT PIE PANEL -->
+            </div>*@
+
+        <div class="col-md-12">
+            <br />
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-external-link-square"></i>
+                    Sổ đã được phân công Ghi chỉ số
+                    <div class="panel-tools">
+                        <a class="btn btn-xs btn-link panel-collapse collapses" href="#">
+                        </a>
+                        @*<a class="btn btn-xs btn-link panel-config" href="#panel-config" data-toggle="modal">
+                                <i class="fa fa-wrench"></i>
+                            </a>*@
+                        <a class="btn btn-xs btn-link panel-refresh" href="#">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-expand" href="#">
+                            <i class="fa fa-resize-full"></i>
+                        </a>
+                        @*<a class="btn btn-xs btn-link panel-close" href="#">
+                                <i class="fa fa-times"></i>
+                            </a>*@
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover table-striped table-bordered table-full-width" id="sample-table-1">
+                        <thead>
+                            <tr>
+                                <th class="center">STT</th>
+                                <th class="center">Mã sổ</th>
+                                <th class="center">Tên sổ</th>
+                                <th class="center">Kỳ</th>
+                                <th class="center">Tháng</th>
+                                <th class="center">Năm</th>
+                                <th class="center">Hình thức</th>
+                                <th class="center">Phân công</th>
+                                <th class="center">Cập nhật chỉ số</th>
+                                <th class="center">Ký số</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="center">1</td>
+                                <td class="center">PD0150205</td>
+                                <td class="center">TBA la văn Cầu 2- Mới 09/2015</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa ký</div></td>
+                            </tr>
+                            <tr>
+                                <td class="center">2</td>
+                                <td class="center">PD0152508</td>
+                                <td class="center">Dãy D Tập Thể Máy Đèn</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa ký</div></td>
+                            </tr>
+                            <tr>
+                                <td class="center">3</td>
+                                <td class="center">PD0111202</td>
+                                <td class="center">71 Lò Sũ</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa ký</div></td>
+                            </tr>
+                            <tr>
+                                <td class="center">4</td>
+                                <td class="center">PD0150208</td>
+                                <td class="center">162b Tổ 12 Phúc Tân</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-success'>Đã cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-info'>Chưa ký</div></td>
+                            </tr>
+                            <tr>
+                                <td class="center">5</td>
+                                <td class="center">PD0113503</td>
+                                <td class="center">84 Đồng Xuân</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-success'>Đã cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-success'>Đã ký</div></td>
+                            </tr>
+                            <tr>
+                                <td class="center">6</td>
+                                <td class="center">PD0143104</td>
+                                <td class="center">8a Ngô Văn Sở</td>
+                                <td class="center">1</td>
+                                <td class="center">7</td>
+                                <td class="center">2017</td>
+                                <td class="center">MDMS</td>
+                                <td class="center"><div class='label label-sm label-success'>Đã phân công</div></td>
+                                <td class="center"><div class='label label-sm label-success'>Đã cập nhật</div></td>
+                                <td class="center"><div class='label label-sm label-success'>Đã ký</div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+@section PageScripts{
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    @*<script src="~/Content/themes/ClipOne/plugins/flot/jquery.js"></script>*@
+    <script src="~/Content/themes/ClipOne/plugins/flot/jquery.flot.js"></script>
+    <script src="~/Content/themes/ClipOne/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="~/Content/themes/ClipOne/plugins/flot/jquery.flot.categories.js"></script>
+    <script src="~/Content/themes/ClipOne/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="~/Content/themes/ClipOne/js/charts.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+            Charts.init();
+        });
+    </script>
+    <script type="text/javascript">
+        $(document)
+        //$(document).ready(function () {
+        //    alert(1);
+        //    $.plot('#placeholder', data, {
+        //        series: {
+        //            pie: {
+        //                show: true,
+        //                combine: {
+        //                    color: '#999',
+        //                    threshold: 0.1
+        //                }
+        //            }
+        //        },
+        //        legend: {
+        //            show: false
+        //        }
+        //    });
+        //})
+
+        function test() {
+            // Example Data
+
+            //var data = [
+            //	{ label: "Series1",  data: 10},
+            //	{ label: "Series2",  data: 30},
+            //	{ label: "Series3",  data: 90},
+            //	{ label: "Series4",  data: 70},
+            //	{ label: "Series5",  data: 80},
+            //	{ label: "Series6",  data: 110}
+            //];
+
+            //var data = [
+            //	{ label: "Series1",  data: [[1,10]]},
+            //	{ label: "Series2",  data: [[1,30]]},
+            //	{ label: "Series3",  data: [[1,90]]},
+            //	{ label: "Series4",  data: [[1,70]]},
+            //	{ label: "Series5",  data: [[1,80]]},
+            //	{ label: "Series6",  data: [[1,0]]}
+            //];
+
+            //var data = [
+            //	{ label: "Series A",  data: 0.2063},
+            //	{ label: "Series B",  data: 38888}
+            //];
+
+            // Randomly Generated Data
+
+            var data = [],
+                series = Math.floor(Math.random() * 6) + 3;
+
+            for (var i = 0; i < series; i++) {
+                data[i] = {
+                    label: "Series" + (i + 1),
+                    data: Math.floor(Math.random() * 100) + 1
+                }
+            }
+            var placeholder = $("#placeholder");
+
+            //$("#example-8").click(function () {
+
+            //placeholder.unbind();
+
+            $.plot(placeholder, data, {
+                series: {
+                    pie: {
+                        show: true,
+                        combine: {
+                            color: "#999",
+                            threshold: 0.05
+                        }
+                    }
+                },
+                legend: {
+                    show: false
+                }
+            });
+
+            setCode([
+                "$.plot('#placeholder', data, {",
+                "    series: {",
+                "        pie: {",
+                "            show: true,",
+                "            combine: {",
+                "                color: '#999',",
+                "                threshold: 0.1",
+                "            }",
+                "        }",
+                "    },",
+                "    legend: {",
+                "        show: false",
+                "    }",
+                "});"
+            ]);
+        }
+        // Add the Flot version string to the footer
+
+        //$("#footer").prepend("Flot " + $.plot.version + " &ndash; ");
+        //});
+
+        // A custom label formatter used by several of the plots
+        test();
+        function labelFormatter(label, series) {
+            return "<div style='font-size:8pt; text-align:center; padding:2px; color:white;'>" + label + "<br/>" + Math.round(series.percent) + "%</div>";
+        }
+
+        //
+
+    </script>
+}

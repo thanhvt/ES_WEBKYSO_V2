@@ -1,0 +1,406 @@
+﻿@model ES_WEBKYSO.Models.D_SOGCS
+@*<h1>Index</h1>*@
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3><span class="page-header-text">@ViewBag.Title</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- start: PLANT TABLE PANEL -->
+            @*@using (Html.BeginForm("BtnGetCmis", "SoGcs", FormMethod.Get, new {@class = "form-horizontal", enctype = "multipart/form-data"}))
+                {*@
+            <fieldset>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label class="control-label">
+                                    Đơn vị
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                            <div class="col-md-12">
+                                @Html.TextBoxFor(m => m.MA_DVIQLY, new { @class = "form-control", @Value = ViewBag.MaDonVi })
+                                @*@User.Identity.Name*@
+
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <label class="control-label">
+                                    Mã sổ
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="control-label">
+                                    Ngày ghi
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control" placeholder="Mã sổ" type="text" id="MaSo" name="MaSo">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="Ngày ghi" id="NgayGhi" name="NgayGhi" class="form-control" size="2" maxlength="2">
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <label class="control-label">
+                                    Thao tác
+                                </label>
+                                <select id="ThaoTac" name="ThaoTac" class="form-control" onclick="disable(value);">
+                                    <option value="">--- Thao tác ---</option>
+                                    <option value="LDL">Lấy dữ liệu CMIS</option>
+                                    <option value="CNDL">Cập nhật dữ liệu chỉ số</option>
+                                    <option value="DDL">Đẩy dữ liệu cho CMIS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <br />
+                                <label class="control-label">
+                                    Số GCS
+                                </label>
+
+                                <select id="HinhThuc" name="HinhThuc" class="form-control">
+                                    <option value="">--- Tất cả ---</option>
+                                    <option value="MTB">MTB</option>
+                                    <option value="HHU">HHU</option>
+                                    <option value="MDMS">MDMS</option>
+                                </select>
+                                <br />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12" style="padding-bottom: 25px;">
+                        <input class="btn btn-primary" type="submit" value="Tìm kiếm" id="btnGetData">
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label class="control-label">
+                                    Kỳ GCS
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">
+                                    Tháng
+                                </label>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label">
+                                    Năm
+                                </label>
+                            </div>
+                            <div class="col-md-12">
+                            </div>
+                            <div class="col-md-4">
+                                <select name="Ky" id="Ky" class="form-control">
+                                    <option value="">--- Chọn kỳ ---</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select name="Thang" id="Thang" class="form-control">
+                                    <option value="">--- Chọn tháng ---</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" placeholder="Năm" id="Nam" name="Nam" class="form-control" value="2017">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <br />
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    @ViewBag.Title
+                </div>
+                <div class="panel-body">
+                    <table class="table table-striped table-bordered table-hover table-full-width" id="TableGeneric">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                    <hr />
+                    <div class="col-md-12" align="center">
+                        <div class="form-group">
+                            @* <input class="btn btn-primary" type="submit" value="Lấy dữ liệu CMIS" id="btnGetCMIS" style="width: 200px;">*@
+
+                            <input class="btn btn-primary" id="btnGetCMIS" type="submit" name="btnGetCMIS" value="Lấy dữ liệu CMIS"/>
+                            <input class="btn btn-primary" type="submit" value="Cập nhật dữ liệu chỉ số" id="btnUpdateCMIS" style="width: 200px;">
+                            <input class="btn btn-primary" type="submit" value="Đẩy dữ liệu về CMIS" id="btnSaveCMIS" style="width: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @*}*@
+            <!-- end: PLANT TABLE PANEL -->
+        </div>
+    </div>
+</div>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    @Scripts.Render("~/js/datatables")
+    @*<script src="~/Scripts/toastr.min.js"></script>*@
+    <script src="~/Content/themes/ClipOne/plugins/DataTables/media/js/jquery.dataTables.editable.js"></script>
+
+
+    <script type="text/javascript">
+        function disable(value) {
+            if (value === "LDL") {
+                $("#btnGetCMIS").removeAttr("disabled", "disabled");
+                $("#btnUpdateCMIS").attr("disabled", "disabled");
+                $("#btnSaveCMIS").attr("disabled", "disabled");
+            }
+            if (value === "CNDL") {
+                $("#btnGetCMIS").attr("disabled", "disabled");
+                $("#btnUpdateCMIS").removeAttr("disabled", "disabled");
+                $("#btnSaveCMIS").attr("disabled", "disabled");
+            }
+            if (value === "DDL") {
+                $("#btnGetCMIS").attr("disabled", "disabled");
+                $("#btnUpdateCMIS").attr("disabled", "disabled");
+                $("#btnSaveCMIS").removeAttr("disabled", "disabled");
+            }
+        };
+
+        $('input[name=NgayGhi]').keyup(function () {
+            $(this).val($(this).val().replace(/[^\d]/, ''));
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        (function ($) {
+            "use strict";
+            window.TableConfig = [];
+
+            window.TableConfig[0] = {
+                id: "TableGeneric",
+                url: "@Url.Action("GetJson")",
+                func: function (grid) {
+                    window.TableGenericGrid = grid;
+                },
+                reloadFunc: function (d) {
+                    d.MaDonVi = $("#MA_DVIQLY").val();
+                    d.Thang = $("#Thang").val();
+                    d.Ky = $("#Ky").val();
+                    d.Thang = $("#Thang").val();
+                    d.Nam = $("#Nam").val();
+                    d.MaSo = $("#MaSo").val();
+                    d.NgayGhi = $("#NgayGhi").val();
+                    d.ThaoTac = $("#ThaoTac").val();
+                    d.HinhThuc = $("#HinhThuc").val();
+                },
+                columns: [
+                    {
+                        header: "#",
+                        data: null,
+                        render: function (data) {
+                            return '<input type="checkbox" Id="' + data.gcs.ID_LICHGCS + '"/>';
+                        }
+                    },
+                    {
+                        header: "Mã sổ",
+                        data: "MA_SOGCS"
+                    },
+                    {
+                        header: "Tên sổ",
+                        data: "TEN_SOGCS"
+                    },
+                    {
+                        header: "Số kỳ",
+                        data: "SO_KY"
+                    },
+                    {
+                        header: "Loại sổ",
+                        data: "LOAI_SOGCS"
+                    },
+                    {
+                        header: "Ngày ghi",
+                        data: "NGAY_GHI"
+                    },
+                    {
+                        header: "Hình thức",
+                        data: "HINH_THUC"
+                    },
+                    {
+                        header: "Trạng thái",
+                        data: "TRANG_THAI"
+                    }
+                ]
+            };
+
+            $("#btnGetData").on('click',
+                function () {
+                    AutoDataTable();
+                });
+
+
+            $('#btnGetCMIS').click(function () {
+
+                var dataToPost = {};
+                dataToPost.MaDonVi = $("#MA_DVIQLY").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                dataToPost.MaSo = $("#MaSo").val();
+                dataToPost.NgayGhi = $("#NgayGhi").val();
+                dataToPost.HinhThuc = $("#HinhThuc").val();
+                dataToPost.ThaoTac = $("#ThaoTac").val();
+                dataToPost.search = $("#TableGeneric_wrapper").find("[type='search']").val();
+                dataToPost.maDvQly = $("#MA_DVIQLY").val();
+
+                $.ajax({
+                    contentType: 'application/json; charset=utf-8',
+                    type: "POST",
+                    url: "/SoGcs/JsonLayDuLieuCmis",
+                    dataType: 'json',
+                    data: JSON.stringify(dataToPost),
+                    traditional: true,
+                    async: true,
+                    processData: false,
+                    cache: false,
+                    success: function (result) {
+                        if (result.success === true) {
+                            alert(result.message);
+                            window.TableGenericGrid.ajax.reload();
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert('request failed');
+                    }
+                });
+
+            });
+
+            $('#btnUpdateCMIS').click(function () {
+
+                var dataToPost = {};
+                dataToPost.MaDonVi = $("#MA_DVIQLY").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                dataToPost.MaSo = $("#MaSo").val();
+                dataToPost.NgayGhi = $("#NgayGhi").val();
+                dataToPost.HinhThuc = $("#HinhThuc").val();
+                dataToPost.search = $("#TableGeneric_wrapper").find("[type='search']").val();
+                dataToPost.maDvQly = $("#MA_DVIQLY").val();
+
+                $.ajax({
+                    contentType: 'application/json; charset=utf-8',
+                    type: "POST",
+                    url: "/SoGcs/JsonCapNhatDuLieuCmis",
+                    dataType: 'json',
+                    data: JSON.stringify(dataToPost),
+                    traditional: true,
+                    async: true,
+                    processData: false,
+                    cache: false,
+                    success: function (result) {
+                        if (result.success === true) {
+                            alert(result.message);
+                            window.TableGenericGrid.ajax.reload();
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert('request failed');
+                    }
+                });
+            });
+
+            $('#btnSaveCMIS').click(function () {
+
+                var dataToPost = {};
+                dataToPost.MaDonVi = $("#MA_DVIQLY").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Ky = $("#Ky").val();
+                dataToPost.Thang = $("#Thang").val();
+                dataToPost.Nam = $("#Nam").val();
+                dataToPost.MaSo = $("#MaSo").val();
+                dataToPost.NgayGhi = $("#NgayGhi").val();
+                dataToPost.HinhThuc = $("#HinhThuc").val();
+                dataToPost.ThaoTac = $("#ThaoTac").val();
+                dataToPost.search = $("#TableGeneric_wrapper").find("[type='search']").val();
+                dataToPost.maDvQly = $("#MA_DVIQLY").val();
+
+                $.ajax({
+                    contentType: 'application/json; charset=utf-8',
+                    type: "POST",
+                    url: "/SoGcs/JsonLuuDuLieuCmis",
+                    dataType: 'json',
+                    data: JSON.stringify(dataToPost),
+                    traditional: true,
+                    async: true,
+                    processData: false,
+                    cache: false,
+                    success: function (result) {
+                        if (result.success === true) {
+                            alert(result.message);
+                            //window.TableGenericGrid.ajax.reload();
+                        } else {
+                            alert(result.message);
+                        }
+                    },
+                    error: function (xhr, textStatus, errorThrown) {
+                        alert('request failed');
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
+
+}
+
+

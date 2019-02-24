@@ -1,0 +1,52 @@
+﻿@model ES_WEBKYSO.Models.CFG_BANGKE_DONVI
+
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+    @using (Html.BeginForm("Create", "CauHinhKyBangKe", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+    {
+        <div class="modal-body">
+            @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly", @Value = ViewBag.MaDviQly } })
+          
+                @Html.EditorFor(x => x.MA_LOAIBANGKE, new { dropKey = "MA_LOAI_BKE_DVI", label = "--- Chọn bảng kê ---", htmlAttributes = new { @class = "form-control " } })
+            </div>
+            <div style="margin-left:15px;">
+                <div class="form-group">
+                    <label> Ghi chú </label>
+                </div>
+                <div class="form-group">
+                    @Html.TextAreaFor(x => x.GHI_CHU, 5, 120, htmlAttributes: new { style = "width: 100%; max-width: 100%;" }) 
+                </div>
+            </div>
+        </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="BangKeCreate" onclick="return checkValue()">Cập nhật</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="">Đóng</button>
+            </div>
+    }
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+    });
+    function checkValue() {
+        var dv = $("#MA_DVIQLY").val();
+        var bk = $("#MA_LOAI_BKE_DVI").val();
+        if (dv == "") {
+            alert("Chưa chọn mã quản lý");
+            return false;
+        } else if(bk=="") {
+            alert("Chưa chọn bảng kê");
+            return false;
+        }
+        return true;
+    }
+</script>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}

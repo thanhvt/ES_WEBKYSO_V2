@@ -1,0 +1,99 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container" style="min-height: 900px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Chuyển dữ liệu</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" align="left">
+            @Html.ValidationSummary()
+            @if (TempData["Error"] != null)
+            {
+                <div class="alert alert-danger">
+                    <p><strong>Error:</strong> @TempData["Error"].ToString()</p>
+                </div>
+            }
+            @if (TempData["Success"] != null)
+            {
+                <div class="alert alert-success">
+                    <p><strong>Success:</strong> @TempData["Success"].ToString()</p>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Thao tác
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    @using (Html.BeginForm("Index", "ChuyenDuLieu", FormMethod.Post, new { @enctype = "multipart/form-data", @class = "form-horizontal", name = "frm", id = "frm" }))
+                    {
+                        <fieldset>
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Username
+                                        </label>
+                                        <input class="form-control" placeholder="Tên tài khoản FTP" type="text" id="username" name="username">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="control-label">
+                                            Password
+                                        </label>
+                                        <input class="form-control" placeholder="Mật khẩu tài khoản FTP" type="password" id="password" name="password">
+                                    </div>
+                                </div>
+                            </div>
+                            @*<span>Select File:</span>
+                            <input type="file" name="postedFile" />
+                            <hr />
+                            <input type="submit" value="Upload" />
+                            <br />
+                            <span style="color:green">@ViewBag.Message</span>*@
+                            <div class="col-md-6">
+                                <br />
+                                <button type="submit" class="btn btn-primary" value="Chuyển dữ liệu" id="btnPostData">
+                                    <i class="fa fa-search"></i>
+                                    Chuyển dữ liệu
+                                </button>
+                            </div>
+                        </fieldset>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    @*<div class="panel panel-success">
+        <div class="panel-heading">
+            Thao tác
+            <i class="fa fa-pencil-square-o text-right"></i>
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary" type="submit" value="Cập nhật chỉ số" id="btnUpdateCMIS">
+                                    <i class="fa fa-pencil"></i>
+                                    Cập nhật chỉ số
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>*@
+</div>

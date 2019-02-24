@@ -1,0 +1,78 @@
+﻿@model ES_WEBKYSO.Models.CFG_BOPHAN_KY
+
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">@ViewBag.Title</h4>
+</div>
+@using (Html.BeginForm("Create", "CauHinhBoPhanKy", FormMethod.Post, new { @class = "form-horizontal", name = "frm", id = "frm" }))
+{
+    <div class="modal-body">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly", @Value = ViewBag.MA_DVIQLY } })
+
+            @Html.EditorFor(x => x.MA_LOAIBANGKE, new { dropKey = "MA_LOAI_BKE_DVI", label = "--- Chọn bảng kê ---", htmlAttributes = new { @class = "form-control "  } })
+        </div>
+        <div class="form-group">
+            @Html.EditorFor(x => x.RoleId, new { dropKey = "MA_BO_PHAN_KY", label = "--- Chọn bộ phận ký ---", htmlAttributes = new { @class = "form-control " } })
+
+            @Html.EditorFor(x => x.THU_TUKY, new { dropKey = "THUTU_KY", label = "--- Chọn thứ tự ký ---", htmlAttributes = new { @class = "form-control " } })
+        </div>
+        <div style="margin-left:15px;">
+            <div class="form-group">
+                <label> Ghi chú </label>
+            </div>
+            <div class="form-group">
+                @Html.TextAreaFor(x => x.MO_TA, 5, 120, htmlAttributes: new { style = "width: 100%; max-width: 100%;" })
+            </div>
+        </div>
+    </div>
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" id="BangKeCreate">Cập nhật</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="">Đóng</button>
+        </div>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.validator.unobtrusive.parse("#frm");
+
+        function Create() {
+            var bophanky = [];
+            bophanky.MA_DVIQLY = $("#MA_DVIQLY").val();
+            bophanky.MA_LOAIBANGKE = $("#MA_LOAIBANGKE").val();
+            bophanky.RoleId = $("#RoleId").val();
+            bophanky.THU_TUKY = $("#THU_TUKY").val();
+            bophanky.MO_TA = $("#MO_TA").val();
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                async: true,
+                url: "/CauHinh/CauHinhBoPhanKy/Create",
+                dataType: 'json',
+                data: JSON.stringify({ model: bophanky }),
+                contentType: "application/json; charset=utf-8",
+                success: function (result) {
+                    if (result.success == true) {
+                        alert(result.message);
+                        grid.ajax.reload();
+                    } else {
+                        alert(result.message);
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    alert(result.message);
+                },
+                complete: function (result) {
+                    grid.ajax.reload();
+                }
+            });
+        }
+        
+    });
+</script>
+
+@section PageScripts{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}

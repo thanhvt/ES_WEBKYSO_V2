@@ -1,0 +1,230 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    ViewBag.Title = "Cấu hình phân công sổ";
+}
+
+<div class="container" style="min-height: 851px;">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="page-header">
+                <h3>@*<span class="page-header-text">@ViewBag.Title</span>*@</h3>
+                <h3><span style="color: teal">Cấu hình phân công sổ</span></h3>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">
+            Tìm kiếm
+            <i class="fa fa-search text-right"></i>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Mã sổ
+                                        </label>
+                                        <input class="form-control" placeholder="Mã sổ" type="text" id="MaSo" name="MaSo">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Loại sổ
+                                        </label>
+                                        <select id="LoaiSo" name="LoaiSo" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn loại sổ ---</option>
+                                            <option value="TP">TP</option>
+                                            <option value="KH">KH</option>
+                                            <option value="DN">DN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Hình thức
+                                        </label>
+                                        <select id="HinhThuc" name="HinhThuc" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn hình thức ---</option>
+                                            <option value="MDMS">MDMS</option>
+                                            <option value="MTB">MTB</option>
+                                            <option value="HHU">HHU</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Ngày ghi
+                                        </label>
+                                        <input class="form-control" placeholder="Ngày ghi" type="text" id="NgayGhi" name="NgayGhi">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Đội
+                                        </label>
+                                        <select id="Doi" name="Doi" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn đội---</option>
+                                            <option value="Doi1">Đội 1</option>
+                                            <option value="Doi2">Đội 2</option>
+                                            <option value="Doi3">Đội 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <br />
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <label class="control-label">
+                                            Nhân viên
+                                        </label>
+                                        <select id="NhanVien" name="NhanVien" class="form-control" onclick="disable(value);">
+                                            <option value="">--- Chọn đội---</option>
+                                            <option value="LHD">Lã Hồng Dương</option>
+                                            <option value="ĐHN">Đỗ Hồng Nhung</option>
+                                            <option value="NVH">Nguyễn Việt Hải</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <br />
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-search"></i>
+                                Tìm kiếm
+                            </button>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <i class="fa fa-apple"></i>
+                    Danh sách cấu hình phân công sổ
+                    <div class="panel-tools">
+                        <a href="@Url.Action("Create")" class="btn btn-xs tooltips" data-original-title="Thêm">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a class="btn btn-xs btn-link panel-collapse expand"></a>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="sample-table-1">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left: auto; margin-right: auto;">
+                                    </th>
+                                    <th>Mã đơn vị quản lý</th>
+                                    <th>Mã sổ</th>
+                                    <th>Loại sổ</th>
+                                    <th>Nhân viên</th>
+                                    <th>Hình thức</th>
+                                    <th>Ngày ghi</th>
+                                    <th>Trạng thái</th>
+                                    <th class="center">Tác vụ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </td>
+                                    <td>PD0100</td>
+                                    <td>D018110</td>
+                                    <td>KH</td>
+                                    <td>Lã Hồng Dương</td>
+                                    <td>MDMS</td>
+                                    <td>8</td>
+                                    <td>
+                                        <span class="label label-sm label-success">Đã phân công</span>
+                                    </td>
+                                    <td class="center">
+                                        <div>
+                                            <a class="btn btn-xs btn-teal tooltips Edit" href="">
+                                                <i class="fa fa-edit"></i> Sửa
+                                            </a>
+                                            <a class="btn btn-xs btn-bricky tooltips Delete" data-id="1" href="#"><i class="fa fa-trash-o"></i> Xóa</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" name="myTextEditBox" value="checked"
+                                               style="margin-left:auto; margin-right:auto;">
+                                    </td>
+                                    <td>PD0100</td>
+                                    <td>D028110</td>
+                                    <td>KH</td>
+                                    <td>Đỗ Hồng Nhung</td>
+                                    <td>MDMS</td>
+                                    <td>16</td>
+                                    <td>
+                                        <span class="label label-sm label-danger">Chưa phân công</span>
+                                    </td>
+                                    <td class="center">
+                                        <div>
+                                            <a class="btn btn-xs btn-teal tooltips Edit" href="">
+                                                <i class="fa fa-edit"></i> Sửa
+                                            </a>
+                                            <a class="btn btn-xs btn-bricky tooltips Delete" data-id="1" href="#"><i class="fa fa-trash-o"></i> Xóa</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

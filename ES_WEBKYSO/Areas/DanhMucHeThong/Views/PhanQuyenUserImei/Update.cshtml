@@ -1,0 +1,79 @@
+﻿@model ES_WEBKYSO.Models.D_IMEI
+
+<div style="margin: -15px;">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">@ViewBag.Title</h4>
+    </div>
+    <div class="modal-body">
+        <form class="form-horizontal" id="PhanQuyenUserImeiUpdateForm">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary()
+            @Html.HiddenFor(x => x.ID)
+            <div class="form-group">
+                @Html.EditorFor(x => x.MA_DVIQLY, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                @Html.EditorFor(x => x.IMEI)
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.LOAI_MAY)
+                @Html.EditorFor(x => x.NGUOI_CAP)
+            </div>
+            <div class="form-group">
+                @Html.EditorFor(x => x.NGUOI_DUNG)
+                @Html.EditorFor(x => x.NgayCapString)
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12" align="left">
+                    @Html.ValidationSummary()
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="PhanQuyenUserImeiUpdateClose">Đóng</button>
+        <button type="button" class="btn btn-primary" id="PhanQuyenUserImeiUpdate">Cập nhật</button>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $('.date-picker').datepicker({
+        autoclose: true
+    });
+    $(document).ready(function () {
+
+        $("#PhanQuyenUserImeiUpdate").on('click', function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                cache: false,
+                async: true,
+                url: "@Url.Action("Update", "PhanQuyenUserImei")",
+                dataType: 'json',
+                data: $("#PhanQuyenUserImeiUpdateForm").serialize(),
+                success: function (result) {
+                    if (result.status === false) {
+                        alert(result.messenger);
+                    }
+                    if (result.status === true) {
+                        $("#PhanQuyenUserImeiUpdateClose").click();
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+
+                },
+                complete: function (result) {
+                    window.TableGenericPhanQuyenUserImeiGrid.ajax.reload();
+                }
+            });
+
+        });
+
+        $('#popupStaticModal').on('hidden.bs.modal', function () {
+            $("#popupStaticModal").html('<div class="modal-body"><div></div></div>');
+        });
+
+    });
+
+</script>
