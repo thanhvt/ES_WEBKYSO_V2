@@ -1125,6 +1125,13 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                     DataTable dt = new DataTable();
                     foreach (string file_name in TEN_FILES)
                     {
+                        //  Sổ GCS chỉ được xuất hiện ở một nơi, VD khi nhận về MTB rồi không được nhận lại lần nữa (hiện đang lấy thoải mái) 
+                        //  có hỗ trợ reset trạng thái để tránh người dùng lấy lại dữ liệu không để ý > mất dữ liệu
+                        var lichGcsCheck = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.FILE_XML.Trim() == file_name.Trim() && o.NHANSO_MTB == "true");
+                        if (lichGcsCheck != null)
+                        {
+                            continue;
+                        }
                         dt = null;
                         //cập nhật chi tiết sổ GCS vào GCS_CHISO_HHU
                         DataSet dsXML = new DataSet();
@@ -1224,7 +1231,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                             //                                    , int.Parse(dt.Rows[0]["NAM"].ToString())
                             //                                    , 1, false);
                         }
-                        var lichGcs = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.FILE_XML.Trim() == file_name.Trim());
+                        var lichGcs = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.FILE_XML.Trim() == file_name.Trim() && o.NHANSO_MTB == "false");
                         if (lichGcs != null)
                         {
                             lichGcs.NHANSO_MTB = "true";
