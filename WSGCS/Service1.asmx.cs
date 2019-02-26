@@ -45,7 +45,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
             GcsUpload = Server.MapPath("GCSUploads"); //lấy thư mục lưu file đẩy lên
             CheckPath(GcsUpload); //kiểm tra thư mục, tạo mới nếu chưa có
         }
-        
+
         [WebMethod]
         public DataSet ReadXMLToHHC(string FileName, int KY, int THANG, int NAM, string MA_DVIQLY, string MA_DOIGCS, int USERID)
         {
@@ -226,7 +226,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
             #endregion
             return ds;
         }
-        
+
         [WebMethod]
         public DataSet ReadXMLToHHCByUserAll(int KY, int THANG, int NAM, string MA_DVIQLY, string MA_DOIGCS, int USERID)
         { //lấy toàn bộ các sổ đc phân công cho nhân viên có USERID và trả về dataset
@@ -447,7 +447,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 #region đọc dữ liệu file .xml và lưu vào dataset
                 foreach (var item in listLICH) //đọc lần lượt các sổ GCS trong file .xml
                 {
-                    
+
                     string pathXML = path + item.FILE_XML;
                     if (File.Exists(path))
                     {//tồn tại file xml thì đọc và add vào dataset
@@ -541,7 +541,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 if (lich == null) return "LỖI: Không tìm thấy sổ được phân công.";
                 if (lich.FILE_XML == FileName) return "LỖI: Không có quyền thao tác với sổ này."; //không cho phép đẩy sổ lên nếu USERID ko được phân công
                                                                                                   // cấu hình save file trên server.
-                //string FilePath = Path.Combine(Server.MapPath("~/TemplateFile/" + lich.MA_DVIQLY.Trim() + "/" + FileName));
+                                                                                                  //string FilePath = Path.Combine(Server.MapPath("~/TemplateFile/" + lich.MA_DVIQLY.Trim() + "/" + FileName));
                 string FilePath = Utility.getXMLPath() + lich.MA_DVIQLY.Trim() + @"\" + FileName;
                 if (Offset == 0) // tạo flie mới, khởi tạo một file trống
                     File.Create(FilePath).Close();
@@ -572,7 +572,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 if (lich == null) return "LỖI: Không tìm thấy sổ được phân công.";
                 if (lich.FILE_XML == FileName) return "LỖI: Không có quyền thao tác với sổ này."; //không cho phép đẩy sổ lên nếu USERID ko được phân công
                                                                                                   // cấu hình save file trên server.
-                //string FilePath = Path.Combine(Server.MapPath("~/TemplateFile/" + lich.MA_DVIQLY.Trim() + "/" + FileName));
+                                                                                                  //string FilePath = Path.Combine(Server.MapPath("~/TemplateFile/" + lich.MA_DVIQLY.Trim() + "/" + FileName));
                 string FilePath = Utility.getXMLPath() + lich.MA_DVIQLY.Trim() + @"\" + FileName;
                 if (Offset == 0) // tạo flie mới, khởi tạo một file trống
                     File.Create(FilePath).Close();
@@ -721,7 +721,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 List<GCS_LICHGCS> listChuaDoiSoat = new List<GCS_LICHGCS>();
 
                 //loại bỏ các sổ đã được đối soát thành công
-                foreach (var item in listSoGCSNV) 
+                foreach (var item in listSoGCSNV)
                 {
                     if (item.NHANSO_MTB == "false")
                     {
@@ -845,7 +845,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
 
                 retVal = null;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 retVal = "ERROR";
                 //common.Log("ERROR: UploadChunk_Mobile (" + FileName + "," + MA_DVIQLY + "," + IMEI + ") -- DETAIL: " + ex.Message);
@@ -923,7 +923,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                     return;
                 }
                 System.IO.File.Copy(db_copy, db_name);
-                
+
             }
             try
             {
@@ -957,7 +957,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                                     string listFile = list_ten_file.Substring(1, list_ten_file.Length - 2);//loại bỏ 2 dấu nháu đơn
                                     var replace = listFile.Replace("'", "");
                                     string[] lstFile = replace.Split(','); //lấy từng file để cập nhật
-                                    
+
                                     foreach (var tenFile in lstFile)
                                     {
                                         string pathServer = Server.MapPath("~/");
@@ -1018,7 +1018,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                                                             lichGcsHhu.STR_CHECK_DSOAT = "CTO_DTU";
                                                             UnitOfWork.RepoBase<GCS_CHISO_HHU>().Update(lichGcsHhu);
                                                         }
-                                                    } 
+                                                    }
                                                     var csMoi = Convert.ToInt32(Math.Round(Convert.ToDouble(y)));
                                                     if (csMoi > 0)
                                                     {
@@ -1058,7 +1058,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                                                 countThucHien, logStatus);
                                         }
                                     }
-                                    
+
                                 }
                             }
                         }
@@ -1114,7 +1114,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
 
                     //khai báo biến sử dụng tiện ích
                     CommonExtend commonExtend = new CommonExtend();
-                    
+
                     db_sqlite.OpenConn();
                     db_sqlite.BeginTransaction();
 
@@ -1138,7 +1138,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                             string ma_SOGCS = row["MA_QUYEN"].ToString();
                             string loaiBCS = row["LOAI_BCS"].ToString();
                             var lstchiso = UnitOfWork.RepoBase<GCS_CHISO_HHU>().GetAll(o => o.MA_DVIQLY == madonvi && o.MA_DDO == ma_DDO && o.MA_CTO == ma_cto
-                                                && o.MA_KHANG == ma_khang & o.MA_QUYEN == ma_SOGCS && o.TEN_FILE == file_name && o.LOAI_BCS == loaiBCS).ToList();
+                                                && o.MA_KHANG == ma_khang & o.MA_QUYEN == ma_SOGCS && o.TEN_FILE == file_name && o.LOAI_BCS == loaiBCS).OrderBy(c => c.MA_KHANG).ThenBy(c => c.LOAI_BCS).ToList();
                             if (lstchiso.Count == 0) //thêm mới chi tiết điểm đo vào bảng GCS_CHISO_HHU nếu chưa có
                             {
                                 GCS_CHISO_HHU chiso = new GCS_CHISO_HHU();
@@ -1208,7 +1208,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                         }
 
                         //lấy về chi tiết các sổ GCS
-                        IEnumerable<GCS_CHISO_HHU> lstChiTietSo = UnitOfWork.RepoBase<GCS_CHISO_HHU>().GetAll(o => o.MA_DVIQLY == MA_DVIQLY && o.TEN_FILE == file_name).ToList();
+                        IEnumerable<GCS_CHISO_HHU> lstChiTietSo = UnitOfWork.RepoBase<GCS_CHISO_HHU>().GetAll(o => o.MA_DVIQLY == MA_DVIQLY && o.TEN_FILE == file_name).OrderBy(c => c.MA_KHANG).ThenBy(c => c.LOAI_BCS).ToList();
                         dt = ToDataTable(lstChiTietSo);
                         //dt = gcsDAL.p_GCS_CHISO_HHU_GetDataSoGCS(MA_DVIQLY, file_name.Trim(), "SO_CHUA_CHOT", 0, 0, 0);
                         dt.Columns.Add("HINH_ANH", typeof(byte[]));
@@ -1251,7 +1251,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
 
                     db_sqlite.CommitTransaction();
 
-                    DataTable dtKoDat = db_sqlite.ExecuteQuery("SELECT * FROM GCS_CHISO_HHU WHERE STR_CHECK_DSOAT = 'UNCHECK'");
+                    DataTable dtKoDat = db_sqlite.ExecuteQuery("SELECT * FROM GCS_CHISO_HHU WHERE STR_CHECK_DSOAT = 'UNCHECK' order by MA_KHANG, LOAI_BCS");
 
                     db_sqlite.CloseConn();
 
@@ -1319,7 +1319,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 //lấy thông tin phân công
                 //DataContext.DataContext context = new DataContext.DataContext();
                 UnitOfWork UnitOfWork = new UnitOfWork(new DataContext.DataContext());
-                var lich = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == KY && o.THANG == THANG 
+                var lich = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == KY && o.THANG == THANG
                     && o.NAM == NAM && o.MA_DVIQLY == MA_DVIQLY && o.MA_SOGCS == MA_SOGCS && o.STATUS == "DL");
                 if (lich == null)
                 {
@@ -1496,12 +1496,12 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
             try
             {
                 //lấy thông tin phân công
-                var lich = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == KY && o.THANG == THANG && o.NAM == NAM && o.MA_DVIQLY == MA_DVIQLY && o.MA_SOGCS == MA_SOGCS );
+                var lich = UnitOfWork.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == KY && o.THANG == THANG && o.NAM == NAM && o.MA_DVIQLY == MA_DVIQLY && o.MA_SOGCS == MA_SOGCS);
                 if (lich == null) return "LỖI: Không tìm thấy sổ được phân công.";
                 // Thừa quá ??? if (lich.FILE_XML == FileName) return "LỖI: Không có quyền thao tác với sổ này."; //không cho phép đẩy sổ lên nếu USERID ko được phân công
                 // cấu hình save file trên server.
                 //string FilePath = Path.Combine(Server.MapPath("~/TemplateFile/" + lich.MA_DVIQLY.Trim() + "/" + lich.FILE_XML));
-                
+
                 string FilePath = Utility.getXMLPath() + lich.MA_DVIQLY.Trim() + @"\" + lich.FILE_XML;
                 ds.WriteXml(FilePath);
                 //if (Offset == 0) // tạo flie mới, khởi tạo một file trống
@@ -1516,9 +1516,9 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                 {
                     //DataSet ds = new DataSet();
                     //ds.ReadXml(FilePath);
-                    if(ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                    if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
                     {
-                        foreach(DataRow dataRow in ds.Tables[0].Rows)
+                        foreach (DataRow dataRow in ds.Tables[0].Rows)
                         {
                             string maquyen = dataRow["MA_QUYEN"].ToString();
                             int ky = Convert.ToInt32(dataRow["KY"].ToString());
@@ -1568,6 +1568,8 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                                     gcsHhu.CS_MOI = Convert.ToDecimal(dataRow["CS_MOI"]);
                                 if (dataRow["SL_MOI"] != null)
                                     gcsHhu.SL_MOI = Convert.ToDecimal(dataRow["SL_MOI"]);
+
+
                                 UnitOfWork.RepoBase<GCS_CHISO_HHU>().Update(gcsHhu);
                             }
                             //var m = System.Web.HttpContext.Current.Server.MapPath("~/");
@@ -1577,7 +1579,7 @@ namespace ES_WEBKYSO.ServiceKetNoiMTB
                             //    {
                             //        lstImage.ANH_GCS = m + @"Images\NoImage.png";
                             //        var path = lstImage.ANH_GCS;
-                                
+
                             //    }
                             //}
                         }

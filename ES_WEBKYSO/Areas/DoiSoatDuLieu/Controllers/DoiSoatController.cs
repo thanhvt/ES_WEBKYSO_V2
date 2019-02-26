@@ -205,7 +205,7 @@ namespace ES_WEBKYSO.Areas.DoiSoatDuLieu.Controllers
             findModel.MaSos = maSoSplit.ToList();
             var paging = Request.Params.ToPaging("MA_DVIQLY");
             var data =
-                Uow.RepoBase<GCS_CHISO_HHU>().ManagerGetAllForIndex(findModel, paging.OrderKey, ref paging).ToList();
+                Uow.RepoBase<GCS_CHISO_HHU>().ManagerGetAllForIndex(findModel, paging.OrderKey, ref paging).OrderBy(c => c.MA_KHANG).ThenBy(c => c.LOAI_BCS).ToList();
             paging.data = data;
             var lstChuaDs = Uow.RepoBase<GCS_CHISO_HHU>().ManagerGetAllForIndex(findModel).Count(x => x.STR_CHECK_DSOAT != "CHUA_DOI_SOAT");
             var lstDsDat = Uow.RepoBase<GCS_CHISO_HHU>().ManagerGetAllForIndex(findModel).Count(x => x.STR_CHECK_DSOAT == "CHECK");
