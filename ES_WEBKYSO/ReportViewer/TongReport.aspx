@@ -42,41 +42,68 @@
 
          protected override void OnLoad(EventArgs e)
          {
+             ReportHelper reportHelper = new ReportHelper(UnitOfWork);
+             var maSos = Request.Params["MaSo"];;
+             maSos = maSos ?? "";
+             var maSoSplit = maSos.Split(',');
+             if (maSos == "")
+             {
+                 maSoSplit = new string[] {};
+             }
 
-             IdLich = int.Parse(Request["IdLich"]);
-             MaBangKe = Request["MaBangKe"];
-             if(MaBangKe == null || IdLich == 0)
+
+             var maDonVi = Request.Params["MaDonVi"];
+             //maSo = Request.Params["MaSo"];
+             string[] maSo = maSoSplit;
+             var ky = int.Parse(Request.Params["Ky"]);
+             var thang = int.Parse(Request.Params["Thang"]);
+             var nam = int.Parse(Request.Params["Nam"]);
+             MaBangKe = Request.Params["LoaiBangKe"];
+             var nguoiDoiSoat = Request.Params["NguoiDoiSoat"];
+             if (maSo == null)
              {
                  lblMessage.Text = "Không tìm thấy file này";
              }
-            
 
-             ReportHelper reportHelper = new ReportHelper(UnitOfWork);
-             MaQuyen = reportHelper.getMaQuyen(IdLich);
-             NgayGcs = reportHelper.getNgayGcs(IdLich);
-              InstanceReportSource instanceReportSource = new InstanceReportSource();
+             //IdLich = int.Parse(Request["IdLich"]);
+             //MaBangKe = Request["MaBangKe"];
+             //if(MaBangKe == null || IdLich == 0)
+             //{
+             //    lblMessage.Text = "Không tìm thấy file này";
+             //}
+
+
+
+             //MaQuyen = reportHelper.getMaQuyen(IdLich);
+             //NgayGcs = reportHelper.getNgayGcs(IdLich);
+             InstanceReportSource instanceReportSource = new InstanceReportSource();
              switch (MaBangKe)
              {
-                 case "BKCS":
-                    
+                 case "08":
+
                      rptBangKeChiSo reportBkcs = new rptBangKeChiSo();
                      var rptBkcs = new rptBangKeChiSo();
 
                      instanceReportSource.ReportDocument = rptBkcs;
                      base.OnLoad(e);
 
-
-                     var sourceBkcs = reportHelper.getReportBkcs(IdLich);
-                     if (sourceBkcs != null)
-                     {
-                         reportBkcs.SetSourceTable(sourceBkcs);
-                         reportBkcs.SetParamater(NgayGcs,MaQuyen);
-                     }
+                     var sourceBkcs = reportHelper.getReportBkcsKTN(ky, thang, nam, maSo[0]);
+                     //if (sourceBkcs != null)
+                     //{
+                     //    reportBkcs.SetSourceTable(sourceBkcs);
+                     //    reportBkcs.SetParamater(NgayGcs,MaQuyen);
+                     //}
+                     //var sourceBkcs = reportHelper.getReportBkcs(IdLich);
+                     //if (sourceBkcs != null)
+                     //{
+                     //    reportBkcs.SetSourceTable(sourceBkcs);
+                     //    reportBkcs.SetParamater(NgayGcs,MaQuyen);
+                     //}
                      instanceReportSource.ReportDocument = reportBkcs.Report;
                      rptTong.ReportSource = instanceReportSource;
                      break;
                  case "TTBT":
-                    
+
                      rptTinhTrangBatThuong reportTtbt = new rptTinhTrangBatThuong();
                      var rptTtbt = new rptTinhTrangBatThuong();
 
@@ -92,14 +119,14 @@
                      instanceReportSource.ReportDocument = reportTtbt.Report;
                      rptTong.ReportSource = instanceReportSource;
                      break;
-                 case "SLBT":
+                 case "06":
                      rptSanLuongBatThuong report_SLBT = new rptSanLuongBatThuong();
                      var rpt_Slbt = new rptSanLuongBatThuong();
 
                      instanceReportSource.ReportDocument = rpt_Slbt;
                      base.OnLoad(e);
 
-                     var source_Slbt = reportHelper.get_SLBT(IdLich);
+                     var source_Slbt = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
                      if (source_Slbt != null)
                      {
                          report_SLBT.SetSourceTable(source_Slbt);
@@ -107,19 +134,34 @@
                      instanceReportSource.ReportDocument = report_SLBT.Report;
                      rptTong.ReportSource = instanceReportSource;
                      break;
-                 case "ASLBT":
-                     rptSanLuongBatThuong report_ASLBT = new rptSanLuongBatThuong();
-                     var rpt_Aslbt = new rptSanLuongBatThuong();
+                 case "07":
+                     rptAnhSanLuongBatThuong report_ASLBT = new rptAnhSanLuongBatThuong();
+                     var rpt_Aslbt = new rptAnhSanLuongBatThuong();
 
                      instanceReportSource.ReportDocument = rpt_Aslbt;
                      base.OnLoad(e);
 
-                     var source_Aslbt = reportHelper.get_SLBT(IdLich);
+                     var source_Aslbt = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
                      if (source_Aslbt != null)
                      {
                          report_ASLBT.SetSourceTable(source_Aslbt);
                      }
                      instanceReportSource.ReportDocument = report_ASLBT.Report;
+                     rptTong.ReportSource = instanceReportSource;
+                     break;
+                 case "09":
+                     rptCongToCoChiSoPMax report_ChiSoPMax = new rptCongToCoChiSoPMax();
+                     var rpt_ChiSoPMax = new rptCongToCoChiSoPMax();
+
+                     instanceReportSource.ReportDocument = rpt_ChiSoPMax;
+                     base.OnLoad(e);
+
+                     var source_ChiSoPMax = reportHelper.GetCHISO_PMax(ky, thang, nam, maSo[0]);
+                     if (source_ChiSoPMax != null)
+                     {
+                         report_ChiSoPMax.SetSourceTable(source_ChiSoPMax);
+                     }
+                     instanceReportSource.ReportDocument = report_ChiSoPMax.Report;
                      rptTong.ReportSource = instanceReportSource;
                      break;
                  default:

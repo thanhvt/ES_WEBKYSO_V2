@@ -185,6 +185,29 @@
                     rptDoiSoat.ReportSource = instanceReportSource;
                 }
                 break;
+           case "06":
+
+                rptCongToSanLuongBatThuongDaXacNhan reportSLBT = new rptCongToSanLuongBatThuongDaXacNhan();
+                var rptSLBT = new rptCongToSanLuongBatThuongDaXacNhan();
+
+                instanceReportSource.ReportDocument = rptSLBT;
+                base.OnLoad(e);
+
+                var sourceSLBT = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
+                if (sourceSLBT != null)
+                {
+                    reportSLBT.SetSourceTable(sourceSLBT);
+                    reportSLBT.SetParamater(nguoiDoiSoat);
+                    instanceReportSource.ReportDocument = reportSLBT.Report;
+                    rptDoiSoat.ReportSource = instanceReportSource;
+                }
+                else
+                {
+                    reportSLBT.SetParamater(nguoiDoiSoat);
+                    instanceReportSource.ReportDocument = reportSLBT.Report;
+                    rptDoiSoat.ReportSource = instanceReportSource;
+                }
+                break;
             default:
                 break;
         }

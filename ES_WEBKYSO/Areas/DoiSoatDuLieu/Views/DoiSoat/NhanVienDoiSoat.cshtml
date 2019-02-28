@@ -169,8 +169,13 @@
                                     <option value="03">03. Danh sách khách hàng đã đối soát</option>
                                     <option value="04">04. Danh sách khách hàng đối soát đạt</option>
                                     <option value="05">05. Danh sách khách hàng đối soát không đạt</option>
-                                    @*<option value="06">06. Danh sách công tơ có sản lượng bất thường</option>
-                                    <option value="07">07. Danh sách công tơ điện tử</option>*@
+                                    <option value="06">06. Danh sách công tơ có sản lượng bất thường</option>
+                                    <option value="07">07. Bảng kê ảnh sản lượng bất thường</option>
+                                    <option value="08">08. Bảng kê ảnh chỉ số công tơ</option>
+                                    <option value="09">09. Danh sách các khách hàng ghi PMAX</option>
+                                    <option value="10">10. Phúc tra chỉ số</option>
+                                    <option value="11">11. Lịch sử phúc tra chỉ số</option>
+                                    <option value="12">12. Phiếu xác minh chỉ số công tơ</option>
                                 </select>
                             </div>
                         </div>
@@ -324,36 +329,41 @@
             dataToPost.Nam = $("#Nam").val();
             dataToPost.LoaiBangKe = $("#LoaiBangKe").val();
             dataToPost.NguoiDoiSoat = $("#NguoiDoiSoat").val();
-            $.ajax({
-                type: "POST",
-                url: "/DoiSoat/PrintBangKe",
-                dataType: 'json',
-                data: {
-                    madv: dataToPost.MaDonVi,
-                    maso: dataToPost.MaSos,
-                    ky: dataToPost.Ky,
-                    thang: dataToPost.Thang,
-                    nam: dataToPost.Nam,
-                    loaibk: dataToPost.LoaiBangKe,
-                    nguoids: dataToPost.NguoiDoiSoat
-                },
-                success: function (data) {
-                    if (data.success == true) {
-                        window.open("/ReportViewer/DoiSoatReport.aspx?MaDonVi=" + $("#MaDonVi").val() +
-                        "&MaSo=" + $("#ID").val() +
-                        "&Ky=" + $("#Ky").val() +
-                        "&Thang=" + $("#Thang").val() +
-                        "&Nam=" + $("#Nam").val() +
-                        "&LoaiBangKe=" + $("#LoaiBangKe").val() +
-                        "&NguoiDoiSoat=" + $("#NguoiDoiSoat").val(), "target", "_blank");
-                    } else {
-                        alert(data.message);
+            if (dataToPost.NguoiDoiSoat < 6) {
+                $.ajax({
+                    type: "POST",
+                    url: "/DoiSoat/PrintBangKe",
+                    dataType: 'json',
+                    data: {
+                        madv: dataToPost.MaDonVi,
+                        maso: dataToPost.MaSos,
+                        ky: dataToPost.Ky,
+                        thang: dataToPost.Thang,
+                        nam: dataToPost.Nam,
+                        loaibk: dataToPost.LoaiBangKe,
+                        nguoids: dataToPost.NguoiDoiSoat
+                    },
+                    success: function (data) {
+                        if (data.success == true) {
+                            window.open("/ReportViewer/DoiSoatReport.aspx?MaDonVi=" + $("#MaDonVi").val() +
+                                "&MaSo=" + $("#ID").val() +
+                                "&Ky=" + $("#Ky").val() +
+                                "&Thang=" + $("#Thang").val() +
+                                "&Nam=" + $("#Nam").val() +
+                                "&LoaiBangKe=" + $("#LoaiBangKe").val() +
+                                "&NguoiDoiSoat=" + $("#NguoiDoiSoat").val(), "target", "_blank");
+                        } else {
+                            alert(data.message);
+                        }
+                    },
+                    error: function (ex) {
+                        alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
                     }
-                },
-                error: function (ex) {
-                    alert('Có lỗi xảy ra trong quá trình xóa xác nhận: ' + ex);
-                }
-            });
+                });
+            }
+            else {
+                alert('Test');
+            }
         });
 
 

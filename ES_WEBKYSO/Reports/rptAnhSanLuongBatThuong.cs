@@ -26,5 +26,11 @@ namespace ES_WEBKYSO.Reports
         {
             tblanhsanluongbatthuong.DataSource = datasource;
         }
+        public void SetParamater(string nguoidoisoat)
+        {
+            ReportParameter[] parameter = new ReportParameter[1];
+            parameter[0] = new ReportParameter("nguoiDoiSoat", ReportParameterType.String, nguoidoisoat);
+            this.ReportParameters.Add(parameter[0]);
+        }
     }
 }

@@ -178,7 +178,20 @@ namespace ES_WEBKYSO.Common
             DataTable dt = lsttodt.ToDataTable(gcsHhu);
             return dt;
         }
+        public DataTable getReportBkcsKTN(int ky, int thang, int nam, string strMaSoGCS)
+        {
 
+            string fileXML = _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).FILE_XML;
+
+            string filePath = "";
+            //filePath = Path.Combine(System.Web.HttpContext.Current.Server.MapPath(@"~/TemplateFile/" + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.ID_LICHGCS == ID_LISHGCS).MA_DVIQLY.Trim() + @"/"), fileXML);
+            filePath = Utility.getXMLPath() + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).MA_DVIQLY.Trim() + @"/" + fileXML;
+            var ds = new DataSet();
+            // filePath = "~/TemplateFile/cochau1_161207.xml";
+            ds.ReadXml(filePath, XmlReadMode.InferSchema);
+            DataTable dtTemp = Convert2TemplateDataTable(ds.Tables[0], System.IO.Path.GetFileName(filePath));
+            return dtTemp;
+        }
         public DataTable getReportBkcs(int ID_LISHGCS)
         {
 
@@ -221,6 +234,61 @@ namespace ES_WEBKYSO.Common
             DataTable dtTemp = Convert2TemplateDataTable(ds.Tables[0], System.IO.Path.GetFileName(filePath));
             return dtTemp;
         }
+
+        public DataTable GetCHISO_PMax(int ky, int thang, int nam, string strMaSoGCS)
+        {
+
+            string fileXML = _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).FILE_XML;
+
+            string filePath = "";
+            //filePath = Path.Combine(System.Web.HttpContext.Current.Server.MapPath(@"~/TemplateFile/" + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.ID_LICHGCS == ID_LISHGCS).MA_DVIQLY.Trim() + "/"), fileXML);
+            filePath = Utility.getXMLPath() + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).MA_DVIQLY.Trim() + @"/" + fileXML;
+            var ds = new DataSet();
+            ds.ReadXml(filePath, XmlReadMode.InferSchema);
+            DataTable dtTemp = Convert2TemplateDataTable(ds.Tables[0], System.IO.Path.GetFileName(filePath));
+
+            DataTable d = filterDR(dtTemp, "A");
+            if (d.Rows.Count == 0) return null;
+            return d;
+        }
+
+        public DataTable filterDR(DataTable dtData, string TEN_FILE)
+        {
+            DataTable dtNew = Convert2TemplateDataTable(dtData, TEN_FILE);
+            dtNew.Columns.Add("NGAY_PMAX1");
+            dtNew.Columns.Add("PMAX1");
+            DataTable dtCSPMax = dtNew.Clone();
+            DataRow dr = null;
+            for (int i = 0; i < dtData.Rows.Count; i++)
+            {
+                dr = dtNew.Rows[i];
+                if (dr["LOAI_BCS"].ToString() == "KT" || dtData.Select("MA_CTO ='" + dr["MA_CTO"] + "'").Count() == 2)
+                    continue;
+                if ((decimal.Parse(dr["PMAX"].ToString()) <= 0) || dr["LOAI_BCS"].ToString() != "BT")
+                {
+                    continue;
+                }
+                dr.SetField("PMAX1", dr["PMAX"].ToString());
+                dr.SetField("NGAY_PMAX1", dr["NGAY_PMAX"].ToString());
+                dtCSPMax.ImportRow(dr);
+            }
+            return dtCSPMax;
+        }
+
+        public DataTable get_SLBT(int ky, int thang, int nam, string strMaSoGCS)
+        {
+
+            string fileXML = _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).FILE_XML;
+
+            string filePath = "";
+            //filePath = Path.Combine(System.Web.HttpContext.Current.Server.MapPath(@"~/TemplateFile/" + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.ID_LICHGCS == ID_LISHGCS).MA_DVIQLY.Trim() + "/"), fileXML);
+            filePath = Utility.getXMLPath() + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).MA_DVIQLY.Trim() + @"/" + fileXML;
+            var ds = new DataSet();
+            ds.ReadXml(filePath, XmlReadMode.InferSchema);
+            DataTable dtTemp = Convert2TemplateDataTable(ds.Tables[0], System.IO.Path.GetFileName(filePath));
+            return dtTemp;
+        }
+
         public DataTable get_SLBT(int ID_LISHGCS)
         {
 

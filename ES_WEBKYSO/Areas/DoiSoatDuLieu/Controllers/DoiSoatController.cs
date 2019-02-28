@@ -513,6 +513,31 @@ namespace ES_WEBKYSO.Areas.DoiSoatDuLieu.Controllers
                             ? Json(new {success = false, message = "Không có dữ liệu đối soát!"},
                                 JsonRequestBehavior.AllowGet)
                             : Json(new {success = true}, JsonRequestBehavior.AllowGet);
+                    case "06":
+                    case "07":
+                    case "08":
+                        var sourceGet_SLBT = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
+                        return sourceGet_SLBT == null
+                            ? Json(new { success = false, message = "Không có dữ liệu đối soát!" },
+                                JsonRequestBehavior.AllowGet)
+                            : Json(new { success = true, message = "OK" }, JsonRequestBehavior.AllowGet);
+                    //case "07":
+                    //    return null;
+                    //case "08":
+                    //    return null;
+                    case "09":
+                        var sourceGetCHISO_PMax = reportHelper.GetCHISO_PMax(ky, thang, nam, maSo[0]);
+                        return sourceGetCHISO_PMax == null
+                            ? Json(new { success = false, message = "Không có dữ liệu đối soát!" },
+                                JsonRequestBehavior.AllowGet)
+                            : Json(new { success = true, message = "OK" }, JsonRequestBehavior.AllowGet);
+                        
+                    //case "10":
+                    //    return null;
+                    //case "11":
+                    //    return null;
+                    //case "12":
+                    //    return null;
                 }
             }
             catch (Exception ex)

@@ -198,25 +198,12 @@
       <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="Telerik.Reporting, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Telerik.Reporting.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Reporting.Services.WebApi, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Telerik.Reporting.Services.WebApi.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.Reporting.XpsRendering, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be" />
-    <Reference Include="Telerik.ReportViewer.Mvc, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DLL\Telerik.ReportViewer.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.ReportViewer.WebForms, Version=10.0.16.204, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL">
-      <HintPath>..\DLL\Telerik.ReportViewer.WebForms.dll</HintPath>
-    </Reference>
-    <Reference Include="Telerik.ReportViewer.WinForms">
-      <HintPath>..\DLL\Telerik.ReportViewer.WinForms.dll</HintPath>
-    </Reference>
+    <Reference Include="Telerik.Reporting, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Reporting.Services.WebApi, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Reporting.XpsRendering, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.ReportViewer.Mvc, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=13.0.19.222, Culture=neutral, PublicKeyToken=a9d7983dfcc261be, processorArchitecture=MSIL" />
     <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
@@ -322,6 +309,7 @@
     <Compile Include="Common\CA\DAL_SqlConnector.cs" />
     <Compile Include="Common\CA\ES_Encrypt.cs" />
     <Compile Include="Common\colData.cs" />
+    <Compile Include="Common\common.cs" />
     <Compile Include="Common\CommonHelper.cs" />
     <Compile Include="Common\CommonReport.cs" />
     <Compile Include="Common\CommonUserProfile.cs" />
@@ -405,6 +393,12 @@
     <Compile Include="Reports\rptCongToCoChiSoPMax.Designer.cs">
       <DependentUpon>rptCongToCoChiSoPMax.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\rptCongToKhongChupAnh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptCongToKhongChupAnh.Designer.cs">
+      <DependentUpon>rptCongToKhongChupAnh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\rptCongToSanLuongBatThuongDaXacNhan.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -416,6 +410,24 @@
     </Compile>
     <Compile Include="Reports\rptDanhSachCongTo.Designer.cs">
       <DependentUpon>rptDanhSachCongTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangDoiSoatDat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangDoiSoatDat.Designer.cs">
+      <DependentUpon>rptDanhSachKhachHangDoiSoatDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangDoiSoatKhongDat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangDoiSoatKhongDat.Designer.cs">
+      <DependentUpon>rptDanhSachKhachHangDoiSoatKhongDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangKhongChupAnh.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDanhSachKhachHangKhongChupAnh.Designer.cs">
+      <DependentUpon>rptDanhSachKhachHangKhongChupAnh.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\rptDsCtCoSLBT.cs">
       <SubType>Component</SubType>
@@ -464,6 +476,24 @@
     </Compile>
     <Compile Include="Reports\rptGhiChuCongTo.Designer.cs">
       <DependentUpon>rptGhiChuCongTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptKhachHangDaDoiSoat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptKhachHangDaDoiSoat.Designer.cs">
+      <DependentUpon>rptKhachHangDaDoiSoat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPhieuXacMinhChiSoCongTo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPhieuXacMinhChiSoCongTo.Designer.cs">
+      <DependentUpon>rptPhieuXacMinhChiSoCongTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptPhucTraChiSoCongTo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptPhucTraChiSoCongTo.Designer.cs">
+      <DependentUpon>rptPhucTraChiSoCongTo.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\rptSanLuongBatThuong.cs">
       <SubType>Component</SubType>
@@ -3993,11 +4023,23 @@
     <EmbeddedResource Include="Reports\rptCongToCoChiSoPMax.resx">
       <DependentUpon>rptCongToCoChiSoPMax.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptCongToKhongChupAnh.resx">
+      <DependentUpon>rptCongToKhongChupAnh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptCongToSanLuongBatThuongDaXacNhan.resx">
       <DependentUpon>rptCongToSanLuongBatThuongDaXacNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptDanhSachCongTo.resx">
       <DependentUpon>rptDanhSachCongTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDanhSachKhachHangDoiSoatDat.resx">
+      <DependentUpon>rptDanhSachKhachHangDoiSoatDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDanhSachKhachHangDoiSoatKhongDat.resx">
+      <DependentUpon>rptDanhSachKhachHangDoiSoatKhongDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDanhSachKhachHangKhongChupAnh.resx">
+      <DependentUpon>rptDanhSachKhachHangKhongChupAnh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptDsCtCoSLBT.resx">
       <DependentUpon>rptDsCtCoSLBT.cs</DependentUpon>
@@ -4023,6 +4065,15 @@
     <EmbeddedResource Include="Reports\rptGhiChuCongTo.resx">
       <DependentUpon>rptGhiChuCongTo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptKhachHangDaDoiSoat.resx">
+      <DependentUpon>rptKhachHangDaDoiSoat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPhieuXacMinhChiSoCongTo.resx">
+      <DependentUpon>rptPhieuXacMinhChiSoCongTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptPhucTraChiSoCongTo.resx">
+      <DependentUpon>rptPhucTraChiSoCongTo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptSanLuongBatThuong.resx">
       <DependentUpon>rptSanLuongBatThuong.cs</DependentUpon>
     </EmbeddedResource>
@@ -4032,6 +4083,17 @@
     <EmbeddedResource Include="Reports\rptTinhTrangBatThuong.resx">
       <DependentUpon>rptTinhTrangBatThuong.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
