@@ -71,6 +71,9 @@ namespace ES_WEBKYSO.Common
             DataTable dt = lsttodt.ToDataTable(gcsHhu);
             return dt;
         }
+
+
+
         public DataTable GetReportDsKhKhongDuocDs(string maDonVi, string[] maSo, int ky, int thang, int nam, string loaiBangKe, string nguoiDoiSoat)
         {
             var gcsHhu = _repo.RepoBase<GCS_CHISO_HHU>().GetAll(x => x.MA_DVIQLY == maDonVi
@@ -273,6 +276,22 @@ namespace ES_WEBKYSO.Common
                 dtCSPMax.ImportRow(dr);
             }
             return dtCSPMax;
+        }
+
+        public DataTable get_SLBT_PhucTraChiSo(int ky, int thang, int nam, string strMaSoGCS)
+        {
+
+            string fileXML = _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).FILE_XML;
+
+            string filePath = "";
+            //filePath = Path.Combine(System.Web.HttpContext.Current.Server.MapPath(@"~/TemplateFile/" + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.ID_LICHGCS == ID_LISHGCS).MA_DVIQLY.Trim() + "/"), fileXML);
+            filePath = Utility.getXMLPath() + _repo.RepoBase<GCS_LICHGCS>().GetOne(o => o.KY == ky && o.THANG == thang && o.NAM == nam && o.MA_SOGCS == strMaSoGCS).MA_DVIQLY.Trim() + @"/" + fileXML;
+            var ds = new DataSet();
+            ds.ReadXml(filePath, XmlReadMode.InferSchema);
+            DataTable dtTemp = Convert2TemplateDataTable(ds.Tables[0], System.IO.Path.GetFileName(filePath));
+            ConfigInfo config = new ConfigInfo();
+            DataTable dtTempRes = GetDtSLBT(ds.Tables[0], fileXML, config);
+            return dtTemp;
         }
 
         public DataTable get_SLBT(int ky, int thang, int nam, string strMaSoGCS)

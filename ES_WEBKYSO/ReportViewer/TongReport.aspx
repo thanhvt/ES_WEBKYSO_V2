@@ -164,6 +164,36 @@
                      instanceReportSource.ReportDocument = report_ChiSoPMax.Report;
                      rptTong.ReportSource = instanceReportSource;
                      break;
+                  case "10":
+                     rptPhucTraChiSoCongTo report_PhucTraChiSoCongTo = new rptPhucTraChiSoCongTo();
+                     var rpt_PhucTraChiSoCongTo = new rptCongToCoChiSoPMax();
+
+                     instanceReportSource.ReportDocument = rpt_PhucTraChiSoCongTo;
+                     base.OnLoad(e);
+
+                     var source_PhucTraChiSoCongTo = reportHelper.get_SLBT_PhucTraChiSo(ky, thang, nam, maSo[0]);
+                     if (source_PhucTraChiSoCongTo != null)
+                     {
+                         report_PhucTraChiSoCongTo.SetSourceTable(source_PhucTraChiSoCongTo);
+                     }
+                     instanceReportSource.ReportDocument = report_PhucTraChiSoCongTo.Report;
+                     rptTong.ReportSource = instanceReportSource;
+                     break;
+                  case "12":
+                     rptPhieuXacMinhChiSoCongTo report_PhieuXacMinhChiSoCongTo = new rptPhieuXacMinhChiSoCongTo();
+                     var rpt_PhieuXacMinhChiSoCongTo = new rptPhieuXacMinhChiSoCongTo();
+
+                     instanceReportSource.ReportDocument = rpt_PhieuXacMinhChiSoCongTo;
+                     base.OnLoad(e);
+
+                     var source_PhieuXacMinhChiSoCongTo = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
+                     if (source_PhieuXacMinhChiSoCongTo != null)
+                     {
+                         report_PhieuXacMinhChiSoCongTo.SetSourceTable(source_PhieuXacMinhChiSoCongTo);
+                     }
+                     instanceReportSource.ReportDocument = report_PhieuXacMinhChiSoCongTo.Report;
+                     rptTong.ReportSource = instanceReportSource;
+                     break;
                  default:
                      break;
              }

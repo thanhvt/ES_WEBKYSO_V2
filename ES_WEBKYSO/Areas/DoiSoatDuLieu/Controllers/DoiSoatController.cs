@@ -516,6 +516,8 @@ namespace ES_WEBKYSO.Areas.DoiSoatDuLieu.Controllers
                     case "06":
                     case "07":
                     case "08":
+                    case "10":
+                    case "12":
                         var sourceGet_SLBT = reportHelper.get_SLBT(ky, thang, nam, maSo[0]);
                         return sourceGet_SLBT == null
                             ? Json(new { success = false, message = "Không có dữ liệu đối soát!" },
